@@ -33,13 +33,13 @@
               <div class="col-lg-4">
                 <div class="form-group">
                   <label class="form-control-label">Nombre: <span class="tx-danger">*</span></label>
-                  <input class="form-control" type="text" name="usu_nom" id="usu_nom" placeholder="Nombre" required>
+                  <input class="formulario" type="text" name="usu_nom" id="usu_nom" placeholder="Nombre" required>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="form-group">
                   <label class="form-control-label">Apellido Paterno: <span class="tx-danger">*</span></label>
-                  <input class="form-control" type="text" name="usu_apep" id="usu_apep" placeholder="Apellido Paterno">
+                  <input class="formulario" type="text" name="usu_apep" id="usu_apep" placeholder="Apellido Paterno">
                 </div>
               </div>
               <div class="col-lg-4">
@@ -51,19 +51,22 @@
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="form-control-label">Correo Electronico: <span class="tx-danger">*</span></label>
-                  <input class="form-control" type="email" name="usu_correo" id="usu_correo">
+                  <input class="formulario" type="email" name="usu_correo" id="usu_correo">
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="form-control-label">Contraseña: <span class="tx-danger">*</span></label>
-                  <input class="form-control" type="password" name="usu_pass" id="usu_pass" placeholder="Ingrese Contraseña">
+                  <input class="formulario" type="password" name="usu_pass" id="usu_pass" placeholder="Ingrese Contraseña">
+
+                  
+
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="form-group mg-b-10-force">
                   <label class="form-control-label">Sexo: <span class="tx-danger">*</span></label>
-                  <select class="form-control select2" name="usu_sex" id="usu_sex" data-placeholder="Seleccione">
+                  <select class="formulario select2" name="usu_sex" id="usu_sex" data-placeholder="Seleccione">
                     <option label="Seleccione"></option>
                     <option value="F">Femenino</option>
                     <option value="M">Masculino</option>
@@ -73,13 +76,13 @@
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="form-control-label">Telefono: <span class="tx-danger">*</span></label>
-                  <input class="form-control" type="number" name="usu_telf" id="usu_telf" placeholder="Ingrese Telefono">
+                  <input class="formulario" type="number" name="usu_telf" id="usu_telf" placeholder="Ingrese Telefono">
                 </div>
               </div>
             </div>
 
             <div class="form-layout-footer">
-              <button class="btn btn-info" id="btnactualizar">Actualizar</button>
+              <button id="btngurdar" id="btnactualizar">Actualizar</button>
             </div>
           </div>
 
@@ -89,6 +92,8 @@
 
     <?php require_once("../html/MainJs.php"); ?>
     <script type="text/javascript" src="usuperfil.js"></script>
+    <script src="../../asset/js/app.js"></script>
+
   </body>
 </html>
 

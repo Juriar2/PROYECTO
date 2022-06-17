@@ -13,13 +13,12 @@ body, html {
 /*Estilos login lo modique todo*/
 .form-control{
 	border: 2px solid #204ee8 ;
-
-	/*height: 40px;*/
 	padding: 0 10px;
 	font-size: 18px;
 	color: #000000	;
 	border-radius: 10px;
-	
+	width: 70%;
+	height: 70px;
 }
 /*le indico que toodo el texto se centre en input**/
 .form-control:hover{
@@ -362,10 +361,7 @@ tr th{
 	font-family: Arial, Helvetica, sans-serif;
 	color: white;
 }
-.br-sideleft:hover{
 
-	background: #9E8010;
-}
 
 .br-menu-link{
 	color: black;
@@ -407,15 +403,52 @@ tr th{
 	
 }
 
-.form-control,formulario{
-	border: 2px solid #e90303 ;
+.formulario{
+	border: 2px solid #08276b ;
 	/*height: 40px;*/
 	padding: 0 10px;
-	font-size: 18px;
+	font-size: 1.5em;
 	color: #000000	;
 	border-radius: 10px;
 	width: 100%;
 	height: 62px;
 	
+}
+*le indico que toodo el texto se centre en input**/
+.formulario:hover{
+	color: #9E8010	;
+	border: 3px solid #9E8010;
 	
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	
+}
+/*le indico que todo el texto se centre en input**/
+.formulario:focus{
+	border: 2px solid #204ee8;
+}
+/***estilos para el text dentro de input**/
+.formulario::placeholder{
+	color: #000000;
+	font-size:1em;
+}
+/**para que se ve mas elegenate**/
+.formulario:-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000000;
+}
+
+#btngurdar{
+	background-color: #9E8010;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 18px;
+	transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+	transition-property: initial;
+	font-weight:700;
+	width: 25%;
+}
+#btngurdar:hover{
+	background-color: #022B5F;
+	width: 100%;
 }

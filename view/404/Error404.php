@@ -148,7 +148,7 @@ a.more-link {
 }
     </style>
 <!-- partial:index.partial.html -->
-<h1>No se a econtradao la pagina</h1>
+<h1>No se ha encontrado la pagina</h1>
 <p class="zoom-area"><b></b></p>
 <section class="error-container">
   <span><span>4</span></span>
