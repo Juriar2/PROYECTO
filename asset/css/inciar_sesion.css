@@ -406,3 +406,16 @@ tr th{
 	color: black;
 	
 }
+
+.form-control,formulario{
+	border: 2px solid #e90303 ;
+	/*height: 40px;*/
+	padding: 0 10px;
+	font-size: 18px;
+	color: #000000	;
+	border-radius: 10px;
+	width: 100%;
+	height: 62px;
+	
+	
+}

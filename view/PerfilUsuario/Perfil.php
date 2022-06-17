@@ -45,7 +45,7 @@
               <div class="col-lg-4">
                 <div class="form-group">
                   <label class="form-control-label">Apellido Materno: <span class="tx-danger">*</span></label>
-                  <input class="form-control" type="text" name="usu_apem" id="usu_apem" placeholder="Apellido Materno">
+                  <input class="form-control formulario" type="text" name="usu_apem" id="usu_apem" placeholder="Apellido Materno">
                 </div>
               </div>
               <div class="col-lg-6">
