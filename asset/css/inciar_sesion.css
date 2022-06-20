@@ -17,8 +17,7 @@ body, html {
 	font-size: 18px;
 	color: #000000	;
 	border-radius: 10px;
-	width: 70%;
-	height: 70px;
+	
 }
 /*le indico que toodo el texto se centre en input**/
 .form-control:hover{
