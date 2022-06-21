@@ -28,9 +28,7 @@
                     <a href="login" class="nav__links" target="_new">Iniciar sesion</a>
                 </li>
                 <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="login" class="nav__links" target="_new">Registrate</a>
-                </li>
+               
                 
                 <img src="./img/close.svg" class="nav__close" alt="img">
             </ul>

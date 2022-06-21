@@ -85,7 +85,7 @@
 						<div class="login-wrap p-4 p-md-5">
 			      	<div class="d-flex">
 			      		<div class="w-100">
-			      			<h3 class="mb-2">Bienvenido</h3>
+			      			<h3 class="mb-2">Bienvenido al sistema</h3>
 			      	
 							<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" autocomplete="off" method="post" id="formLogin" class="signin-form">
 							<?php
