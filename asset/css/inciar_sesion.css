@@ -7,7 +7,10 @@ body, html {
     text-rendering: optimizeLegibility;
 }
 
-
+form {
+	
+	margin:0 0;
+}
 
 /*Estilos login lo modique todo*/
 .form-control{
@@ -351,9 +354,9 @@ tr th{
 	height: 62px;
 	
 }
-*le indico que toodo el texto se centre en input**/
+/*le indico que toodo el texto se centre en input**/
 .formulario:hover{
-	color: #9E8010	;
+	color: #000000	;
 	border: 3px solid #9E8010;
 	
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -374,7 +377,7 @@ tr th{
 }
 
 
-
+/**boton perfil**/
 #btngurdar{
 	background-color: #9E8010;
 	color: white;
@@ -397,8 +400,13 @@ tr th{
 	font-size: 1.8em;
 	font-family: Arial, Helvetica, sans-serif;
 	
+}/**finaliza aqui**/
+/**hace referencia la perfil de usuario**/
+label{
+	margin:0;
+	color: #000000;
+	font-size: 1.3em;
 }
-
 
 @media   (max-width: 468px) {
 	.perfil{
@@ -427,4 +435,4 @@ tr th{
 		height: 62px;
 		
 	}*/
-}
+}/**finaliza aqui**/
