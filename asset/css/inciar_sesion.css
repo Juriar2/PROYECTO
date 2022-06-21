@@ -378,7 +378,7 @@ tr th{
 
 
 /**boton perfil**/
-#btngurdar{
+.btngurdar{
 	background-color: #9E8010;
 	color: white;
 	padding: 14px 20px;
@@ -390,7 +390,7 @@ tr th{
 	font-weight:700;
 	width: 25%;
 }
-#btngurdar:hover{
+.btngurdar:hover{
 	background-color: #022B5F;
 	width: 100%;
 }

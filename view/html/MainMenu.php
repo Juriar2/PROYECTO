@@ -67,7 +67,7 @@
       </div>
     </a>
 
-    <a href="../html/Logout.php" class="br-menu-link">
+    <a href="../html/Logout" class="br-menu-link">
       <div class="br-menu-item">
         <i class="menu-item-icon icon ion-power tx-20"></i>
         <span class="menu-item-label">Cerrar Sesion</span>
