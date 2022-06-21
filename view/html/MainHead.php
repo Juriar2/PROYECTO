@@ -32,3 +32,6 @@
 <link href="../../public/css/bracket.css" rel="stylesheet">
 
 <link rel="stylesheet" href="../../asset/css/inciar_sesion.css">
+
+
+<link rel="stylesheet" href="../../asset/css/wickedcss.min.css">

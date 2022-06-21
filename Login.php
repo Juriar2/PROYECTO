@@ -10,7 +10,7 @@
     $usuario->login();
   }else{
 		//al momento de cargar la pagina com arlete una vez el usuario ha iniciado sesion
-	echo "<script>alert('Debe de iniciar sesion con tu correo Elctronico Institucinal');</script>";
+	echo "<script>alert('Debes de iniciar sesion con tu correo Elctronico Institucinal y su matricula como contraseña');</script>";
   }
 
 ?>
@@ -101,6 +101,7 @@
 							</div>
 								<?php
 								break;
+								 
 
 								case "2";
 								?>
@@ -128,8 +129,9 @@
   					
 		            </div>
 		            <div class="form-group">
-						<input type="hidden"  name="enviar"  class="form-control" value="si">
-		            	<button type="submit"  class="button02">Iniciar sesion</button>
+						<input type="hidden" id="login"  name="enviar"  class="form-control" value="si">
+		            	<button type="submit" id="login02" class="button02">Iniciar sesion</button>
+						
 		            </div>
 		          
 		          </form>
@@ -138,14 +140,20 @@
 		      </div>
 				</div>
 			</div>
-            <footer>
+			<div class="bg-1">
+			<footer class="t-stroke t-shadow">
             INSTITUTO TECNOLÓGICO SUPERIOR DE LA REGIÓN SIERRA
             </footer>
+			</div>
+            
            
 		</div>
 		<div id="snell">
   
+<script>
+	
 
+</script>
 <svg width="100%" height="100" viewBox="0 0 328 265" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="XMLID5">
   <g id="eye2">
@@ -232,8 +240,9 @@
 
 
   </div>
-        
+        <script src="asset/js/jquery.min.js"></script>
 	</section>
+	
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js'></script><script  src="./script.js"></script>
 	<script src="asset/js/jquery.min.js"></script>
   <script src="asset/js/popper.js"></script>
