@@ -21,6 +21,7 @@ $(document).on("click","#btnactualizar", function(){
         usu_nom : $('#usu_nom').val(),
         usu_apep : $('#usu_apep').val(),
         usu_apem : $('#usu_apem').val(),
+        usu_correo : $('#usu_correo').val(),
         usu_pass : $('#usu_pass').val(),
         usu_sex : $('#usu_sex').val(),
         usu_telf : $('#usu_telf').val()

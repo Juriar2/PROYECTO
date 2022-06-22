@@ -5,7 +5,7 @@
   <label class="menu01">Menu</label>
   <div class="br-sideleft-menu">
 
-    <a href="../UsuHome/Usuario" class="br-menu-link">
+    <a href="../UsuHome/usuario" class="br-menu-link">
       <div class="br-menu-item">
         <i class="menu-item-icon icon ion-ios-home-outline tx-22"></i>
         <span class="menu-item-label">Inicio</span>
@@ -14,7 +14,7 @@
 
   
       
-          <a href="../UsuCurso/Curso" class="br-menu-link">
+          <a href="../UsuCurso/curso" class="br-menu-link">
             <div class="br-menu-item">
               <i class="menu-item-icon icon ion-ios-bookmarks-outline tx-24"></i>
               <span class="menu-item-label">Taller Cursos</span>
@@ -60,7 +60,7 @@
     
 
 
-    <a href="../PerfilUsuario/Perfil" class="br-menu-link">
+    <a href="../PerfilUsuario/perfil" class="br-menu-link">
       <div class="br-menu-item">
         <i class="menu-item-icon icon ion-ios-gear-outline tx-20"></i>
         <span class="menu-item-label">Perfil</span>

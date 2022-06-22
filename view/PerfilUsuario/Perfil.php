@@ -54,7 +54,7 @@
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="form-control-label">Correo Electronico: <span class="tx-danger">*</span></label>
-                  <input class="formulario floater" type="email" name="usu_correo" id="usu_correo" placeholder="corrreo electroncio" readonly>
+                  <input class="formulario floater" type="email" name="usu_correo" id="usu_correo" placeholder="corrreo electroncio" readonly disabled="disabled" >
                 </div>
               </div>
               <div class="col-lg-6">

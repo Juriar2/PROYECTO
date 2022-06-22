@@ -55,16 +55,16 @@ footer{
 
 /*hace referencia BOTN DEL LOGIN**/
 .button02{
-	background-color: #022B5F;
-	color: white;
-	padding: 30px 25px;
-	border: none;
-	cursor: pointer;
-	width: 100%;
-	border-radius: 10px;
-	transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
-	transition-property: initial;
-	font-weight:1000;
+	background-color: #f12323;
+		color: white;
+		padding: 10px 14px 10px 14px;
+		border: none;
+		cursor: pointer;
+		border-radius: 18px;
+		transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+		transition-property: initial;
+		font-weight:700;
+		width: 100%;
  }
  .button02:hover{
     background-color: #9E8010;   

@@ -24,8 +24,8 @@
 	<meta name="keywords" content="Itss">
     <meta name="author" content="Itss">
     <meta name="theme-color" content="#9E8010">
+	<link rel="shortcut icon" href="asset/images/itss.png" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="asset/css/inciar_sesion.css">
@@ -240,16 +240,16 @@
 
 
   </div>
-        <script src="asset/js/jquery.min.js"></script>
+       
 	</section>
 	
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js'></script><script  src="./script.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js'></script>
 	<script src="asset/js/jquery.min.js"></script>
-  <script src="asset/js/popper.js"></script>
-  <script src="asset/js/bootstrap.min.js"></script>
-  <script src="asset/js/main.js"></script>
-  <script src="asset/js/animacion.js"></script>
-  <script src="asset/js/app.js"></script>
+ 	 <script src="asset/js/popper.js"></script>
+  	<script src="asset/js/bootstrap.min.js"></script>
+  	<script src="asset/js/main.js"></script>
+  	<script src="asset/js/animacion.js"></script>
+  	<script src="asset/js/app.js"></script>
   
 	</body>
 </html>
