@@ -1,5 +1,3 @@
-
-
 <?php
   /* Llamamos al archivo de conexion.php */
   require_once("../../config/config.php");

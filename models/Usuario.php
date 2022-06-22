@@ -7,6 +7,7 @@
             if(isset($_POST["enviar"])){
                 $correo = $_POST["usu_correo"];
                 $pass = $_POST["usu_pass"];
+               
                 if(empty($correo) and empty($pass)){
                     /*TODO: En caso esten vacios correo y contraseña, devolver al index con mensaje = 2 */
                     header("Location:".conectar::ruta()."Login?m=2");
