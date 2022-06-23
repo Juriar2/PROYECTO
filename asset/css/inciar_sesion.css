@@ -453,11 +453,11 @@ label{
 		text-align: left;
 		font-size: 1.2em;
 		color: black;
-		background-color: #1374f3;
+		background-color: #eccc58;;
 	}
 	
 	table th{
-		background-color: #1374f3;
+		background-color:#eccc58;;
 		color: black;
 		text-align: center;
 		font-size: 1.2em;
@@ -466,5 +466,56 @@ label{
 		color: black;
 	}
 }/**finaliza aqui**/
+/**btnpfd*/
 
+.btnpfd{
+	background-color: #f73333;
+	border: none;
+	padding: 12px 12px 12px;
+	cursor: pointer;
+	color: white;
+	border-radius: 8px;
+
+}
+/**estilos botonAdminMntUsuario***/
+.btnresgistro{
+	margin: 20px 25px 25px;
+	background-color: #1374f3;
+	padding: 8px 10px 8px 10px;
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+	color: white;
+	text-shadow: 15px 15px 15px  #000000;
+	font-size: 1.2em;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: 1000;
+	
+}
+
+.btnresgistro:hover{
+	background-color: #f12323;
+	color: white;
+	text-shadow: 15px 15px 15px  #000000;
+	font-size: 1.2em;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: 1000;
+}
+
+hr{
+	border: 0.5px solid #000000;
+	
+	margin: 0;
+}
+@media   (max-width: 490px){
+	.btnresgistro{
+		background-color: #f12323;
+		color: white;
+		text-shadow: 15px 15px 15px  #000000;
+		font-size: 1.2em;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		font-weight: 1000;
+		image-resolution: initial;
+	}	
+}
 

@@ -15,15 +15,12 @@
 
         </h1>
         <br>
-        <p class="tx-16 mg-b-30 text-justify" id="cur_descrip">
-
-        </p>
 
         <div id="qrcode"></div>
 
         <div class="form-layout-footer">
             <button class="btn btn-outline-info" id="btnpng"><i class="fa fa-send mg-r-10"></i> PNG</button>
-            <button class="btn btn-outline-success" id="btnpdf"><i class="fa fa-send mg-r-10"></i> PDF</button>
+            <button class="btnpfd slideRight" id="btnpdf" title="descragar en pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></i> Descargar PDF</button>
         </div>
 
       </div>

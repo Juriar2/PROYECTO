@@ -23,13 +23,15 @@ $(document).ready(function(){
         var x = canvas.width / 2;
         ctx.fillText(data.usu_nom+' '+ data.usu_apep+' '+data.usu_apem, x, 250);
 
+        ctx.font = '18px Arial';
+        ctx.fillText('Taller', x, 295);
         ctx.font = '30px Arial';
-        ctx.fillText(data.cur_nom, x, 320);
+        ctx.fillText(data.cur_nom, x, 330);
 
         ctx.font = '18px Arial';
         ctx.fillText(data.inst_nom+' '+ data.inst_apep+' '+data.inst_apem, x, 420);
-        ctx.font = '15px Arial';
-        ctx.fillText('Instructor', x, 450);
+        ctx.font = '20px Arial';
+        ctx.fillText('Instructor', x, 395);
 
         ctx.font = '15px Arial';
         ctx.fillText('Fecha de Inicio : '+data.cur_fechini+' / '+'Fecha de Finalización : '+data.cur_fechfin+'', x, 490);
