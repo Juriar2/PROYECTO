@@ -478,7 +478,21 @@ label{
 	border-radius: 20px;
 	width: 40%;
 
-}/** finaliza aqui btnpfd*/
+}
+@media   (max-width: 490px){
+	.btnpfd{
+	background-color: #f73333;
+	border: none;
+	padding: 12px 12px 12px;
+	cursor: pointer;
+	color: white;
+	font-size: 1.2em;
+	border-radius: 20px;
+	width: 50%;
+	}	
+}
+
+/** finaliza aqui btnpfd*/
 /**estilos botonAdminMntUsuario***/
 .btnresgistro{
 	margin: 20px 25px 25px;
@@ -488,7 +502,6 @@ label{
 	border-radius: 15px;
 	cursor: pointer;
 	color: white;
-	
 	font-size: 1.2em;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-weight: 1000;
@@ -530,3 +543,33 @@ hr{
 	font-size: 1.2em;
 }/**finaliza aqui**/
 
+/**das**/
+.resgistro01{
+	background-color: #166FE5;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 18px;
+	transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+	transition-property: initial;
+	font-weight:700;
+}
+.resgistro01:hover{
+	background-color: #2b7ce6;
+}
+
+.resgistro02{
+	background-color: #ec1919;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 18px;
+	transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+	transition-property: initial;
+	font-weight:700;
+}
+.resgistro02:hover{
+	background-color: #ee4646;
+}/*finaliza aqui**/

@@ -12,51 +12,60 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Nombre: <span class="tx-danger">*</span></label>
-                            <input class="form-control tx-uppercase" id="usu_nom" type="text" name="usu_nom" required/>
+                            <input class="formulario" id="usu_nom" type="text" name="usu_nom" required/>
                         </div>
                     </div>
 
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Apellido Paterno: <span class="tx-danger">*</span></label>
-                            <input class="form-control tx-uppercase" id="usu_apep" type="text" name="usu_apep" required/>
+                            <input class="formulario" id="usu_apep" type="text" name="usu_apep" required/>
                         </div>
                     </div>
 
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Apellido Materno: <span class="tx-danger">*</span></label>
-                            <input class="form-control tx-uppercase" id="usu_apem" type="text" name="usu_apem" required/>
+                            <input class="formulario" id="usu_apem" type="text" name="usu_apem" required/>
                         </div>
                     </div>
 
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Correo: <span class="tx-danger">*</span></label>
-                            <input class="form-control tx-uppercase" id="usu_correo" type="email" name="usu_correo" required/>
+                            <input class="formulario" id="usu_correo" type="email" name="usu_correo" required/>
                         </div>
                     </div>
 
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Password: <span class="tx-danger">*</span></label>
-                            <input class="form-control tx-uppercase" id="usu_pass" type="text" name="usu_pass" required/>
+                            <input class="formulario" id="usu_pass" type="password" name="usu_pass" required/>
                         </div>
                     </div>
 
-                    
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label class="form-control-label">Sexo: <span class="tx-danger">*</span></label>
+                            <select class="formulario select2" style="width:100%" name="usu_sex" id="usu_sex" data-placeholder="Seleccione">
+                                <option label="Seleccione"></option>
+                                <option value="M">Masculino</option>
+                                <option value="F">Femenino</option>
+                            </select>
+                        </div>
+                    </div>
 
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Telefono: <span class="tx-danger">*</span></label>
-                            <input class="form-control tx-uppercase" id="usu_telf" type="text" name="usu_telf" required/>
+                            <input class="formulario " id="usu_telf" type="text" name="usu_telf" required/>
                         </div>
                     </div>
 
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Rol: <span class="tx-danger">*</span></label>
-                            <select class="form-control select2" style="width:100%" name="rol_id" id="rol_id" data-placeholder="Seleccione">
+                            <select class="formulario select2" style="width:100%" name="rol_id" id="rol_id" data-placeholder="Seleccione">
                                 <option label="Seleccione"></option>
                                 <option value="1">Usuario</option>
                                 <option value="2">Admin</option>
@@ -66,15 +75,15 @@
 
                     <div class="col-lg-12">
                         <div class="form-group">
-                            <label class="form-control-label">DNI: <span class="tx-danger">*</span></label>
-                            <input class="form-control tx-uppercase" id="usu_dni" type="text" name="usu_dni" required/>
+                            <label class="form-control-label">Matricula: <span class="tx-danger">*</span></label>
+                            <input class="formulario" id="usu_matri" type="text" name="usu_matri" required/>
                         </div>
                     </div>
 
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" name="action" value="add" class="btn btn-outline-primary tx-11 tx-uppercase pd-y-12 pd-x-25 tx-mont tx-medium"><i class="fa fa-check"></i> Guardar</button>
-                    <button type="reset" class="btn btn-outline-secondary tx-11 tx-uppercase pd-y-12 pd-x-25 tx-mont tx-medium" aria-label="Close" aria-hidden="true" data-dismiss="modal"><i class="fa fa-close"></i> Cancelar</button>
+                    <button type="submit" name="action" value="add" class="resgistro01"></i> Guardar</button>
+                    <button type="reset" class="resgistro02" aria-label="Close" aria-hidden="true" data-dismiss="modal"><i class="fa fa-close"></i> Cancelar</button>
                 </div>
             </form>
         </div>

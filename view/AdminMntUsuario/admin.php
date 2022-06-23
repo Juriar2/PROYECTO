@@ -18,6 +18,8 @@
     <?php require_once("../html/MainHeader.php"); ?>
 
     <div class="br-mainpanel">
+   <button class="btnresgistro" id="add_button" onclick="nuevo()"><i class="fa fa-plus-square mg-r-10"></i> Nuevo Registro</button>
+
       <div class="br-pageheader pd-y-15 pd-l-20">
         <nav class="breadcrumb pd-0 mg-0 tx-12">
           <a class="breadcrumb-item" href="#">Usuario</a>
@@ -33,9 +35,8 @@
             <h6 class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10">Usuario</h6>
             <p class="mg-b-30 tx-gray-600">Listado de Usuario</p>
 
-            <button class="btn btn-outline-primary" id="add_button" onclick="nuevo()"><i class="fa fa-plus-square mg-r-10"></i> Nuevo Registro</button>
 
-            <button class="btn btn-outline-primary" id="btnplantilla"><i class="fa fa-gear mg-r-10"></i> Subir Plantilla</button>
+           
 
             <p></p>
 
@@ -51,6 +52,8 @@
                     <th class="wd-15p">Rol</th>
                     <th class="wd-10p"></th>
                     <th class="wd-10p"></th>
+
+                    
                     </tr>
                 </thead>
                 <tbody>
