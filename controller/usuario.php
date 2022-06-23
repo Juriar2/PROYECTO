@@ -34,7 +34,7 @@
 
         /*TODO: MicroServicio para poder mostrar el listado de cursos de un usuario con certificado */
         case "listar_cursos_top10":
-            $datos=$usuario->get_cursos_x_usuario_top_limited($_POST["usu_id"]);
+            $datos=$usuario->get_cursos_x_usuario_top10($_POST["usu_id"]);
             $data= Array();
             foreach($datos as $row){
                 $sub_array = array();
@@ -63,7 +63,7 @@
                     $output["curd_id"] = $row["curd_id"];
                     $output["cur_id"] = $row["cur_id"];
                     $output["cur_nom"] = $row["cur_nom"];
-                    /*$output["cur_descrip"] = $row["cur_descrip"];*/
+                    $output["cur_descrip"] = $row["cur_descrip"];
                     $output["cur_fechini"] = $row["cur_fechini"];
                     $output["cur_fechfin"] = $row["cur_fechfin"];
                     $output["cur_img"] = $row["cur_img"];
@@ -105,14 +105,14 @@
                     $output["usu_pass"] = $row["usu_pass"];
                     $output["usu_telf"] = $row["usu_telf"];
                     $output["rol_id"] = $row["rol_id"];
-                    $output["usu_matri"] = $row["usu_matri"];
+                    $output["usu_dni"] = $row["usu_dni"];
                 }
                 echo json_encode($output);
             }
             break;
         /*TODO: Mostrar informacion segun DNI del usuario registrado */
         case "consulta_dni":
-            $datos = $usuario->get_usuario_x_dni($_POST["usu_matri"]);
+            $datos = $usuario->get_usuario_x_dni($_POST["usu_dni"]);
             if(is_array($datos)==true and count($datos)<>0){
                 foreach($datos as $row){
                     $output["usu_id"] = $row["usu_id"];
@@ -124,7 +124,7 @@
                     $output["usu_pass"] = $row["usu_pass"];
                     $output["usu_telf"] = $row["usu_telf"];
                     $output["rol_id"] = $row["rol_id"];
-                    $output["usu_matri"] = $row["usu_matri"];
+                    $output["usu_dni"] = $row["usu_dni"];
                 }
                 echo json_encode($output);
             }
@@ -144,9 +144,9 @@
         /*TODO: Guardar y editar cuando se tenga el ID */
         case "guardaryeditar":
             if(empty($_POST["usu_id"])){
-                $usuario->insert_usuario($_POST["usu_nom"],$_POST["usu_apep"],$_POST["usu_apem"],$_POST["usu_correo"],$_POST["usu_pass"],$_POST["usu_sex"],$_POST["usu_telf"],$_POST["rol_id"],$_POST["usu_matri"]);
+                $usuario->insert_usuario($_POST["usu_nom"],$_POST["usu_apep"],$_POST["usu_apem"],$_POST["usu_correo"],$_POST["usu_pass"],$_POST["usu_sex"],$_POST["usu_telf"],$_POST["rol_id"],$_POST["usu_dni"]);
             }else{
-                $usuario->update_usuario($_POST["usu_id"],$_POST["usu_nom"],$_POST["usu_apep"],$_POST["usu_apem"],$_POST["usu_correo"],$_POST["usu_pass"],$_POST["usu_sex"],$_POST["usu_telf"],$_POST["rol_id"],$_POST["usu_matri"]);
+                $usuario->update_usuario($_POST["usu_id"],$_POST["usu_nom"],$_POST["usu_apep"],$_POST["usu_apem"],$_POST["usu_correo"],$_POST["usu_pass"],$_POST["usu_sex"],$_POST["usu_telf"],$_POST["rol_id"],$_POST["usu_dni"]);
             }
             break;
         /*TODO: Eliminar segun ID */
@@ -227,7 +227,7 @@
             break;
 
         case "guardar_desde_excel":
-            $usuario->insert_usuario($_POST["usu_nom"],$_POST["usu_apep"],$_POST["usu_apem"],$_POST["usu_correo"],$_POST["usu_pass"],$_POST["usu_sex"],$_POST["usu_telf"],$_POST["rol_id"],$_POST["usu_matri"]);
+            $usuario->insert_usuario($_POST["usu_nom"],$_POST["usu_apep"],$_POST["usu_apem"],$_POST["usu_correo"],$_POST["usu_pass"],$_POST["usu_sex"],$_POST["usu_telf"],$_POST["rol_id"],$_POST["usu_dni"]);
             break;
 
     }

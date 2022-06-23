@@ -9,7 +9,7 @@
                 $pass = $_POST["usu_pass"];
                 if(empty($correo) and empty($pass)){
                     /*TODO: En caso esten vacios correo y contraseña, devolver al index con mensaje = 2 */
-                    header("Location:".conectar::ruta()."Login?m=2");
+                    header("Location:".conectar::ruta()."index.php?m=2");
 					exit();
                 }else{
                     $sql = "SELECT * FROM tm_usuario WHERE usu_correo=? and usu_pass=? and est=1";
@@ -25,14 +25,13 @@
                         $_SESSION["usu_correo"]=$resultado["usu_correo"];
                         $_SESSION["rol_id"]=$resultado["rol_id"];
                         /*TODO: Si todo esta correcto indexar en home */
-                        header("Location:".Conectar::ruta()."view/UsuHome/Usuario");
+                        header("Location:".Conectar::ruta()."view/UsuHome/");
                         exit();
                     }else{
                         /*TODO: En caso no coincidan el usuario o la contraseña */
-                        header("Location:".conectar::ruta()."Login?m=1");
+                        header("Location:".conectar::ruta()."index.php?m=1");
                         exit();
                     }
-                    
                 }
             }
         }
@@ -52,7 +51,7 @@
                 tm_usuario.usu_nom,
                 tm_usuario.usu_apep,
                 tm_usuario.usu_apem,
-                tm_usuario.usu_matri,
+                tm_usuario.usu_dni,
                 tm_instructor.inst_id,
                 tm_instructor.inst_nom,
                 tm_instructor.inst_apep,
@@ -70,7 +69,7 @@
         }
 
         /*TODO: Mostrar todos los cursos en los cuales esta inscrito un usuario */
-        public function get_cursos_x_usuario_top_limited($usu_id){
+        public function get_cursos_x_usuario_top10($usu_id){
             $conectar= parent::conexion();
             parent::set_names();
             $sql="SELECT 
@@ -84,7 +83,7 @@
                 tm_usuario.usu_nom,
                 tm_usuario.usu_apep,
                 tm_usuario.usu_apem,
-                tm_usuario.usu_matri,
+                tm_usuario.usu_dni,
                 tm_instructor.inst_id,
                 tm_instructor.inst_nom,
                 tm_instructor.inst_apep,
@@ -117,7 +116,7 @@
                 tm_usuario.usu_nom,
                 tm_usuario.usu_apep,
                 tm_usuario.usu_apem,
-                tm_usuario.usu_matri,
+                tm_usuario.usu_dni,
                 tm_instructor.inst_id,
                 tm_instructor.inst_nom,
                 tm_instructor.inst_apep,
@@ -190,12 +189,12 @@
         }
 
         /*TODO: Mostrar los datos del usuario segun el DNI */
-        public function get_usuario_x_dni($usu_matri){
+        public function get_usuario_x_dni($usu_dni){
             $conectar= parent::conexion();
             parent::set_names();
-            $sql="SELECT * FROM tm_usuario WHERE est=1 AND usu_matri=?";
+            $sql="SELECT * FROM tm_usuario WHERE est=1 AND usu_dni=?";
             $sql=$conectar->prepare($sql);
-            $sql->bindValue(1, $usu_matri);
+            $sql->bindValue(1, $usu_dni);
             $sql->execute();
             return $resultado=$sql->fetchAll();
         }
@@ -227,10 +226,10 @@
         }
 
         /*TODO: Funcion para insertar usuario */
-        public function insert_usuario($usu_nom,$usu_apep,$usu_apem,$usu_correo,$usu_pass,$usu_sex,$usu_telf,$rol_id,$usu_matri){
+        public function insert_usuario($usu_nom,$usu_apep,$usu_apem,$usu_correo,$usu_pass,$usu_sex,$usu_telf,$rol_id,$usu_dni){
             $conectar= parent::conexion();
             parent::set_names();
-            $sql="INSERT INTO tm_usuario (usu_id,usu_nom,usu_apep,usu_apem,usu_correo,usu_pass,usu_sex,usu_telf,rol_id,usu_matri,fech_crea, est) VALUES (NULL,?,?,?,?,?,?,?,?,?,now(),'1');";
+            $sql="INSERT INTO tm_usuario (usu_id,usu_nom,usu_apep,usu_apem,usu_correo,usu_pass,usu_sex,usu_telf,rol_id,usu_dni,fech_crea, est) VALUES (NULL,?,?,?,?,?,?,?,?,?,now(),'1');";
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1, $usu_nom);
             $sql->bindValue(2, $usu_apep);
@@ -240,13 +239,13 @@
             $sql->bindValue(6, $usu_sex);
             $sql->bindValue(7, $usu_telf);
             $sql->bindValue(8, $rol_id);
-            $sql->bindValue(9, $usu_matri);
+            $sql->bindValue(9, $usu_dni);
             $sql->execute();
             return $resultado=$sql->fetchAll();
         }
 
         /*TODO: Funcion para actualizar usuario */
-        public function update_usuario($usu_id,$usu_nom,$usu_apep,$usu_apem,$usu_correo,$usu_pass,$usu_sex,$usu_telf,$rol_id,$usu_matri){
+        public function update_usuario($usu_id,$usu_nom,$usu_apep,$usu_apem,$usu_correo,$usu_pass,$usu_sex,$usu_telf,$rol_id,$usu_dni){
             $conectar= parent::conexion();
             parent::set_names();
             $sql="UPDATE tm_usuario
@@ -259,7 +258,7 @@
                     usu_sex = ?,
                     usu_telf = ?,
                     rol_id = ?,
-                    usu_matri = ?
+                    usu_dni = ?
                 WHERE
                     usu_id = ?";
             $sql=$conectar->prepare($sql);
@@ -271,7 +270,7 @@
             $sql->bindValue(6, $usu_sex);
             $sql->bindValue(7, $usu_telf);
             $sql->bindValue(8, $rol_id);
-            $sql->bindValue(9, $usu_matri);
+            $sql->bindValue(9, $usu_dni);
             $sql->bindValue(10, $usu_id);
             $sql->execute();
             return $resultado=$sql->fetchAll();

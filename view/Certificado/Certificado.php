@@ -19,8 +19,8 @@
         <div id="qrcode"></div>
 
         <div class="form-layout-footer">
-            <button class="btn btn-outline-info" id="btnpng"><i class="fa fa-send mg-r-10"></i> PNG</button>
-            <button class="btnpfd slideRight" id="btnpdf" title="descragar en pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></i> Descargar PDF</button>
+            <!--<button class="btn btn-outline-info" id="btnpng"><i class="fa fa-send mg-r-10"></i> PNG</button>---->
+          <button class="btnpfd slideRight" id="btnpdf" title="Descargar PDF"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></i> Descargar PDF</button>
         </div>
 
       </div>

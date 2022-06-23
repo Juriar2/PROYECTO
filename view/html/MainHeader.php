@@ -10,7 +10,7 @@
           <div class="dropdown">
             <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
               <span class="logged-name hidden-md-down"><?php echo $_SESSION["usu_nom"]?></span>
-              <img src="http://via.placeholder.com/64x64" class="wd-32 rounded-circle" alt="">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShN0nuLT7HIpIANuDi6wbMKpeuCgZsl2PtAA&usqp=CAU" class="wd-32 rounded-circle" alt="">
               <span class="square-10 bg-success"></span>
             </a>
             <input type="hidden" id="usu_idx" value="<?php echo $_SESSION["usu_id"] ?>"><!-- Usu_id del usuario -->
@@ -18,8 +18,8 @@
             
             <div class="dropdown-menu dropdown-menu-header wd-200">
               <ul class="list-unstyled user-profile-nav">
-                <li><a href="../PerfilUsuario/perfil"><i class="icon ion-ios-person"></i>Perfil</a></li>
-                <li><a href="../html/Logout"><i class="icon ion-ios-gear"></i>Salir</a></li>
+                <li class="btnperfil"><a href="../PerfilUsuario/perfil"><i class="icon ion-ios-person"></i>Perfil</a></li>
+                <li class="btnperfil"><a href="../html/Logout"><i class="icon ion-ios-gear"></i>Cerrar Sesion</a></li>
                
               </ul>
             </div>
