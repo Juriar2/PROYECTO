@@ -35,6 +35,7 @@ $(document).ready(function(){
    
 
     $('#usuario_data').DataTable({
+        
         "aProcessing": true,
         "aServerSide": true,
         dom: 'Bfrtip',
@@ -62,6 +63,7 @@ $(document).ready(function(){
             "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
             "sInfoPostFix":    "",
             "sSearch":         "Buscar:",
+            "placeholder":     "Buscar",
             "sUrl":            "",
             "sInfoThousands":  ",",
             "sLoadingRecords": "Cargando...",
@@ -197,3 +199,8 @@ function handleFileSelect(evt) {
 document.getElementById('upload').addEventListener('change', handleFileSelect, false);
 
 init();
+
+
+
+
+

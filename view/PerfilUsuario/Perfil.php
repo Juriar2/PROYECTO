@@ -97,13 +97,10 @@
     <?php require_once("../html/MainJs.php"); ?>
     <script type="text/javascript" src="usuperfil.js"></script>
    <script>
-    /*========================================
-Mostrar contraseña
-==========================================*/
-const mostrarClave=document.querySelectorAll('.mostrarClave');
-const inputPass=document.querySelectorAll('.clave');
+      const mostrarClave=document.querySelectorAll('.mostrarClave');
+      const inputPass=document.querySelectorAll('.clave');
 
-for (let i = 0; i < mostrarClave.length; i++) {
+      for (let i = 0; i < mostrarClave.length; i++) {
     
     mostrarClave[i].addEventListener('click',()=>{
 

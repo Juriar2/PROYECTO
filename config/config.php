@@ -2,7 +2,7 @@
     /*TODO: Inicializando la sesion del usuario */
    /* Starting a session. */
     session_start();
-
+    
     /*TODO: Iniciamos Clase Conectar */
     class Conectar{
         protected $dbh;

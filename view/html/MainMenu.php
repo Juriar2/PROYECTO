@@ -1,7 +1,7 @@
 <div class="br-logo"><a href="../UsuHome/"><span>[</span>Empresa<span>]</span></a></div>
 
 <div class="br-sideleft overflow-y-auto">
-  <label class="sidebar-label pd-x-15 mg-t-20">Menu</label>
+  <label class="menu01">Menu</label>
   <div class="br-sideleft-menu">
 
     <a href="../UsuHome/usuario" class="br-menu-link">

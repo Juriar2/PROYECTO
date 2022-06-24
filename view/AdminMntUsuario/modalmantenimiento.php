@@ -12,35 +12,36 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Nombre: <span class="tx-danger">*</span></label>
-                            <input class="formulario" id="usu_nom" type="text" name="usu_nom" required/>
+                            <input class="formulario" id="usu_nom" type="text" name="usu_nom"  placeholder="Ingrese el nombre ejemplo maria" />
+                            <i class="formulario__validacion-estado  fa fa-check-square" aria-hidden="true"></i>
                         </div>
                     </div>
 
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Apellido Paterno: <span class="tx-danger">*</span></label>
-                            <input class="formulario" id="usu_apep" type="text" name="usu_apep" required/>
+                            <input class="formulario" id="usu_apep" type="text" name="usu_apep" placeholder="Ingrese el apellido ejemplo hernandez"/>
                         </div>
                     </div>
 
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Apellido Materno: <span class="tx-danger">*</span></label>
-                            <input class="formulario" id="usu_apem" type="text" name="usu_apem" required/>
+                            <input class="formulario" id="usu_apem" type="text" name="usu_apem"placeholder="Ingrese el appelido materno ejemplo guzaman" />
                         </div>
                     </div>
 
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Correo: <span class="tx-danger">*</span></label>
-                            <input class="formulario" id="usu_correo" type="email" name="usu_correo" required/>
+                            <input class="formulario" id="usu_correo" type="email" name="usu_correo" placeholder="Ingrese el correo electronico ejemplo maria@homail.com" />
                         </div>
                     </div>
 
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Password: <span class="tx-danger">*</span></label>
-                            <input class="formulario" id="usu_pass" type="password" name="usu_pass" required/>
+                            <input class="formulario" id="usu_pass" type="password" name="usu_pass"placeholder="Ingrese el password" />
                         </div>
                     </div>
 
@@ -58,7 +59,7 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Telefono: <span class="tx-danger">*</span></label>
-                            <input class="formulario " id="usu_telf" type="text" name="usu_telf" required/>
+                            <input class="formulario " id="usu_telf" type="text" name="usu_telf" placeholder="Ingrese el telefono ejemplo 932115475" />
                         </div>
                     </div>
 
@@ -76,7 +77,7 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Matricula: <span class="tx-danger">*</span></label>
-                            <input class="formulario" id="usu_matri" type="text" name="usu_matri" required/>
+                            <input class="formulario" id="usu_matri" type="text" name="usu_matri"placeholder="Ingrese la matricula 19E478"/>
                         </div>
                     </div>
 
@@ -89,3 +90,6 @@
         </div>
     </div>
 </div>
+
+
+
