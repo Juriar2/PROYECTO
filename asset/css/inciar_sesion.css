@@ -84,13 +84,16 @@ footer{
 		border-radius: 18px;
 		transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
 		transition-property: initial;
-		font-weight:700;
+		font-weight:500;
 		width: 113%;
 		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		font-size: 1.2em;
+		
  }
  .button02:hover{
-    background-color: #9E8010;   
+    background-color: #2b7ce6;   
 	list-style: upper-roman;
+	color: black;
  }
  @media  (max-width: 600px) {
 	.button02{
@@ -414,8 +417,15 @@ label{
 
 /** finaliza aqui btnpfd*/
 /**estilos botonAdminMntUsuario***/
-
-
+/**es para esconder el elemento strong que tinee escrito **/
+@media  (max-width: 500px){
+	strong{
+		visibility: hidden;
+	}
+	hr{
+	display: none;	
+	}
+}
 
 .btnresgis{
 	margin: 20px 25px 25px;

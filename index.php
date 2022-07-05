@@ -58,7 +58,7 @@
         <br>
         <br>
         <br>
-        <img class="imagenes" src="https://firebasestorage.googleapis.com/v0/b/yuriar-d684c.appspot.com/o/curva3.svg?alt=media&token=4f9257f2-ee11-4bdc-a648-bbce44fee233" class="curve-image">
+        <img class="imagenes " src="https://firebasestorage.googleapis.com/v0/b/yuriar-d684c.appspot.com/o/curva3.svg?alt=media&token=4f9257f2-ee11-4bdc-a648-bbce44fee233">
     </section>
 </body>
 </html>
