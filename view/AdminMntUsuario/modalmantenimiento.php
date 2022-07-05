@@ -91,5 +91,13 @@
     </div>
 </div>
 
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-
+<script>
+    Swal.fire({
+                title: 'Alert!',
+                text: ' Combinacion de tecla para el modal Ctrl+Q y para cerrar el modal Esc',
+                icon: 'success',
+                confirmButtonText: 'entendido'
+            })
+</script>

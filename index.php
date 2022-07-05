@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,44 +8,57 @@
     <meta name="keywords" content="Itss">
     <meta name="author" content="Itss">
     <meta name="theme-color" content="#9E8010">
-    <link rel="stylesheet" href="asset/css/normalize.css">
-    <link rel="stylesheet" href="asset/css/inciar_sesion.css">
-    
+    <link rel="stylesheet" href="asset/css/home.css">
+    <link rel="stylesheet" href="asset/css/wickedcss.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     
 
     <title>ITSS</title>
 </head>
 <body>
-<header class="hero">
-        <nav class="nav container">
-            <div class="nav__logo" >
-                <h2 class="nav__title"><a href="https://abiyasoftware.com.mx/">ITSS.</a></h2>
-            </div>
-                
-            <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="login" class="nav__links" target="_new">Iniciar sesion</a>
-                </li>
-                <ul class="nav__link nav__link--menu">
-               
-                
-                <img src="./img/close.svg" class="nav__close" alt="img">
-            </ul>
-
-            <div class="nav__menu">
-                <img src="./img/menu.svg" class="nav__img" alt="img">
-            </div>
-        </nav>
-
-        <section class="hero__container container">
-            <h1 class="hero__title slideLeft" >Somo una empresa dedica al creacion de software</h1>
-            <p class="hero__paragraph slideUp">La innovación es lo que distingue a un líder de los demás</p>
-            <a href="Planes" class="cta  wiggle">Mas informacion</a>
-        </section>
+    <!----home de la pagina-------------->
+<header>
+        <div class="container">
+            <nav class="nav d-flex">
+                <a href="#" class="logo">ITSS</a>
+                <a href="login" target="new" class="btn rollerRight">inciar sesion</a></li>
+                    
+            </nav>
+        </div>
     </header>
+    <!---inicia la otra parte-------------->
 
-  <script src="asset/js/mover.js"></script>
-    
+    <section class="home">
+        <div class="container">
+            
+            <div class="home-wrapper d-flex">
+                <div class="col-left">
+                    <h1 class="slideRight">Protect 
+                        The one You Love</h1>
+                    <p>choose suitable life insurance plans <br>
+                        as per your need</p>
+                    <ul>
+                        <li><img src="assets/images/health.svg" alt="health">Health</li>
+                        <li><img src="assets/images/car.svg" alt="car">Car</li>
+                        <li><img src="assets/images/home.svg" alt="Home">Home</li>
+                    </ul>
+                    <div class="btn-section d-flex">
+                        <a href="#" class="btn-start">Get started</a>
+                        <a href="#" class="btn-play"> <span><img src="assets/images/play.svg" alt="play"></span>
+                            Watch Video</a>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <img  src="https://firebasestorage.googleapis.com/v0/b/yuriar-d684c.appspot.com/o/undraw_laravel_and_vue_-59-tp.svg?alt=media&token=1a09f9c0-8ce7-4e66-af5e-a5db6c672b65" class="pulse">
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <img class="imagenes" src="https://firebasestorage.googleapis.com/v0/b/yuriar-d684c.appspot.com/o/curva3.svg?alt=media&token=4f9257f2-ee11-4bdc-a648-bbce44fee233" class="curve-image">
+    </section>
 </body>
 </html>

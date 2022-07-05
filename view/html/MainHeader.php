@@ -19,10 +19,11 @@
             <div class="dropdown-menu dropdown-menu-header wd-200">
               <ul class="list-unstyled user-profile-nav">
                 <li class="btnperfil"><a href="../PerfilUsuario/perfil"><i class="icon ion-ios-person"></i>Perfil</a></li>
+                <li class="btnperfil"><a href="../Acerca/acerca"><i class="icon ion-ios-gear"></i>Version 1.0</a></li>
                 <li class="btnperfil"><a href="../html/Logout"><i class="icon ion-ios-gear"></i>Cerrar Sesion</a></li>
-               
               </ul>
             </div>
+            
           </div>
         </nav>
         

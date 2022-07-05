@@ -58,6 +58,6 @@
 <?php
   }else{
     /* Si no a iniciado sesion se redireccionada a la ventana principal */
-    header("Location:".Conectar::ruta()."view/404/Error404");
+    header("Location:".Conectar::ruta()."login");
   }
 ?>

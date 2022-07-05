@@ -9,7 +9,7 @@
                 $pass = $_POST["usu_pass"];
                 if(empty($correo) and empty($pass)){
                     /*TODO: En caso esten vacios correo y contraseña, devolver al index con mensaje = 2 */
-                    header("Location:".conectar::ruta()."Login?m=2");
+                    header("Location:".conectar::ruta()."login?m=2");
 					exit();
                 }else{
                     $sql = "SELECT * FROM tm_usuario WHERE usu_correo=? and usu_pass=? and est=1";
@@ -25,14 +25,13 @@
                         $_SESSION["usu_correo"]=$resultado["usu_correo"];
                         $_SESSION["rol_id"]=$resultado["rol_id"];
                         /*TODO: Si todo esta correcto indexar en home */
-                        header("Location:".Conectar::ruta()."view/UsuHome/Usuario");
+                        header("Location:".Conectar::ruta()."view/UsuHome/usuario");
                         exit();
                     }else{
                         /*TODO: En caso no coincidan el usuario o la contraseña */
-                        header("Location:".conectar::ruta()."Login?m=1");
+                        header("Location:".conectar::ruta()."login?m=1");
                         exit();
                     }
-                    
                 }
             }
         }
@@ -70,7 +69,7 @@
         }
 
         /*TODO: Mostrar todos los cursos en los cuales esta inscrito un usuario */
-        public function get_cursos_x_usuario_top_limited($usu_id){
+        public function get_cursos_x_usuario_top10($usu_id){
             $conectar= parent::conexion();
             parent::set_names();
             $sql="SELECT 

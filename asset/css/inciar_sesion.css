@@ -1,50 +1,70 @@
 body, html {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100%;
-    height: 100vh;
-    text-rendering: optimizeLegibility;
-	
+    color: #000000;
 }
 
 input{
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Estilos login lo modique todo*/
-.form-control{
-	border: 2px solid #204ee8 ;
+.formularioxd{
+	border: 2px solid #08276b ;
+	/*height: 40px;*/
 	padding: 0 10px;
-	font-size: 18px;
+	font-size: 1.5em;
 	color: #000000	;
 	border-radius: 10px;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	width: 113%;
+	height: 62px;
 	
 }
-/*le indico que toodo el texto se centre en input**/
-.form-control:hover{
+@media  (max-width: 600px){
+	.formularioxd{
+		width: 100%;
+		
+	}
+	
+	
+
+}
+textarea{
+	resize: none;
+	border: 2px solid #08276b ;
+	/*height: 40px;*/
+	padding: 0 10px;
+	font-size: 1.5em;
 	color: #000000	;
-	border: 3px solid #9E8010;
-	
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	
+	border-radius: 10px;
+	width: 100%;
+	height: 62px;
+
 }
+
+.form{
+	border: 2px solid #08276b ;
+	/*height: 40px;*/
+	padding: 0 10px;
+	font-size: 1.5em;
+	color: #000000	;
+	border-radius: 10px;
+	width: 100%;
+	height: 62px;
+}
+
+
 /*le indico que todo el texto se centre en input**/
-.form-control:focus{
+.formularioxd:focus{
 	border: 2px solid #204ee8;
 }
 /***estilos para el text dentro de input**/
-.form-control::placeholder{
+.formularioxd::placeholder{
 	color: #000000;
 	font-size:1em;
 }
 /**para que se ve mas elegenate**/
-.form-control:-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #000000;
-}
-/**para que se ve mas elegenate**/
-.form-control::-moz-placeholder { /* Firefox 19+ */
+.formularioxd:-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #000000;
 }
 footer{
@@ -53,9 +73,10 @@ footer{
     margin: 10px;
 }
 
+
 /*hace referencia BOTN DEL LOGIN**/
 .button02{
-	background-color: #f12323;
+		background-color: #f12323;
 		color: white;
 		padding: 10px 14px 10px 14px;
 		border: none;
@@ -64,10 +85,18 @@ footer{
 		transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
 		transition-property: initial;
 		font-weight:700;
-		width: 100%;
+		width: 113%;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
  .button02:hover{
     background-color: #9E8010;   
+	list-style: upper-roman;
+ }
+ @media  (max-width: 600px) {
+	.button02{
+		width: 100%;
+
+	}
  }
  /*Finazliza aqui*/
  
@@ -78,121 +107,6 @@ a {
     text-decoration: none;
     color: #ececec;
 }
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: var(--padding-container);
-}
-
-.hero {
-    width: 100%;
-    height: 100vh;
-    min-height: 600px;
-    max-height: 800px;
-    position: relative;
-    display: grid;
-    grid-template-rows: 100px 1fr;
-    color: #fff;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-	max-width:380%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('https://i0.wp.com/hipertextual.com/wp-content/uploads/2015/09/Imagen-2.jpg?fit=1162%2C774&ssl=1');
-    background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
-    z-index: -1;
-}
-
-
-/* Nav */
-
-.nav {
-    --padding-container: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.nav__title {
-    font-weight: 300;
-}
-
-.nav__link {
-    margin-left: auto;
-    padding: 0;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: max-content;
-    gap: 2em;
-}
-
-.nav__items {
-    list-style: none;
-}
-
-.nav__links {
-    color: #fff;
-    text-decoration: none;
-	font-size: 1.5em;
-}
-
-.nav__menu {
-    margin-left: auto;
-    cursor: pointer;
-    display: none;
-}
-
-.nav__img {
-    display: block;
-    width: 30px;
-}
-
-
-.nav__close {
-    display: var(--show, none);
-}
-
-
-/* Hero container */
-
-.hero__container {
-    max-width: 800px;
-    --padding-container: 0;
-    display: grid;
-    grid-auto-rows: max-content;
-    align-content: center;
-    gap: 1em;
-    padding-bottom: 100px;
-    text-align: center;
-}
-
-.hero__title {
-    font-size: 3rem;
-}
-
-.hero__paragraph {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.cta {
-    display: inline-block;
-    background-color: #2091F9;
-    justify-self: center;
-    color: #fff;
-    text-decoration: none;
-    padding: 13px 30px;
-    border-radius: 32px;
-}
-
 
 
 
@@ -202,6 +116,15 @@ img{
   	max-width:380px;
   
   border: #000000;
+ }
+ @media  (max-width: 600px) {
+	img{
+		
+		 
+		  max-width:380px;
+
+	  	
+	 }
  }
 
 .mostrarClave{
@@ -221,13 +144,15 @@ img{
 }
 
 .alert{
-	
+
 	color: rgb(252, 38, 38);
-	font-size: .9em;
+	font-size: 1.2em;
 	margin: -15px;
+	font-weight: 400px;
 	
 	
 }
+
 .dust-paarticle
 {
   position: absolute;
@@ -253,7 +178,7 @@ animation: swing ease-in-out .6s infinite alternate;
 
 #eye2
 {
-animation: swing ease-in-out .8s infinite alternate;
+	animation: swing ease-in-out .8s infinite alternate;
     transform-origin: bottom;
     transform-box: fill-box;
     left: calc(40% - .0rem);
@@ -296,6 +221,8 @@ table th{
 tr th{
 	color: black;
 }
+
+
 
 .br-sideleft{
 	background-color: #eccc58;
@@ -351,18 +278,11 @@ tr th{
 	font-size: 1.5em;
 	color: #000000	;
 	border-radius: 10px;
-	width: 100%;
+	width: 103%;
 	height: 62px;
 	
 }
-/*le indico que toodo el texto se centre en input**/
-.formulario:hover{
-	color: #000000	;
-	border: 3px solid #9E8010;
-	
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	
-}
+
 /*le indico que todo el texto se centre en input**/
 .formulario:focus{
 	border: 2px solid #204ee8;
@@ -494,11 +414,14 @@ label{
 
 /** finaliza aqui btnpfd*/
 /**estilos botonAdminMntUsuario***/
-.btnresgistro{
+
+
+
+.btnresgis{
 	margin: 20px 25px 25px;
 	background-color: #1374f3;
 	padding: 8px 10px 8px 10px;
-	border: 1px solid #1374f3;
+	border:none;
 	border-radius: 15px;
 	cursor: pointer;
 	color: white;
@@ -508,13 +431,15 @@ label{
 	
 }
 
-.btnresgistro:hover{
+.btnresgis:hover{
+	border:none;
 	background-color: #f12323;
 	color: white;
-	text-shadow: 15px 15px 15px  #000000;
 	font-size: 1.2em;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-weight: 1000;
+	
+	
 }
 
 hr{
@@ -540,8 +465,12 @@ hr{
 	margin: 8px;
 	float: left;
 	color: #000000;
-	font-size: 1.2em;
-}/**finaliza aqui**/
+	font-size: 1.3em;
+}
+logged-name:hover{
+	color: #ec1919;
+}
+/**finaliza aqui**/
 
 /**das**/
 .resgistro01{
@@ -573,3 +502,30 @@ hr{
 .resgistro02:hover{
 	background-color: #ee4646;
 }/*finaliza aqui**/
+
+/****acerca***/
+ a{
+	text-align: left;
+	color: #000000;
+}
+.container{
+	font-size: .9em;
+}
+
+.hola{
+	background-color: #57aaee;
+	color: white;
+	font-size: 1.5em;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+	padding: 10px;
+	
+}
+
+.center{
+	text-align: left;
+	
+	
+}
+
+/****finazliza***/

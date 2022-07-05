@@ -93,11 +93,9 @@
 							switch($_GET["m"]){
 								case "1";
 								?>
-							<div class="alert alert-error" role="alert">
-							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-							</button>
-							<strong class="d-block d-sm-inline-block-force">El correo que ingreso o la contraseña que ingresaste es incorrecto</strong>
+							<div class="alert alert-error" role="alert"
+							<strong class="d-block d-sm-inline-block-force">El correo o la contraseña son incorrecto</strong>
+
 							</div>
 								<?php
 								break;
@@ -106,9 +104,6 @@
 								case "2";
 								?>
 							<div class="alert alert-error" role="alert">
-							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-							</button>
 							<strong class="d-block d-sm-inline-block-force">Todo los campos son obligatorio</strong>
 							</div>
 								<?php
@@ -118,14 +113,14 @@
 						?>
 						<br>
 						
-			      		<div class="form-group mb-3">
-			      			<label class="label" for="name">Correo electronico</label>
-			      			<input type="email" id="usu_correo" name="usu_correo" class="form-control"  placeholder="Ingrese su correo electronico institucional">
+			      			<div class="form-group mb-3">
+			      			<label class="label" for="Correo electronico">Correo electronico</label>
+			      			<input type="email" id="usu_correo" name="usu_correo" class="formularioxd"  placeholder="Ingrese su correo electronico ">
 			      		</div>
-		            <div class="form-group mb-3">
+		            	<div class="form-group mb-3">
 		            	<label class="label" for="password">contraseña</label>
-		              <input type="password" id="usu_pass" name="usu_pass" class="form-control clave"  placeholder="Ingrese su contraseña como matricula">
-					  <button type="button" class="mostrarClave">Mostra contraseña</button>
+		              	<input type="password" id="usu_pass" name="usu_pass" class="formularioxd clave"  placeholder="Ingrese su contraseña como matricula">
+					 	 <button type="button" class="mostrarClave">Mostra contraseña</button>
   					
 		            </div>
 		            <div class="form-group">
@@ -144,8 +139,8 @@
 			<footer class="t-stroke t-shadow">
             INSTITUTO TECNOLÓGICO SUPERIOR DE LA REGIÓN SIERRA
             </footer>
+
 			</div>
-            
            
 		</div>
 		<div id="snell">

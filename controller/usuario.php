@@ -34,7 +34,7 @@
 
         /*TODO: MicroServicio para poder mostrar el listado de cursos de un usuario con certificado */
         case "listar_cursos_top10":
-            $datos=$usuario->get_cursos_x_usuario_top_limited($_POST["usu_id"]);
+            $datos=$usuario->get_cursos_x_usuario_top10($_POST["usu_id"]);
             $data= Array();
             foreach($datos as $row){
                 $sub_array = array();
@@ -63,7 +63,7 @@
                     $output["curd_id"] = $row["curd_id"];
                     $output["cur_id"] = $row["cur_id"];
                     $output["cur_nom"] = $row["cur_nom"];
-                    /*$output["cur_descrip"] = $row["cur_descrip"];*/
+                    $output["cur_descrip"] = $row["cur_descrip"];
                     $output["cur_fechini"] = $row["cur_fechini"];
                     $output["cur_fechfin"] = $row["cur_fechfin"];
                     $output["cur_img"] = $row["cur_img"];

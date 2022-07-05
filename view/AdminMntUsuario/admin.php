@@ -8,7 +8,7 @@
   <head>
     <?php require_once("../html/MainHead.php"); ?>
 
-    <title>Empresa::MntUsuario</title>
+    <title>Adminitrador</title>
   </head>
 
   <body>
@@ -18,15 +18,16 @@
     <?php require_once("../html/MainHeader.php"); ?>
 
     <div class="br-mainpanel">
-   <button class="btnresgistro" id="add_button" onclick="nuevo()"><i class="fa fa-plus-square mg-r-10"></i> Nuevo Registro</button>
+   <button class="btnresgis" id="add_button" onclick="nuevo()"><i class="fa fa-plus-square mg-r-10"></i> Nuevo Registro</button> <strong>Para mostrar un modal presione Ctrl+1 y Ecs para cerra</strong>
+  
 
-    
+    <hr>
      
 
       <div class="br-pagebody">
         <div class="br-section-wrapper">
             <h6 class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10">Usuario</h6>
-            <p class="mg-b-30 tx-gray-600">Listado de Usuario</p>
+            <p class="mg-b-30 tx-gray-600">Usuarios activos</p>
             <div class="table-wrapper"></div>
                 <table id="usuario_data" class="table display responsive nowrap">
                 <thead>
@@ -58,7 +59,9 @@
 
     <?php require_once("../html/MainJs.php"); ?>
     <script type="text/javascript" src="adminmntusuario.js"></script>
-    <script src="asset/js/formulario.js"></script>
+    <script type="text/javascript" src="shortcut.js"></script>
+
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
   </body>
@@ -66,6 +69,6 @@
 <?php
   }else{
     /* Si no a iniciado sesion se redireccionada a la ventana principal */
-    header("Location:".Conectar::ruta()."view/404/Error404");
+    header("Location:".Conectar::ruta()."login");
   }
 ?>

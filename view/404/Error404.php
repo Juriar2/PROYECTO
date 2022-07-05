@@ -158,7 +158,7 @@ a.more-link {
 <div class="link-container">
   <a target="_blank" href="https://localhost/itss/login" class="more-link">Regresar</a>
 </div>
-<!-- partial -->
+
   
 </body>
 </html>
