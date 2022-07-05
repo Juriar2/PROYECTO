@@ -233,11 +233,12 @@ img{
  }
 
  .btn{
-        background-color: #f02424;
+      background-color: #f02424;
      	color: #fff;
      	border-radius: 5px;
      	padding: 10px 28px;
      	font-size: 16px;
+      margin: 10px;
         
      	     
  }
@@ -250,6 +251,16 @@ img{
      	
  }
  
+ .btnresgistrate{
+  background-color: #f02424;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 28px;
+  font-size: 16px;
+  margin: 15px ;
+  float: left;
+  }
+ 
   
  .imagenes{
   max-width: 1500px;
@@ -260,3 +271,16 @@ bottom: -55px;
   left: 0;
   }
  
+
+ .launch-time{
+  display: flex;
+ }
+
+ .launch-time div{
+  flex-basis: 100px;
+ }
+ .launch-time div p{
+  font-size: 1.5em;
+  
+  margin: 10px;
+ }
