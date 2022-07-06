@@ -36,6 +36,7 @@
             <div class="home-wrapper d-flex">
                 <div class="col-left">
                     <h1 class="slideRight">Resgistrate por tiempo ilimitado</h1>
+
                         <div class="launch-time">
                             <div>
                                 <p id="days">00</p>
@@ -55,18 +56,19 @@
                             </div>
                             
                         </div>
-                        <br>
-                        <a href="Resgistrate" target="new" class="btnresgistrate rollerRight">Inscribete</a>
+                        
+                      <a href="Resgistrate" target="new" class="btnresgistrate">Inscribete</a>
                 </div>
+                
                 <div class="home-image">
-                    <img  src="https://firebasestorage.googleapis.com/v0/b/yuriar-d684c.appspot.com/o/undraw_laravel_and_vue_-59-tp.svg?alt=media&token=1a09f9c0-8ce7-4e66-af5e-a5db6c672b65" class="pulse">
+                <img  src="https://firebasestorage.googleapis.com/v0/b/yuriar-d684c.appspot.com/o/rocket.png?alt=media&token=4b46a1a5-ef10-4e36-98f7-e0047aed49a7" class="logo1 pulse">
+
                 </div>
             </div>
         </div>
         <br>
         <br>
         <br>
-        <img class="imagenes " src="https://firebasestorage.googleapis.com/v0/b/yuriar-d684c.appspot.com/o/curva3.svg?alt=media&token=4f9257f2-ee11-4bdc-a648-bbce44fee233">
     </section>
     <script src="asset/js/tiempo.js"></script>
 

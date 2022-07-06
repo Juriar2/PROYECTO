@@ -7,6 +7,22 @@
   font-family: "Mulish", sans-serif;
 }
 
+body{
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/yuriar-d684c.appspot.com/o/background.png?alt=media&token=fda7a6b3-c902-4ab7-8c7c-a2740fe1f11f');
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 768px){
+  body{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/yuriar-d684c.appspot.com/o/background.png?alt=media&token=fda7a6b3-c902-4ab7-8c7c-a2740fe1f11f');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    
+  }
+}
+  
+
 a {
   text-decoration: none;
 }
@@ -15,6 +31,7 @@ a {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
+  
 }
 
 .d-flex {
@@ -96,7 +113,7 @@ nav {
   font-size: 40px;
   font-weight: 800;
   line-height: 50px;
-  color: #222;
+  color: white;
   margin-bottom: 20px;
 }
 .col-left p {
@@ -271,16 +288,58 @@ bottom: -55px;
   left: 0;
   }
  
-
+/***cuenta regresiva*****/
  .launch-time{
   display: flex;
+  font-size: 1.4em;
+  color: #f02424;
  }
 
  .launch-time div{
   flex-basis: 100px;
+  color: #000000;
  }
  .launch-time div p{
   font-size: 1.5em;
-  
+  color: #e2e0e0;
+  background-color: #321df3;
+  border-radius:13px ;
+  text-align: center;
   margin: 10px;
+  animation:  blink 5s linear reverse;
+  
  }
+ @media (max-width: 767px) {
+  .launch-time{
+    display: flex;
+    font-size: 1.4em;
+    color: #f02424;
+   }
+  
+   .launch-time div{
+    flex-basis: 100px;
+    color: white;
+   }
+   .launch-time div p{
+    font-size: 1.5em;
+    color: #e2e0e0;
+    background-color: #321df3;
+    border-radius:13px ;
+    text-align: center;
+    margin: 10px;
+    animation:  blink 5s linear reverse;
+    
+   }
+  }
+ @keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+  
+}
