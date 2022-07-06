@@ -66,9 +66,7 @@
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
+       
     </section>
     <script src="asset/js/tiempo.js"></script>
 

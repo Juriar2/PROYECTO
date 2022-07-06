@@ -36,6 +36,8 @@ function guardaryeditar(e){
 }
 
 $(document).ready(function(){
+    combo_categoria();
+    combo_instructor();
 $('#cursos_data').DataTable({
         "aProcessing": true,
         "aServerSide": true,
@@ -175,7 +177,7 @@ init();
 
 $(document).ready(function(){  
     //Para mostrar un modal
-    shortcut.add("Ctrl+Q",function() {
+    shortcut.add("Alt+Q",function() {
          $('#modalmantenimiento').modal('show');
     });
 

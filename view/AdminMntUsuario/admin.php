@@ -26,12 +26,13 @@
 
       <div class="br-pagebody">
         <div class="br-section-wrapper">
-            <h6 class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10">Usuario</h6>
-            <p class="mg-b-30 tx-gray-600">Usuarios activos</p>
+            <h6 class="user">Usuario</h6>
+            <p class="useractivo">Usuarios activos</p>
             <div class="table-wrapper"></div>
                 <table id="usuario_data" class="table display responsive nowrap">
                 <thead>
                     <tr>
+                    
                     <th class="wd-15p">Nombre</th>
                     <th class="wd-15p">Ape.Paterno</th>
                     <th class="wd-15p">Ape.Materno</th>

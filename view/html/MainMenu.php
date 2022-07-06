@@ -51,7 +51,7 @@
             </div>
           </a>
 
-          <a href="../AdminDetalleCertificado/" class="br-menu-link">
+          <a href="../AdminDetalleCertificado/constancia" class="br-menu-link">
             <div class="br-menu-item">
               <i class="menu-item-icon icon ion-ios-bookmarks-outline tx-24"></i>
               <span class="menu-item-label">Detalle Certificado</span>

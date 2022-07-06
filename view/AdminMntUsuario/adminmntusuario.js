@@ -204,6 +204,7 @@ init();
 
 
 
+
  $(document).ready(function(){  
     //Para mostrar un modal
     shortcut.add("Ctrl+Q",function() {

@@ -1,6 +1,7 @@
 body, html {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #000000;
+	
 }
 
 input{
@@ -223,8 +224,28 @@ table th{
 }
 tr th{
 	color: black;
+
 }
 
+@media (max-width: 460px) {
+	table{
+		text-align: center;
+		font-size: 1.2em;
+		color: black;
+		background-color: #eccc58;
+	}
+	
+	table th{
+		background-color: #eccc58;
+		color: black;
+		text-align: center;
+		font-size: 1.2em;
+	}
+	tr th{
+		color: black;
+	
+	}
+}
 
 
 .br-sideleft{
@@ -261,12 +282,7 @@ tr th{
 	
 }
 
-.table,table-bordered{
-	
-	font-size: 1.2em;
-	color: black;
-	
-}
+
 
 .total{
 	font-size: 1.2em;
@@ -372,22 +388,7 @@ label{
 		width: 50%;
 		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	}
-	table{
-		text-align: left;
-		font-size: 1.2em;
-		color: black;
-		background-color: #eccc58;;
-	}
 	
-	table th{
-		background-color:#eccc58;;
-		color: black;
-		text-align: center;
-		font-size: 1.2em;
-	}
-	tr th{
-		color: black;
-	}
 }/**finaliza aqui**/
 /**btnpfd*/
 
@@ -541,3 +542,31 @@ logged-name:hover{
 /****finazliza***/
 
 
+/*****AdminMntUsuario/admin*/
+
+.user,
+.useractivo
+{
+	text-align: center;
+	color: #000000;
+	font-size: 1.3em;
+	text-shadow: 2px 2px 2px tomato;
+}
+
+@media  (max-width: 460px){
+	.dtr-title{
+		visibility: hidden;
+		list-style: none;
+	}
+	span,
+	.dtr-title{
+		float: right;
+		text-align: left;
+		width: auto;
+		
+	}
+	.dtr-details{
+		list-style: none;
+		text-align: left;
+	}
+}
