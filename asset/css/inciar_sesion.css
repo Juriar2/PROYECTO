@@ -130,6 +130,9 @@ img{
 	  	
 	 }
  }
+ form .error {
+  color: #eb2f2f;
+}
 
 .mostrarClave{
 	margin: 10px;
