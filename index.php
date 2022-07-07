@@ -35,7 +35,7 @@
             
             <div class="home-wrapper d-flex">
                 <div class="col-left">
-                    <h1 class="slideRight">Resgistrate por tiempo ilimitado</h1>
+                    <h1 class="slideRight">Registrarse por tiempo ilimitado</h1>
 
                         <div class="launch-time">
                             <div>
@@ -57,11 +57,11 @@
                             
                         </div>
                         
-                      <a href="Resgistrate" target="new" class="btnresgistrate">Inscribete</a>
+                      <a href="Resgistrate" target="new" class="btnresgistrate">Inscríbete</a>
                 </div>
                 
                 <div class="home-image">
-                <img  src="https://firebasestorage.googleapis.com/v0/b/yuriar-d684c.appspot.com/o/rocket.png?alt=media&token=4b46a1a5-ef10-4e36-98f7-e0047aed49a7" class="logo1 pulse">
+                <img class="nave pulse" src="https://firebasestorage.googleapis.com/v0/b/yuriar-d684c.appspot.com/o/rocket.png?alt=media&token=4b46a1a5-ef10-4e36-98f7-e0047aed49a7" >
 
                 </div>
             </div>

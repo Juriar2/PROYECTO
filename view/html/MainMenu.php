@@ -1,4 +1,4 @@
-<div class="br-logo"><a href="../UsuHome/"><span>[</span>xd<span>]</span></a></div>
+<div class="br-logo"><a href="../UsuHome/usuario"><span>[</span>xd<span>]</span></a></div>
 
 <div class="br-sideleft overflow-y-auto">
   <label class="menu01">Menu</label>

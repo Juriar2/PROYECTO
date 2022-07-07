@@ -35,7 +35,7 @@
             <table id="cursos_data" class="table table-bordered">
               <thead class="halo" >
                 <tr>
-                  <th class="wd-15p halo02">Curso</th>
+                  <th class="wd-15p">Curso</th>
                   <th class="wd-15p">Fecha Inicio</th>
                   <th class="wd-20p">Fecha Fin</th>
                   <th class="wd-15p">Instructor</th>

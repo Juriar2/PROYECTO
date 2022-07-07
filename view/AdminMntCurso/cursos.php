@@ -29,8 +29,8 @@
         <h4 class="tx-gray-800 mg-b-5">Cursos</h4>
         <p class="mg-b-0">Mantenimiento</p>
         </div>
-            <div class="table-wrapper"></div>
-                <table id="cursos_data" class="table display responsive nowrap">
+            <div class="table-wrapper">
+                <table id="cursos_data" class="table">
                 <thead>
                     <tr>
                     <th class="wd-15p">Categoria</th>

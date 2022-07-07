@@ -25,6 +25,7 @@ body{
 
 a {
   text-decoration: none;
+
 }
 /* classes */
 .container {
@@ -297,7 +298,7 @@ bottom: -55px;
 
  .launch-time div{
   flex-basis: 100px;
-  color: #000000;
+  color: white;
  }
  .launch-time div p{
   font-size: 1.5em;
@@ -309,7 +310,7 @@ bottom: -55px;
   animation:  blink 5s linear reverse;
   
  }
- @media (max-width: 767px) {
+ @media (max-width: 700px) and (min-width: 900px){  
   .launch-time{
     display: flex;
     font-size: 1.4em;
@@ -317,11 +318,13 @@ bottom: -55px;
    }
   
    .launch-time div{
+    font-size: 1.1em;
     flex-basis: 100px;
     color: white;
+    
    }
    .launch-time div p{
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #e2e0e0;
     background-color: #321df3;
     border-radius:13px ;
@@ -330,6 +333,8 @@ bottom: -55px;
     animation:  blink 5s linear reverse;
     
    }
+  
+
   }
  @keyframes blink {
   0% {
@@ -342,4 +347,34 @@ bottom: -55px;
     opacity: 0;
   }
   
+}
+
+.home-image{
+  animation:  giro 5s linear forwards;
+}
+
+.giro:hover{
+	-webkit-transform-origin: center;
+	-webkit-animation: 2s giro 1;
+}
+
+@-webkit-keyframes giro{
+	0%{
+		opacity: 0;
+		-webkit-transform: rotate(-200deg);
+	}
+
+}
+
+.girovar:hover{
+	-webkit-transform-origin: left bottom; /*tambien se pueden usar porcentajes, el primero indica la horizontal y el segundo vertical*/ 
+	-webkit-animation: 5s girovar 3;
+}
+
+@-webkit-keyframes girovar{
+	0%{
+		opacity: 0;
+		-webkit-transform: rotate(-100deg);
+	}
+
 }

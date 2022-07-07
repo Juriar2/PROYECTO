@@ -227,24 +227,25 @@ tr th{
 
 }
 
-@media (max-width: 460px) {
-	table{
+@media  (max-width: 300px) and (min-width: 1300px) {
+	table ,th ,tr{
 		text-align: center;
 		font-size: 1.2em;
 		color: black;
 		background-color: #eccc58;
 	}
 	
-	table th{
+	table th,tr th{
 		background-color: #eccc58;
 		color: black;
 		text-align: center;
 		font-size: 1.2em;
 	}
-	tr th{
+	tr, th, table{
 		color: black;
 	
 	}
+	
 }
 
 
@@ -560,8 +561,8 @@ logged-name:hover{
 	}
 	span,
 	.dtr-title{
-		float: right;
-		text-align: left;
+		
+		
 		width: auto;
 		
 	}
