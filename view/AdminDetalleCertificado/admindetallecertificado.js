@@ -91,14 +91,14 @@ function eliminar(curd_id){
 }
 
 function combo_curso(){
-    $.post("../../controller/curso.php?op=combo", function (data) {
+    $.post("../../controller/curso?op=combo", function (data) {
         $('#cur_id').html(data);
     });
 }
 
 function certificado(curd_id){
     console.log(curd_id);
-    window.open('../Certificado/Certificado.php?curd_id='+ curd_id +'','_blank');
+    window.open('../Certificado/Certificado?curd_id='+ curd_id +'','_blank');
 }
 
 function nuevo(){
