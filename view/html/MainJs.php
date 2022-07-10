@@ -22,7 +22,6 @@
 
 
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css"></script>
 
 
 

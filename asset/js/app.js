@@ -36,37 +36,4 @@ for (let i = 0; i < mostrarClave.length; i++) {
     });
 }
 
-$(function() {
-    // Initialize form validation on the registration form.
-    // It has the name attribute "registration"
-    $("form[name='registration']").validate({
-      // Specify validation rules
-      rules: {
-        // The key name on the left side is the name attribute
-        // of an input field. Validation rules are defined
-        // on the right side
-        
-        usu_correo: {
-          required: true,
-          // Specify that email should be validated
-          // by the built-in "email" rule
-          usu_correo: true
-        },
-        usu_pass: {
-          required: true,
-          minlength: 15
-        }
-      },
-      // Specify validation error messages
-      messages: {
-        usu_pass: {
-          required: "Por favor proporcione una contraseña",
-          minlength: "Su contraseña debe tener al menos 15 caracteres."
-        },
-        usu_correo: "correo electrónico no válido"
-      },
-      submitHandler: function(form) {
-        hidden.submit();
-      }
-    });
-  });
+

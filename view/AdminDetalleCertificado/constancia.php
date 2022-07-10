@@ -8,7 +8,7 @@
   <head>
     <?php require_once("../html/MainHead.php"); ?>
 
-    <title>Empresa::Detalle Certificado</title>
+    <title>Certificado</title>
   </head>
 
   <body>
@@ -30,8 +30,8 @@
       <div class="br-pagebody">
         
         <div class="br-section-wrapper">
-            <h6 class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10">Detalle Certificado</h6>
-            <p class="mg-b-30 tx-gray-600">Listado de Detalle Certificado</p>
+            <h6 class="useractivo">Detalle Certificado</h6>
+            <p class="user">Listado de Detalle Certificado</p>
 
             <div class="form-layout">
                 <div class="row">

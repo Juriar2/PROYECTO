@@ -87,7 +87,7 @@
 			      		<div class="w-100">
 			      			<h3 class="mb-2">Bienvenido al sistema</h3>
 			      	
-							<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" autocomplete="off" method="post" id="formLogin" class="signin-form">
+							<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"  method="post" id="formLogin" class="signin-form" >
 							<?php
 							if (isset($_GET["m"])){
 							switch($_GET["m"]){
@@ -125,12 +125,12 @@
 		            </div>
 		            <div class="form-group">
 						<input type="hidden" id="login"  name="enviar"  class="form-control" value="si">
-		            	<button type="submit" id="login02" class="button02">Iniciar sesion</button>
+		            	<button  type="submit" id="login02" class="button02">Iniciar sesion</button>
 						
 		            </div>
 		          
 		          </form>
-				  <div id="error"></div>
+				  
 		        </div>
 		      </div>
 				</div>
@@ -236,12 +236,18 @@
 	</section>
 	
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js'></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 	<script src="asset/js/jquery.min.js"></script>
  	 <script src="asset/js/popper.js"></script>
   	<script src="asset/js/bootstrap.min.js"></script>
   	<script src="asset/js/main.js"></script>
   	<script src="asset/js/animacion.js"></script>
   	<script src="asset/js/app.js"></script>
+	<script src="asset/js/login.js"></script>
+	
+
+
   
 	</body>
 </html>
