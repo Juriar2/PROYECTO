@@ -1,14 +1,14 @@
 <?php
-    /*TODO: Llamando a cadena de Conexion */
+    /* Llamando a cadena de Conexion */
     require_once("../config/config.php");
-    /*TODO: Llamando a la clase */
+    /* Llamando a la clase */
     require_once("../models/Instructor.php");
-    /*TODO: Inicializando Clase */
+    /* Inicializando Clase */
     $instructor = new Instructor();
 
-    /*TODO: Opcion de solicitud de controller */
+    /* Opcion de solicitud de controller */
     switch($_GET["op"]){
-        /*TODO: Guardar y editar cuando se tenga el ID */
+        /* Guardar y editar cuando */
         case "guardaryeditar":
             if(empty($_POST["inst_id"])){
                 $instructor->insert_instructor($_POST["inst_nom"],$_POST["inst_apep"],$_POST["inst_apem"],$_POST["inst_correo"],$_POST["inst_sex"],$_POST["inst_telf"]);
@@ -16,7 +16,7 @@
                 $instructor->update_instructor($_POST["inst_id"],$_POST["inst_nom"],$_POST["inst_apep"],$_POST["inst_apem"],$_POST["inst_correo"],$_POST["inst_sex"],$_POST["inst_telf"]);
             }
             break;
-        /*TODO: Creando Json segun el ID */
+        /* Creando Json*/
         case "mostrar":
             $datos = $instructor->get_instructor_id($_POST["inst_id"]);
             if(is_array($datos)==true and count($datos)<>0){
@@ -32,11 +32,11 @@
                 echo json_encode($output);
             }
             break;
-        /*TODO: Eliminar segun ID */
+        
         case "eliminar":
             $instructor->delete_instructor($_POST["inst_id"]);
             break;
-        /*TODO:  Listar toda la informacion segun formato de datatable */
+        
         case "listar":
             $datos=$instructor->get_instructor();
             $data= Array();

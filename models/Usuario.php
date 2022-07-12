@@ -1,6 +1,6 @@
 <?php
     class Usuario extends Conectar{
-        /*TODO: Funcion para login de acceso del usuario */
+        /* Funcion para login de acceso del usuario */
         public function login(){
             $conectar=parent::conexion();
             parent::set_names();
@@ -8,7 +8,7 @@
                 $correo = $_POST["usu_correo"];
                 $pass = $_POST["usu_pass"];
                 if(empty($correo) and empty($pass)){
-                    /*TODO: En caso esten vacios correo y contraseña, devolver al index con mensaje = 2 */
+                    /* En caso esten vacios correo y contraseña, devolver al login con mensaje = 2 */
                     header("Location:".conectar::ruta()."login?m=2");
 					exit();
                 }else{

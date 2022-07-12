@@ -1,15 +1,16 @@
 <?php
-    /*TODO: Llamando a cadena de Conexion */
+  
     require_once("../config/config.php");
-    /*TODO: Llamando a la clase */
+    
     require_once("../models/Usuario.php");
-    /*TODO: Inicializando Clase */
+  
     $usuario = new Usuario();
 
-    /*TODO: Opcion de solicitud de controller */
+    
     switch($_GET["op"]){
 
-        /*TODO: MicroServicio para poder mostrar el listado de cursos de un usuario con certificado */
+        
+       /* Este es un microservicio que se utiliza para listar todos los cursos que ha tomado un usuario. */
         case "listar_cursos":
             $datos=$usuario->get_cursos_x_usuario($_POST["usu_id"]);
             $data= Array();

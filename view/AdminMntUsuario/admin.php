@@ -69,7 +69,7 @@
 </html>
 <?php
   }else{
-    /* Si no a iniciado sesion se redireccionada a la ventana principal */
+    /*  redireccionada a la ventana principal */
     header("Location:".Conectar::ruta()."login");
   }
 ?>

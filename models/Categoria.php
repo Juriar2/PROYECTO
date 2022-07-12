@@ -1,6 +1,6 @@
 <?php
     class Categoria extends Conectar{
-        /*TODO: Funcion para insertar categoria */
+       
         public function insert_categoria($cat_nom){
             $conectar= parent::conexion();
             parent::set_names();
@@ -11,7 +11,7 @@
             return $resultado=$sql->fetchAll();
         }
 
-        /*TODO: Funcion para actualizar categoria */
+       
         public function update_categoria($cat_id,$cat_nom){
             $conectar= parent::conexion();
             parent::set_names();
@@ -27,7 +27,7 @@
             return $resultado=$sql->fetchAll();
         }
 
-        /*TODO: Eliminar cambiar de estado a la categoria */
+        
         public function delete_categoria($cat_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -43,6 +43,11 @@
         }
 
         /*TODO: Listar todas las categorias */
+        /**
+         * It returns all the categories from the database.
+         * 
+         * @return The result of the query.
+         */
         public function get_categoria(){
             $conectar= parent::conexion();
             parent::set_names();
@@ -52,7 +57,14 @@
             return $resultado=$sql->fetchAll();
         }
 
-        /*TODO: Filtrar segun ID de categoria */
+       
+        /**
+         * It gets the category id from the database.
+         * 
+         * @param cat_id The ID of the category you want to get.
+         * 
+         * @return The result of the query.
+         */
         public function get_categoria_id($cat_id){
             $conectar= parent::conexion();
             parent::set_names();

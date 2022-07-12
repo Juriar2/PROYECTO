@@ -1,14 +1,14 @@
 <?php
-    /*TODO: Llamando a cadena de Conexion */
+    /*Tcadena de Conexion */
     require_once("../config/config.php");
-    /*TODO: Llamando a la clase */
+    /* clase */
     require_once("../models/Categoria.php");
-    /*TODO: Inicializando Clase */
+    /* Inicializando Clase */
     $categoria = new Categoria();
 
-    /*TODO: Opcion de solicitud de controller */
+    /*  solicitud de controller */
     switch($_GET["op"]){
-        /*TODO: Guardar y editar cuando se tenga el ID */
+        /*Guardar y editar */
         case "guardaryeditar":
             if(empty($_POST["cat_id"])){
                 $categoria->insert_categoria($_POST["cat_nom"]);
@@ -17,6 +17,7 @@
             }
             break;
         /*TODO: Creando Json segun el ID */
+        
         case "mostrar":
             $datos = $categoria->get_categoria_id($_POST["cat_id"]);
             if(is_array($datos)==true and count($datos)<>0){
@@ -51,6 +52,7 @@
             echo json_encode($results);
             break;
         /*TODO:  Listar toda la informacion segun formato de datatable */
+        /* Esta es una función que se utilizará para completar el menú desplegable en el formulario. */
         case "combo":
             $datos=$categoria->get_categoria();
             if(is_array($datos)==true and count($datos)>0){
