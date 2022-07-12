@@ -96,6 +96,7 @@
  
     <?php require_once("../html/MainJs.php"); ?>
     <script type="text/javascript" src="usuperfil.js"></script>
+    
    <script>
       const mostrarClave=document.querySelectorAll('.mostrarClave');
       const inputPass=document.querySelectorAll('.clave');

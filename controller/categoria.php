@@ -1,65 +1,61 @@
 <?php
-    /*TODO: Llamando a cadena de Conexion */
-    require_once("../config/config.php");
-    /*TODO: Llamando a la clase */
-    require_once("../models/Categoria.php");
-    /*TODO: Inicializando Clase */
-    $categoria = new Categoria();
+  /* Llamamos al archivo de conexion.php */
+  require_once("../../config/config.php");
+  if(isset($_SESSION["usu_id"])){
+?>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <?php require_once("../html/MainHead.php"); ?>
 
-    /*TODO: Opcion de solicitud de controller */
-    switch($_GET["op"]){
-        /*TODO: Guardar y editar cuando se tenga el ID */
-        case "guardaryeditar":
-            if(empty($_POST["cat_id"])){
-                $categoria->insert_categoria($_POST["cat_nom"]);
-            }else{
-                $categoria->update_categoria($_POST["cat_id"],$_POST["cat_nom"]);
-            }
-            break;
-        /*TODO: Creando Json segun el ID */
-        case "mostrar":
-            $datos = $categoria->get_categoria_id($_POST["cat_id"]);
-            if(is_array($datos)==true and count($datos)<>0){
-                foreach($datos as $row){
-                    $output["cat_id"] = $row["cat_id"];
-                    $output["cat_nom"] = $row["cat_nom"];
-                }
-                echo json_encode($output);
-            }
-            break;
-        /*TODO: Eliminar segun ID */
-        case "eliminar":
-            $categoria->delete_categoria($_POST["cat_id"]);
-            break;
-        /*TODO:  Listar toda la informacion segun formato de datatable */
-        case "listar":
-            $datos=$categoria->get_categoria();
-            $data= Array();
-            foreach($datos as $row){
-                $sub_array = array();
-                $sub_array[] = $row["cat_nom"];
-                $sub_array[] = '<button type="button" onClick="editar('.$row["cat_id"].');"  id="'.$row["cat_id"].'" class="btn btn-outline-warning btn-icon"><div><i class="fa fa-edit"></i></div></button>';
-                $sub_array[] = '<button type="button" onClick="eliminar('.$row["cat_id"].');"  id="'.$row["cat_id"].'" class="btn btn-outline-danger btn-icon"><div><i class="fa fa-close"></i></div></button>';                
-                $data[] = $sub_array;
-            }
+    <title>Empresa::MntCategoria</title>
+  </head>
 
-            $results = array(
-                "sEcho"=>1,
-                "iTotalRecords"=>count($data),
-                "iTotalDisplayRecords"=>count($data),
-                "aaData"=>$data);
-            echo json_encode($results);
-            break;
-        /*TODO:  Listar toda la informacion segun formato de datatable */
-        case "combo":
-            $datos=$categoria->get_categoria();
-            if(is_array($datos)==true and count($datos)>0){
-                $html= " <option label='Seleccione'></option>";
-                foreach($datos as $row){
-                    $html.= "<option value='".$row['cat_id']."'>".$row['cat_nom']."</option>";
-                }
-                echo $html;
-            }
-            break;
-    }
+  <body>
+
+    <?php require_once("../html/MainMenu.php"); ?>
+
+    <?php require_once("../html/MainHeader.php"); ?>
+
+    <div class="br-mainpanel">
+    <button class="btnresgis" id="add_button" onclick="nuevo()"><i class="fa fa-plus-square mg-r-10"></i> Nuevo Registro</button> <strong>Para mostrar un modal presione Ctrl+1 y Ecs para cerra</strong>
+    <hr>
+      <div >
+      </div>
+      <div class="br-pagebody">
+        <div class="br-section-wrapper">
+            <h6 class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10">Categorias</h6>
+            <p class="mg-b-30 tx-gray-600">Listado de Categorias</p>
+            <div class="table-wrapper"></div>
+                <table id="categoria_data" class="table display responsive nowrap">
+                <thead>
+                    <tr>
+                    <th class="wd-15p">Nombre</th>
+                    <th class="wd-10p"></th>
+                    <th class="wd-10p"></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                </table>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <?php require_once("modalmantenimiento.php"); ?>
+
+    <?php require_once("../html/MainJs.php"); ?>
+    <script type="text/javascript" src="adminmntcategoria.js"></script>
+    <script  src="../../asset/js/shortcut.js"></script>
+
+  </body>
+</html>
+<?php
+  }else{
+    /* Si no a iniciado sesion se redireccionada a la ventana principal */
+    header("Location:".Conectar::ruta()."login");
+  }
 ?>

@@ -22,7 +22,7 @@ input{
 	height: 62px;
 	
 }
-@media  (max-width: 600px){
+@media  (max-width: 900px){
 	.formularioxd{
 		width: 100%;
 		
@@ -88,7 +88,7 @@ footer{
 		transition-property: initial;
 		font-weight:500;
 		width: 113%;
-		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 		font-size: 1.2em;
 		
  }
@@ -97,7 +97,8 @@ footer{
 	list-style: upper-roman;
 	color: black;
  }
- @media  (max-width: 600px) {
+ /**dispositivo movil**/
+ @media  (max-width: 900px) {
 	.button02{
 		width: 100%;
 
@@ -122,6 +123,7 @@ img{
   
   border: #000000;
  }
+  /**dispositivo movil**/
  @media  (max-width: 600px) {
 	img{
 		
@@ -146,7 +148,7 @@ img{
 }
 
 .br-logo{
-	color: blue;
+	color: white;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.5em;
 }
@@ -199,7 +201,7 @@ animation: swing ease-in-out .6s infinite alternate;
 	transform-origin: center;
 }
 
-/*************swing************/
+/*************swing animacion************/
 @keyframes swing {
     0% { transform: rotate(8deg); }
     100% { transform: rotate(-8deg); }
@@ -230,7 +232,7 @@ tr th{
 	color: black;
 
 }
-
+ /**dispositivo movil**/
 @media  (max-width: 300px) and (min-width: 1300px) {
 	table ,th ,tr{
 		text-align: center;
@@ -355,7 +357,7 @@ label{
 	color: #000000;
 	font-size: 1.3em;
 }
-
+ /**dispositivo movil**/
 @media   (max-width: 490px) {
 	.perfil{
 		color: tomato;
@@ -407,7 +409,9 @@ label{
 	border-radius: 20px;
 	width: 40%;
 
-}
+} 
+/**dispositivo movil**/
+
 @media   (max-width: 490px){
 	.btnpfd{
 	background-color: #f73333;
@@ -424,6 +428,7 @@ label{
 /** finaliza aqui btnpfd*/
 /**estilos botonAdminMntUsuario***/
 /**es para esconder el elemento strong que tinee escrito **/
+ /**dispositivo movil**/
 @media  (max-width: 500px){
 	strong{
 		visibility: hidden;
@@ -522,7 +527,11 @@ logged-name:hover{
 /****acerca***/
  a{
 	text-align: left;
-	color: #000000;
+	color: white;
+
+}
+.logo{
+	font-size: 1.2em;
 }
 .container{
 	font-size: .9em;
@@ -556,6 +565,7 @@ logged-name:hover{
 	color: #000000;
 	font-size: 1.3em;
 	text-shadow: 2px 2px 2px tomato;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 @media  (max-width: 460px){
