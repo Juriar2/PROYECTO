@@ -229,10 +229,7 @@
 </g>
 </g>
 </svg>
-
-
   </div>
-       
 	</section>
 	
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js'></script>

@@ -31,7 +31,7 @@
         public static function ruta(){
             //QA
             return "https://localhost/itss/";
-            //Produccion
+            
            
         }
 
