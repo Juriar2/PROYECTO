@@ -80,7 +80,7 @@
                 </div>
                 
                 <div class="home-image">
-                <img class="nave pulse" src="https://firebasestorage.googleapis.com/v0/b/yuriar-d684c.appspot.com/o/rocket.png?alt=media&token=4b46a1a5-ef10-4e36-98f7-e0047aed49a7" >
+                <img class="nave pulse" src="https://firebasestorage.googleapis.com/v0/b/yuriar-d684c.appspot.com/o/rocket.png?alt=media&token=4b46a1a5-ef10-4e36-98f7-e0047aed49a7" class="pulse">>
                 </div>
             </div>
         </div>
