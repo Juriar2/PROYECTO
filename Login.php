@@ -72,6 +72,7 @@
   
 	</div>
 	<section class="ftco-section">
+		
 		<div class="container">
 			
 			<div class="row justify-content-center">
@@ -113,14 +114,14 @@
 						?>
 						<br>
 						
-			      			<div class="form-group mb-3">
-			      			<label class="label" for="Correo electronico">Correo electronico</label>
-			      			<input type="email" id="usu_correo" name="usu_correo" class="formularioxd"  placeholder="Ingrese su correo electronico ">
-			      		</div>
-		            	<div class="form-group mb-3">
-		            	<label class="label" for="password">contraseña</label>
-		              	<input type="password" id="usu_pass" name="usu_pass" class="formularioxd clave"  placeholder="Ingrese su contraseña como matricula">
-					 	 <button type="button" class="mostrarClave">Mostra contraseña</button>
+			      	<div class="form-group mb-3">
+			      	<label class="label" for="Correo electronico">Correo electronico</label>
+			      	<input type="email" id="usu_correo" name="usu_correo" class="formularioxd"  placeholder="Ingrese su correo electronico ">
+			      	</div>
+		            <div class="form-group mb-3">
+		            <label class="label" for="password">contraseña</label>
+		            <input type="password" id="usu_pass" name="usu_pass" class="formularioxd clave"  placeholder="Ingrese su contraseña como matricula">
+					 	<button type="button" class="mostrarClave">Mostra contraseña</button>
   					
 		            </div>
 		            <div class="form-group">
@@ -139,7 +140,7 @@
 			<footer class="t-stroke t-shadow">
             INSTITUTO TECNOLÓGICO SUPERIOR DE LA REGIÓN SIERRA
             </footer>
-
+							
 			</div>
            
 		</div>
