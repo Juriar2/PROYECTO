@@ -1,5 +1,5 @@
 /* A countdown timer. */
-var countDownDate = new Date("August , 2022 01:00:00").getTime();
+var countDownDate = new Date("08 01, 2022 1:00:00").getTime();
 var x = setInterval(function(){
     var now =new Date().getTime();
     var distance = countDownDate - now;
