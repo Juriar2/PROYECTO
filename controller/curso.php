@@ -91,7 +91,9 @@
             echo json_encode($data);
             break;
 
-       
+       case "update_imagen_curso":
+            $curso->update_imagen_curso($_POST["curx_idx"],$_POST["cur_img"]);
+            break;
         
     }
 ?>
