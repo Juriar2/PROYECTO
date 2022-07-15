@@ -24,7 +24,7 @@ $(document).ready(function(){
         ctx.fillText(data.usu_nom+' '+ data.usu_apep+' '+data.usu_apem, x, 250);
 
         ctx.font = '18px Arial';
-        ctx.fillText('Taller', x, 295);
+        ctx.fillText('por assitir al Taller', x, 295);
         ctx.font = '30px Arial';
         ctx.fillText(data.cur_nom, x, 330);
 
