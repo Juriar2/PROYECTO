@@ -138,7 +138,7 @@
 			</div>
 			<div class="bg-1">
 			<footer class="t-stroke t-shadow">
-            
+            INSTITUTO TECNOLÓGICO SUPERIOR DE LA REGIÓN SIERRA
             </footer>
 							
 			</div>
