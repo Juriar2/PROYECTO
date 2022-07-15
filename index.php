@@ -38,6 +38,7 @@
   <div class="shooting_star"></div>
   <div class="shooting_star"></div>
   <div class="shooting_star"></div>
+  
 </div>
  <!----home de la pagina-------------->
 <header>
@@ -55,7 +56,7 @@
             
             <div class="home-wrapper d-flex">
                 <div class="col-left">
-                    <h1 class="slideRight">Registrarse por tiempo ilimitado</h1>
+                    <h1 class="res slideRight">Registrarse por tiempo ilimitado</h1>
                         <div class="launch-time">
                             <div>
                                 <p id="days">00</p>
