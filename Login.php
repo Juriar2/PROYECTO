@@ -15,7 +15,7 @@
 
 ?>
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
   	<title>Iniciar sesison</title>
