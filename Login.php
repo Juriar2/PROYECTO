@@ -1,4 +1,3 @@
-
 <?php
   /*TODO: Llamando Cadena de Conexion */
   require_once("config/config.php");

@@ -1,12 +1,14 @@
+<?php
+  /* Llamamos al archivo de conexion.php */
+  require_once("../../config/config.php");
+  if(isset($_SESSION["usu_id"])){
+?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
-  
     <?php require_once("../html/MainHead.php"); ?>
-    <?php require_once("../../config/config.php");
-       if(isset($_SESSION["usu_id"])){
-    ?>
-    <title>Perfil del Usuario</title>
+
+    <title>Empresa::Perfil</title>
   </head>
 
   <body>
@@ -14,6 +16,7 @@
     <?php require_once("../html/MainMenu.php"); ?>
 
     <?php require_once("../html/MainHeader.php"); ?>
+
 
     <div class="br-mainpanel">
       <div class="br-pageheader pd-y-15 pd-l-20">
