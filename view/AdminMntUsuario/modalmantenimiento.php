@@ -1,7 +1,7 @@
 <div id="modalmantenimiento" class="modal fade" data-backdrop="static" data-keyboard="false">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content bd-0">
-            <div class="modal-header pd-y-20 pd-x-25">
+        <div class="modal-header pd-y-20 pd-x-25">
                 <h6 id="lbltitulo" class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold"></h6>
             </div>
             <!-- Formulario Mantenimiento -->
@@ -12,29 +12,28 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Nombre: <span class="tx-danger">*</span></label>
-                            <input class="form" id="usu_nom" type="text" name="usu_nom"  placeholder="Ingrese el nombre ejemplo maria" required/>
-                            <span>(required, at least 3 characters)</span>
+                            <input class="form" id="usu_nom" type="text" name="usu_nom"  placeholder="Ingrese el nombre" required/>
                         </div>
                     </div>
 
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Apellido Paterno: <span class="tx-danger">*</span></label>
-                            <input class="form" id="usu_apep" type="text" name="usu_apep" placeholder="Ingrese el apellido ejemplo hernandez"required/>
+                            <input class="form" id="usu_apep" type="text" name="usu_apep" placeholder="Ingrese el apellido"required/>
                         </div>
                     </div>
 
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Apellido Materno: <span class="tx-danger">*</span></label>
-                            <input class="form" id="usu_apem" type="text" name="usu_apem"placeholder="Ingrese el appelido materno ejemplo guzaman"required />
+                            <input class="form" id="usu_apem" type="text" name="usu_apem"placeholder="Ingrese el appelido"required />
                         </div>
                     </div>
 
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Correo: <span class="tx-danger">*</span></label>
-                            <input class="form" id="usu_correo" type="email" name="usu_correo" placeholder="Ingrese el correo electronico ejemplo maria@homail.com" required/>
+                            <input class="form" id="usu_correo" type="email" name="usu_correo" placeholder="Ingrese el correo electronico" required/>
                         </div>
                     </div>
 
@@ -59,7 +58,7 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Telefono: <span class="tx-danger">*</span></label>
-                            <input class="form " id="usu_telf" type="text" name="usu_telf" placeholder="Ingrese el telefono ejemplo 932115475"required />
+                            <input class="form " id="usu_telf" type="text" name="usu_telf" placeholder="Ingrese el telefono"required />
                         </div>
                     </div>
 
@@ -77,7 +76,7 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Matricula: <span class="tx-danger">*</span></label>
-                            <input class="form" id="usu_matri" type="text" name="usu_matri"placeholder="Ingrese la matricula 19E478" required>
+                            <input class="form" id="usu_matri" type="text" name="usu_matri"placeholder="Ingrese la matricula" required>
                         </div>
                     </div>
 

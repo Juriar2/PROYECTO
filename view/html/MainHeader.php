@@ -9,7 +9,8 @@
           
           <div class="dropdown">
             <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
-              <span class="logged-name hidden-md-down"><?php echo $_SESSION["usu_nom"]?></span>
+             <span class="logged-name hidden-md-down">hola de nuevo,</span> <span class="logged-name hidden-md-down"><?php echo $_SESSION["usu_nom"]?></span>
+             
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShN0nuLT7HIpIANuDi6wbMKpeuCgZsl2PtAA&usqp=CAU" class="wd-32 rounded-circle" alt="">
               <span class="square-10 bg-success"></span>
             </a>

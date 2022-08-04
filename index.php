@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="asset/css/wickedcss.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Anton'><link rel="stylesheet" href="./style.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Anton'><link rel="stylesheet" href="./style.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LddbUkhAAAAABS6nf9K7K4SKbC_ResEqfWBaGmD"></script>
     <title>ITSS</title>
 </head>
 <body>
@@ -88,5 +89,17 @@
        
     </section>
     <script src="asset/js/tiempo.js"></script>
+    <script>
+			$(document).ready(function() {
+				$('#login02').click(function() {
+					grecaptcha.ready(function() {
+						grecaptcha.execute('6LddbUkhAAAAABS6nf9K7K4SKbC_ResEqfWBaGmD', {
+							
+				
+						});
+					});
+				});
+			});
+		</script>
 </body>
 </html>

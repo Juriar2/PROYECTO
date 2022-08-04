@@ -18,7 +18,7 @@
     <?php require_once("../html/MainHeader.php"); ?>
 
     <div class="br-mainpanel">
-    <button class="btnresgis" id="add_button" onclick="nuevo()"><i class="fa fa-plus-square mg-r-10"></i> Nuevo Registro</button> <strong>Para mostrar un modal presione Ctrl+1 y Ecs para cerra</strong>
+    <button class="btnresgis" id="add_button" onclick="nuevo()"><i class="fa fa-plus-square mg-r-10"></i> Nuevo Registro</button> <strong>Para mostrar un modal presione Ctrl+Q y Ecs para cerra</strong>
 
     <hr>  
       
