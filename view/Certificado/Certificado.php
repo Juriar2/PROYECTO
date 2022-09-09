@@ -1,3 +1,8 @@
+<?php
+  /* Llamamos al archivo de conexion.php */
+  require_once("../../config/config.php");
+  if(isset($_SESSION["usu_id"])){
+?>
 <!DOCTYPE html>
 <html lang="es" class="pos-relative">
     <head>
@@ -12,7 +17,7 @@
         <h1 class="tx-100 tx-xs-140 tx-normal tx-inverse tx-roboto mg-b-0">
 
           <canvas id="canvas" height="650px" width="900px" class="img-fluid" alt="Responsive image"></canvas>
-
+          
         </h1>
         <br>
 
@@ -31,3 +36,9 @@
     <script type="text/javascript" src="certificado.js"></script>
   </body>
 </html>
+<?php
+  }else{
+    /* Si no a iniciado sesion se redireccionada a la ventana principal */
+    header("Location:".Conectar::ruta()."login");
+  }
+?>

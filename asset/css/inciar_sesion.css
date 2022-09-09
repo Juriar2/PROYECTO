@@ -1,10 +1,8 @@
-body,html{
+body, html {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   
-
+    color: #000000;
 	
 }
-
 
 input{
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -167,6 +165,56 @@ img{
 	
 }
 
+.dust-paarticle
+{
+  position: absolute;
+    width: 100%;
+	
+}
+
+#snell
+{
+  position:absolute;
+  top:0;
+  width:100%;
+  margin:20px;
+}
+
+#eye1
+{
+animation: swing ease-in-out .6s infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+    left: calc(52% - 5rem);
+}
+
+#eye2
+{
+	animation: swing ease-in-out .8s infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+    left: calc(40% - .0rem);
+}
+
+
+#dust-paarticle path
+{
+ 	 transform-box: fill-box;
+	transform-origin: center;
+}
+
+/*************swing animacion************/
+@keyframes swing {
+    0% { transform: rotate(8deg); }
+    100% { transform: rotate(-8deg); }
+}
+
+
+.position-set
+{
+position:absolute;
+  top:50%;
+}
 
 
 table{
@@ -444,12 +492,6 @@ hr{
 }
 logged-name:hover{
 	color: #ec1919;
-}
-.strong{
-	margin: 8px;
-	float: left;
-	color: #000000;
-	font-size: 1.3em;
 }
 /**finaliza aqui**/
 

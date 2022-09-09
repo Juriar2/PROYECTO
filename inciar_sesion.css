@@ -1,0 +1,602 @@
+body,
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*Estilos login lo modique todo*/
+
+.formularioxd {
+    border: 2px solid #08276b;
+    /*height: 40px;*/
+    padding: 0 10px;
+    font-size: 1.5em;
+    color: #000000;
+    border-radius: 10px;
+    width: 113%;
+    height: 62px;
+}
+
+@media (max-width: 900px) {
+    .formularioxd {
+        width: 100%;
+    }
+}
+
+textarea {
+    resize: none;
+    border: 2px solid #08276b;
+    /*height: 40px;*/
+    padding: 0 10px;
+    font-size: 1.5em;
+    color: #000000;
+    border-radius: 10px;
+    width: 100%;
+    height: 62px;
+}
+
+.form {
+    border: 2px solid #08276b;
+    /*height: 40px;*/
+    padding: 0 10px;
+    font-size: 1.5em;
+    color: #000000;
+    border-radius: 10px;
+    width: 100%;
+    height: 62px;
+   
+}
+.form-control{
+    border: 2px solid #08276b;
+    /*height: 40px;*/
+    padding: 0 10px;
+    font-size: 1.5em;
+    color: #000000;
+    border-radius: 10px;
+    width: 100%;
+    height: 62px;
+   
+}
+.custom-select{
+    border: 2px solid #08276b;
+    /*height: 40px;*/
+    padding: 0 10px;
+    font-size: 1.5em;
+    color: #000000;
+    border-radius: 10px;
+    width: 100%;
+    height: 62px;
+}
+.fillText{
+    
+}
+
+
+/*le indico que todo el texto se centre en input**/
+
+.formularioxd:focus {
+    border: 2px solid #204ee8;
+}
+
+
+/***estilos para el text dentro de input**/
+
+.formularioxd::placeholder {
+    color: #000000;
+    font-size: 1em;
+}
+
+
+/**para que se ve mas elegenate**/
+
+.formularioxd:-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #000000;
+}
+
+footer {
+    text-align: right;
+    color: #000000;
+    margin: 10px;
+}
+
+
+/*hace referencia BOTN DEL LOGIN**/
+
+.button02 {
+    background-color: #f12323;
+    color: white;
+    padding: 10px 14px 10px 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 18px;
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+    transition-property: initial;
+    font-weight: 500;
+    width: 113%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+
+.button02:hover {
+    background-color: #2b7ce6;
+    list-style: upper-roman;
+    color: black;
+}
+
+
+/**dispositivo movil**/
+
+@media (max-width: 900px) {
+    .button02 {
+        width: 100%;
+    }
+}
+
+
+/*Finazliza aqui*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/*****este estilo pertenece a la pagina principal******/
+
+a {
+    text-decoration: none;
+    color: #ececec;
+}
+
+img {
+    display: block;
+    margin: 1px auto;
+    max-width: 380px;
+    border: #000000;
+}
+
+
+/**dispositivo movil**/
+
+@media (max-width: 600px) {
+    img {
+        max-width: 380px;
+    }
+}
+
+form .error {
+    color: #eb2f2f;
+}
+
+.mostrarClave {
+    margin: 10px;
+    background-color: #9E8010;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: .9em;
+    border: #166FE5;
+}
+
+.br-logo {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.alert {
+    color: rgb(252, 38, 38);
+    font-size: 1.2em;
+    margin: -15px;
+    font-weight: 400px;
+}
+
+table {
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+    background-color: #eccc58;
+}
+
+table th {
+    background-color: #eccc58;
+    color: black;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+tr th {
+    color: black;
+}
+
+
+/**dispositivo movil**/
+
+@media (max-width: 300px) and (min-width: 1300px) {
+    table,
+    th,
+    tr {
+        text-align: center;
+        font-size: 1.2em;
+        color: black;
+        background-color: #eccc58;
+    }
+    table th,
+    tr th {
+        background-color: #eccc58;
+        color: black;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    tr,
+    th,
+    table {
+        color: black;
+    }
+}
+
+.br-sideleft {
+    background-color: #eccc58;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.br-menu-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.menu01 {
+    color: black;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.lista {
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lista0 {
+    font-size: 1.2em;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.total {
+    font-size: 1.2em;
+    color: black;
+}
+
+.formulario {
+    border: 2px solid #08276b;
+    /*height: 40px;*/
+    padding: 0 10px;
+    font-size: 1.5em;
+    color: #000000;
+    border-radius: 10px;
+    width: 103%;
+    height: 62px;
+}
+
+
+/*le indico que todo el texto se centre en input**/
+
+.formulario:focus {
+    border: 2px solid #204ee8;
+}
+
+
+/***estilos para el text dentro de input**/
+
+.formulario::placeholder {
+    color: #000000;
+    font-size: 1em;
+}
+
+
+/**para que se ve mas elegenate**/
+
+.formulario:-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #000000;
+}
+
+
+/**boton perfil**/
+
+.btngurdar {
+    background-color: #f12323;
+    color: white;
+    padding: 10px 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 17px;
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+    transition-property: unset;
+    font-weight: 1000;
+    width: 30%;
+}
+
+.btngurdar:hover {
+    background-color: #1374f3;
+    width: 100%;
+    color: black;
+}
+
+.perfil {
+    color: black;
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/**finaliza aqui**/
+
+
+/**hace referencia la perfil de usuario**/
+
+label {
+    margin: 0;
+    color: #000000;
+    font-size: 1.3em;
+}
+
+
+/**dispositivo movil**/
+
+@media (max-width: 490px) {
+    .perfil {
+        color: tomato;
+        font-size: 1.8em;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+    label {
+        margin: 0;
+        color: #000000;
+        font-size: 1.3em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .btngurdar {
+        background-color: #f12323;
+        color: white;
+        padding: 14px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 18px;
+        transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+        transition-property: initial;
+        font-weight: 700;
+        width: 40%;
+    }
+    .btngurdar:hover {
+        background-color: #1374f3;
+        width: 100%;
+        -ms-layout-grid: none;
+    }
+    input {
+        width: 50%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}
+
+
+/**finaliza aqui**/
+
+
+/**btnpfd*/
+
+.btnpfd {
+    background-color: #f73333;
+    border: none;
+    padding: 12px 12px 12px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 20px;
+    width: 40%;
+}
+
+
+/**dispositivo movil**/
+
+@media (max-width: 490px) {
+    .btnpfd {
+        background-color: #f73333;
+        border: none;
+        padding: 12px 12px 12px;
+        cursor: pointer;
+        color: white;
+        font-size: 1.2em;
+        border-radius: 20px;
+        width: 50%;
+    }
+}
+
+
+/** finaliza aqui btnpfd*/
+
+
+/**estilos botonAdminMntUsuario***/
+
+
+/**es para esconder el elemento strong que tinee escrito **/
+
+
+/**dispositivo movil**/
+
+@media (max-width: 500px) {
+    strong {
+        visibility: hidden;
+    }
+    hr {
+        display: none;
+    }
+}
+
+.btnresgis {
+    margin: 20px 25px 25px;
+    background-color: #1374f3;
+    padding: 8px 10px 8px 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1000;
+}
+
+.btnresgis:hover {
+    border: none;
+    background-color: #f12323;
+    color: white;
+    font-size: 1.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1000;
+}
+
+hr {
+    border: 0.5px solid #000000;
+    margin: -0.9px;
+}
+
+@media (max-width: 490px) {
+    .btnresgistro {
+        background-color: #f12323;
+        color: white;
+        text-shadow: 15px 15px 15px #000000;
+        font-size: 1.2em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 1000;
+        image-resolution: initial;
+    }
+}
+
+
+/**perfil**/
+
+.logged-name {
+    margin: 8px;
+    float: left;
+    color: #000000;
+    font-size: 1.3em;
+}
+
+logged-name:hover {
+    color: #ec1919;
+}
+
+.strong {
+    margin: 8px;
+    float: left;
+    color: #000000;
+    font-size: 1.3em;
+}
+
+
+/**finaliza aqui**/
+
+
+/**das**/
+
+.resgistro01 {
+    background-color: #166FE5;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 18px;
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+    transition-property: initial;
+    font-weight: 700;
+}
+
+.resgistro01:hover {
+    background-color: #2b7ce6;
+}
+
+.resgistro02 {
+    background-color: #ec1919;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 18px;
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+    transition-property: initial;
+    font-weight: 700;
+}
+
+.resgistro02:hover {
+    background-color: #ee4646;
+}
+
+
+/*finaliza aqui**/
+
+
+/****acerca***/
+
+a {
+    text-align: left;
+    color: white;
+}
+
+.logo {
+    font-size: 1.2em;
+}
+
+.container {
+    font-size: .9em;
+}
+
+.hola {
+    background-color: #57aaee;
+    color: white;
+    font-size: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.center {
+    text-align: left;
+}
+
+
+/****finazliza***/
+
+
+/*****AdminMntUsuario/admin*/
+
+.user,
+.useractivo {
+    text-align: center;
+    color: #000000;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 2px tomato;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media (max-width: 460px) {
+    .dtr-title {
+        visibility: hidden;
+        list-style: none;
+    }
+    span,
+    .dtr-title {
+        width: auto;
+    }
+    .dtr-details {
+        list-style: none;
+        text-align: left;
+    }
+}

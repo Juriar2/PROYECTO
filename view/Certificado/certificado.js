@@ -16,15 +16,20 @@ $(document).ready(function(){
         /* Dimensionamos y seleccionamos imagen */
         ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
 
+        
+
+
         /* Definimos tamaño de la fuente */
         ctx.font = '40px Arial';
         ctx.textAlign = "center";
         ctx.textBaseline = 'middle';
         var x = canvas.width / 2;
         ctx.fillText(data.usu_nom+' '+ data.usu_apep+' '+data.usu_apem, x, 250);
+        
+       
 
         ctx.font = '18px Arial';
-        ctx.fillText('por assitir al Taller', x, 295);
+        ctx.fillText('por assitir al Taller al', x, 295);
         ctx.font = '30px Arial';
         ctx.fillText(data.cur_nom, x, 330);
 
@@ -36,8 +41,12 @@ $(document).ready(function(){
         ctx.font = '15px Arial';
         ctx.fillText('Fecha de Inicio : '+data.cur_fechini+' / '+'Fecha de Finalización : '+data.cur_fechfin+'', x, 490);
 
+        ctx.fillText('Folio: '+data.usu_id , x, 150);
+        
+
+        
         /* Ruta de la Imagen */
-        imageqr.src = "../../public/"+curd_id+".png";
+        imageqr.src = "../../public"+curd_id+".png";
         /* Dimensionamos y seleccionamos imagen */
         ctx.drawImage(imageqr, 400, 500, 100, 100);
 
@@ -49,7 +58,7 @@ $(document).ready(function(){
 /* Recarga por defecto solo 1 vez */
 window.onload = function() {
     if(!window.location.hash) {
-        window.location = window.location + '#loaded';
+        window.location = window.location + '#';
         window.location.reload();
     }
 }

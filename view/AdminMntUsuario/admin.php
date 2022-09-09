@@ -31,6 +31,7 @@
             <div class="table-wrapper"></div>
                 <table id="usuario_data" class="table display responsive nowrap">
                 <thead>
+                  
                     <tr>
                     
                     <th class="wd-15p">Nombre</th>
