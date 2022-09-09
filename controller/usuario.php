@@ -135,6 +135,14 @@
         case "update_perfil":
             $usuario->update_usuario_perfil(
                 $_POST["usu_id"],
+                $_POST["usu_pass"],
+                $_POST["usu_sex"],
+                $_POST["usu_telf"]
+            );
+            break;
+            case "actulizar_perfil":
+            $usuario->actulizar_perfil(
+                $_POST["usu_id"],
                 $_POST["usu_nom"],
                 $_POST["usu_apep"],
                 $_POST["usu_apem"],

@@ -587,3 +587,10 @@ logged-name:hover{
 		text-align: left;
 	}
 }
+
+span.emailjs{
+    color: black;
+    font-size: 1.1em;
+    margin: 2px 2px 2px;
+    float: right;
+}

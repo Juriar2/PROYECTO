@@ -1,4 +1,6 @@
 <?php
+   
+
     /*TODO: Inicializando la sesion del usuario */
    /* Starting a session. */
     session_start();
