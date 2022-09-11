@@ -45,7 +45,7 @@
               <div class="col-lg-4">
                 <div class="form-group">
                   <label class="form-control-label">Apellido Paterno: <span class="tx-danger">*</span></label>
-                  <input class="formulario floater" type="text" name="usu_apep" id="usu_apep" placeholder="Apellido Paterno">
+                  <input  class="formulario floater"  type="text" name="usu_apep" id="usu_apep" placeholder="Apellido Paterno">
                 </div>
               </div>
               <div class="col-lg-4">
@@ -87,57 +87,28 @@
                 </div>
               </div>
             </div>
-
+            <?php
+      if($_SESSION["rol_id"]==2){
+        ?>
             <div class="form-layout-footer">
               <button class="btngurdar" id="btnactualizar">Actualizar perfil</button>
             </div>
+            <?php
+      }else{
+        ?>
           </div>
 
         </div>
       </div>
     </div>
- 
+    <?php
+      }
+    ?>
+
     <?php require_once("../html/MainJs.php"); ?>
     <script type="text/javascript" src="usuperfil.js"></script>
     
-   <script>
-      const mostrarClave=document.querySelectorAll('.mostrarClave');
-      const inputPass=document.querySelectorAll('.clave');
 
-      for (let i = 0; i < mostrarClave.length; i++) {
-    
-    mostrarClave[i].addEventListener('click',()=>{
-
-        if(inputPass[i].type==="password"){
-
-            //cambiamos el tipo password a text
-            inputPass[i].setAttribute('type','text');
-
-
-            //le agregamos la clase active
-            mostrarClave[i].classList.add('active');
-
-        }else{
-            //si el tipo de input es text
-
-            //cambiamos el tipo text a password
-            inputPass[i].setAttribute('type','password');
-
-             //removemos la clase del icono
-            
-
-             
- 
-             //le agregamos la clase active
-             mostrarClave[i].classList.remove('active');
- 
-        }
-
-    });
-}
-
-
-   </script>
         
   </body>
 </html>

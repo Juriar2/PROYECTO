@@ -64,7 +64,7 @@
                     <div class="d-flex">
                         <div class="w-100">
                             <h3 class="mb-2">Bienvenido al sistema</h3>
-                    
+                            
                             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"  method="post" id="formLogin" class="signin-form" >
                             <?php
                             if (isset($_GET["m"])){
@@ -72,7 +72,7 @@
                                 case "1";
                                 ?>
                             <div class="alert alert-error" role="alert">
-                            <strong class="d-block d-sm-inline-block-force">El correo o la contraseña son incorrecto</strong>
+                            <strong class="d-block d-sm-inline-block-force">El correo o la contraseña son incorrecto no coicide </strong>
 
                             </div>
                                 <?php
@@ -130,7 +130,6 @@
     <script src="asset/js/main.js"></script>
     <script src="asset/js/app.js"></script>
     
-    <script src="asset/js/login.js"></script>
 
 
   

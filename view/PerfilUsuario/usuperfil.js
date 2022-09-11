@@ -34,24 +34,3 @@ $(document).on("click","#btnactualizar", function(){
         confirmButtonText: 'Aceptar'
     })
 });
-
-$(document).on("click","#btnactualizar", function(){
-
-    $.post("../../controller/usuario.php?op=actulizar_perfil", { 
-        usu_id : usu_id,
-        usu_nom : $('#usu_nom').val(),
-        usu_apep : $('#usu_apep').val(),
-        usu_apem : $('#usu_apem').val(),
-        usu_pass : $('#usu_pass').val(),
-        usu_sex : $('#usu_sex').val(),
-        usu_telf : $('#usu_telf').val()
-     }, function (data) {
-    });
-
-    Swal.fire({
-        title: 'Correcto!',
-        text: 'Se actualizo Correctamente',
-        icon: 'success',
-        confirmButtonText: 'Aceptar'
-    })
-});

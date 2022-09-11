@@ -34,6 +34,20 @@
     <?php require_once("../html/MainJs.php"); ?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
     <script type="text/javascript" src="certificado.js"></script>
+    <script type="text/javascript">
+  $(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
+
   </body>
 </html>
 <?php

@@ -412,6 +412,17 @@ label{
 	width: 40%;
 
 } 
+.btnimpr{
+	background-color: #3a78ec;
+	border: none;
+	padding: 12px 12px 12px;
+	cursor: pointer;
+	color: white;
+	font-size: 1.2em;
+	border-radius: 20px;
+	width: 40%;
+	margin: 10px 10px 10px;
+}
 /**dispositivo movil**/
 
 @media   (max-width: 490px){
