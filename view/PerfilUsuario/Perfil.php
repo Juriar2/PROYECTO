@@ -65,9 +65,6 @@
                   <label class="form-control-label">Contraseña: <span class="tx-danger">*</span></label>
                   <input class="formulario floater clave" type="password" name="usu_pass" id="usu_pass" placeholder="Ingrese Contraseña">
                   <button type="button" class="mostrarClave">Mostra contraseña</button>
-                  
-                  
-
                 </div>
               </div>
               <div class="col-lg-6">
@@ -80,13 +77,38 @@
                   </select>
                 </div>
               </div>
+              
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="form-control-label">Telefono: <span class="tx-danger">*</span></label>
                   <input class="formulario floater" type="number" name="usu_telf" id="usu_telf" placeholder="Ingrese Telefono">
                 </div>
               </div>
+              <div class="col-lg-6">
+                <div class="form-group mg-b-10-force">
+                  <label class="form-control-label">Grado: <span class="tx-danger">*</span></label>
+                  <select class="formulario select2 floater" name="usu_gra" id="usu_gra" data-placeholder="Seleccione">
+                    <option label="Seleccione"></option>
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group mg-b-10-force">
+                  <label class="form-control-label">Grupo: <span class="tx-danger">*</span></label>
+                  <select class="formulario select2 floater" name="usu_grupo" id="usu_grupo" data-placeholder="Seleccione">
+                    <option label="Seleccione"></option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    
+                  </select>
+                </div>
+              </div>
             </div>
+            
             <?php
       if($_SESSION["rol_id"]==2){
         ?>

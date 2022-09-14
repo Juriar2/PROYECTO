@@ -7,10 +7,8 @@
     /*TODO: Inicializando Clase */
     $usuario = new Usuario();
     $usuario->login();
-  }else{
-        //al momento de cargar la pagina com arlete una vez el usuario ha iniciado sesion
-    echo "<script>alert('Debes de iniciar sesion con tu correo Elctronico Institucinal y su matricula como contraseña');</script>";
   }
+  
 
 ?>
 

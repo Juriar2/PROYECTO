@@ -23,7 +23,8 @@ $(document).on("click","#btnactualizar", function(){
         usu_apem : $('#usu_apem').val(),
         usu_pass : $('#usu_pass').val(),
         usu_sex : $('#usu_sex').val(),
-        usu_telf : $('#usu_telf').val()
+        usu_telf : $('#usu_telf').val(),
+        usu_grado : $('#usu_gra').val(),
      }, function (data) {
     });
 
