@@ -93,24 +93,30 @@
             }
             break;
         /*TODO: Mostrar informacion del usuario en la vista perfil */
-        case "mostrar":
-            $datos = $usuario->get_usuario_x_id($_POST["usu_id"]);
-            if(is_array($datos)==true and count($datos)<>0){
-                foreach($datos as $row){
-                    $output["usu_id"] = $row["usu_id"];
-                    $output["usu_nom"] = $row["usu_nom"];
-                    $output["usu_apep"] = $row["usu_apep"];
-                    $output["usu_apem"] = $row["usu_apem"];
-                    $output["usu_correo"] = $row["usu_correo"];
-                    $output["usu_sex"] = $row["usu_sex"];
-                    $output["usu_pass"] = $row["usu_pass"];
-                    $output["usu_telf"] = $row["usu_telf"];
-                    $output["rol_id"] = $row["rol_id"];
-                    $output["usu_matri"] = $row["usu_matri"];
-                }
-                echo json_encode($output);
-            }
-            break;
+         case"mostrar_perfil":
+                $datos = $usuario->get_usuario_x_id($_POST["usu_id"]);
+                if(is_array($datos)==true and count($datos)<>0){
+                    foreach($datos as $row){
+                       $output["usu_id"] = $row["usu_id"];
+                        $output["usu_nom"] = $row["usu_nom"];
+                        $output["usu_apep"] = $row["usu_apep"];
+                        $output["usu_apem"] = $row["usu_apem"];
+                        $output["usu_correo"] = $row["usu_correo"];
+                        $output["usu_sex"] = $row["usu_sex"];
+                        $output["usu_pass"] = $row["usu_pass"];
+                        $output["usu_telf"] = $row["usu_telf"];
+                        $output["rol_id"] = $row["rol_id"];
+                        $output["usu_gra"] = $row["usu_gra"];
+                        $output["usu_grup"] = $row["usu_grup"];
+                        $output["usu_gef"] = $row["usu_gef"];
+                        $output["usu_carre"] = $row["usu_carre"];
+                        $output["usu_si"] = $row["usu_si"];
+                        $output["usu_matri"] = $row["usu_matri"];/***se  puede agregar otro debajo */
+                        
+                    }
+                        echo json_encode($output);
+                    }
+                break;
         /*TODO: Mostrar informacion segun DNI del usuario registrado */
         case "consulta_dni":
             $datos = $usuario->get_usuario_x_dni($_POST["usu_matri"]);
@@ -139,15 +145,20 @@
                 $_POST["usu_apem"],
                 $_POST["usu_pass"],
                 $_POST["usu_sex"],
-                $_POST["usu_telf"]
+                $_POST["usu_telf"],
+                $_POST["usu_gra"],
+                $_POST["usu_grup"],
+                $_POST["usu_gef"]
+
             );
             break;
         /*TODO: Guardar y editar cuando se tenga el ID */
+        /*TODO: Guardar y editar cuando se tenga el ID */
         case "guardaryeditar":
             if(empty($_POST["usu_id"])){
-                $usuario->insert_usuario($_POST["usu_nom"],$_POST["usu_apep"],$_POST["usu_apem"],$_POST["usu_correo"],$_POST["usu_pass"],$_POST["usu_sex"],$_POST["usu_telf"],$_POST["rol_id"],$_POST["usu_matri"]);
+                $usuario->insert_usuario($_POST["usu_nom"],$_POST["usu_apep"],$_POST["usu_apem"],$_POST["usu_correo"],$_POST["usu_pass"],$_POST["usu_sex"],$_POST["usu_telf"],$_POST["usu_carre"],$_POST["usu_si"],$_POST["rol_id"],$_POST["usu_matri"]);
             }else{
-                $usuario->update_usuario($_POST["usu_id"],$_POST["usu_nom"],$_POST["usu_apep"],$_POST["usu_apem"],$_POST["usu_correo"],$_POST["usu_pass"],$_POST["usu_sex"],$_POST["usu_telf"],$_POST["rol_id"],$_POST["usu_matri"]);
+                $usuario->update_usuario($_POST["usu_id"],$_POST["usu_nom"],$_POST["usu_apep"],$_POST["usu_apem"],$_POST["usu_correo"], $_POST["usu_pass"],$_POST["usu_sex"],$_POST["usu_telf"],$_POST["usu_carre"],$_POST["usu_si"],$_POST["rol_id"],$_POST["usu_matri"]);
             }
             break;
         /*TODO: Eliminar segun ID */
@@ -165,6 +176,8 @@
                     $sub_array[] = $row["usu_apem"];
                     $sub_array[] = $row["usu_correo"];
                     $sub_array[] = $row["usu_telf"];
+                    $sub_array[] = $row["usu_carre"];
+                    $sub_array[] = $row["usu_si"];
                     if ($row["rol_id"]==1) {
                         $sub_array[] = "Usuario";
                     }else{

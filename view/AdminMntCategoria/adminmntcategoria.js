@@ -21,12 +21,22 @@ function guardaryeditar(e){
             $('#categoria_data').DataTable().ajax.reload();
             $('#modalmantenimiento').modal('hide');
 
-            Swal.fire({
-                title: 'Correcto!',
-                text: 'Se Registro Correctamente',
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                  toast.addEventListener('mouseenter', Swal.stopTimer)
+                  toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+              })
+              
+              Toast.fire({
                 icon: 'success',
-                confirmButtonText: 'Aceptar'
-            })
+                text: 'Se ha registrado correctamente',
+              })
         }
     });
 }
@@ -90,27 +100,49 @@ function editar(cat_id){
 }
 
 function eliminar(cat_id){
-    swal.fire({
-        title: "Eliminar!",
-        text: "Desea Eliminar el Registro?",
-        icon: "error",
-        confirmButtonText: "Si",
+    const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+          confirmButton: 'btn btn-success',
+          cancelButton: 'btn btn-danger'
+        },
+        buttonsStyling: true
+      })
+      
+      swalWithBootstrapButtons.fire({
+        title: 'Estas seguro?',
+        text: "No podrás revertir esto.!",
+        icon: 'warning',
         showCancelButton: true,
-        cancelButtonText: "No",
-    }).then((result) => {
+        confirmButtonText: 'si, eliminarlo!',
+        cancelButtonText: 'No, cancelar!',
+        reverseButtons: true
+      }).then((result) => {
         if (result.value) {
-            $.post("../../controller/categoria.php?op=eliminar",{cat_id : cat_id}, function (data) {
-                $('#categoria_data').DataTable().ajax.reload();
-
-                Swal.fire({
-                    title: 'Correcto!',
-                    text: 'Se Elimino Correctamente',
-                    icon: 'success',
-                    confirmButtonText: 'Aceptar'
-                })
-            });
+            if (result.value) {
+                $.post("../../controller/categoria.php?op=eliminar",{cat_id : cat_id}, function (data) {
+                    $('#categoria_data').DataTable().ajax.reload();
+    
+                    
+                });
+            }
         }
-    });
+        if (result.isConfirmed) {
+          swalWithBootstrapButtons.fire(
+            'Eliminado!',
+            'Su el resgistro ha sido elimindo.',
+            'success'
+          )
+        } else if (
+          /* Read more about handling dismissals below */
+          result.dismiss === Swal.DismissReason.cancel
+        ) {
+          swalWithBootstrapButtons.fire(
+            'Cancelar',
+            'Se cancelo la elminacion :)',
+            'info'
+          )
+        }
+      })
 }
 
 function nuevo(){

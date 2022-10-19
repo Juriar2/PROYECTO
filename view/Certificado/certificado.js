@@ -20,20 +20,20 @@ $(document).ready(function(){
 
 
         /* Definimos tamaño de la fuente */
-        ctx.font = '40px Arial';
+        ctx.font = '30px Arial';
         ctx.textAlign = "center";
         ctx.textBaseline = 'middle';
         var x = canvas.width / 2;
-        ctx.fillText(data.usu_nom+' '+ data.usu_apep+' '+data.usu_apem, x, 250);
+        ctx.fillText(data.usu_nom+' '+ data.usu_apep+' '+data.usu_apem, x, 275);
         
        
 
-        ctx.font = '18px Arial';
-        ctx.fillText('por assitir al Taller al', x, 295);
         ctx.font = '30px Arial';
-        ctx.fillText(data.cur_nom, x, 330);
+        ctx.textAlign = "right";
+        ctx.fillText(data.cur_nom, x, 329);
 
         ctx.font = '18px Arial';
+        ctx.textAlign = "center";
         ctx.fillText(data.inst_nom+' '+ data.inst_apep+' '+data.inst_apem, x, 420);
         ctx.font = '20px Arial';
         ctx.fillText('Instructor', x, 395);
@@ -41,7 +41,7 @@ $(document).ready(function(){
         ctx.font = '15px Arial';
         ctx.fillText('Fecha de Inicio : '+data.cur_fechini+' / '+'Fecha de Finalización : '+data.cur_fechfin+'', x, 490);
 
-        ctx.fillText('Folio: '+data.usu_id , x, 150);
+
         
 
         

@@ -1,75 +1,53 @@
-body, html {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #000000;
-	
-}
-
-input{
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-family: Arial, Helvetica, sans-serif;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
 }
 
 
 /*Estilos login lo modique todo*/
-.formularioxd{
-	border: 2px solid #08276b ;
-	/*height: 40px;*/
-	padding: 0 10px;
-	font-size: 1.5em;
-	color: #000000	;
-	border-radius: 10px;
-	width: 113%;
-	height: 62px;
-	
-}
-@media  (max-width: 900px){
-	.formularioxd{
-		width: 100%;
-		
-	}
-	
-	
 
-}
-textarea{
-	resize: none;
-	border: 2px solid #08276b ;
-	/*height: 40px;*/
-	padding: 0 10px;
-	font-size: 1.5em;
-	color: #000000	;
-	border-radius: 10px;
-	width: 100%;
-	height: 62px;
-
+.formularioxd {
+    border: 2px solid #08276b;
+    /*height: 40px;*/
+    padding: 0 10px;
+    font-size: 1.5em;
+    color: #000000;
+    border-radius: 10px;
+    width: 113%;
+    height: 62px;
 }
 
-.form{
-	border: 2px solid #08276b ;
-	/*height: 40px;*/
-	padding: 0 10px;
-	font-size: 1.5em;
-	color: #000000	;
-	border-radius: 10px;
-	width: 100%;
-	height: 62px;
+@media (max-width: 900px) {
+    .formularioxd {
+        width: 100%;
+    }
 }
 
 
 /*le indico que todo el texto se centre en input**/
-.formularioxd:focus{
-	border: 2px solid #204ee8;
+
+.formularioxd:focus {
+    border: 2px solid #204ee8;
 }
+
+
 /***estilos para el text dentro de input**/
-.formularioxd::placeholder{
-	color: #000000;
-	font-size:1em;
+
+.formularioxd::placeholder {
+    color: #000000;
+    font-size: 1em;
 }
+
+
 /**para que se ve mas elegenate**/
-.formularioxd:-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #000000;
+
+.formularioxd:-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #000000;
 }
-footer{
+
+footer {
     text-align: right;
     color: #000000;
     margin: 10px;
@@ -77,36 +55,308 @@ footer{
 
 
 /*hace referencia BOTN DEL LOGIN**/
-.button02{
-		background-color: #f12323;
-		color: white;
-		padding: 10px 14px 10px 14px;
-		border: none;
-		cursor: pointer;
-		border-radius: 18px;
-		transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
-		transition-property: initial;
-		font-weight:500;
-		width: 113%;
-		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-		font-size: 1.2em;
-		
- }
- .button02:hover{
-    background-color: #2b7ce6;   
-	list-style: upper-roman;
-	color: black;
- }
- /**dispositivo movil**/
- @media  (max-width: 900px) {
-	.button02{
-		width: 100%;
 
-	}
- }
- /*Finazliza aqui*/
- 
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+.button02 {
+    background-color: #9E8010;
+    color: white;
+    padding: 10px 14px 10px 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 18px;
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+    transition-property: initial;
+    font-weight: 500;
+    width: 113%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+
+.button02:hover {
+    background-color: #2352ec;
+    list-style: upper-roman;
+    color: white;
+}
+
+
+/**dispositivo movil**/
+
+@media (max-width: 900px) {
+    .button02 {
+        width: 100%;
+    }
+}
+
+label.per {
+    margin: 2px;
+    font-size: 1.6em;
+}
+
+.crear {
+    color: black;
+    padding: 8px 8px 8px 8px;
+    cursor: pointer;
+    border-radius: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+
+
+/*arterat del login**/
+
+.alert {
+    color: rgb(252, 38, 38);
+    font-size: 1.2em;
+    margin: -15px;
+    font-weight: 400px;
+}
+
+
+/*Finazliza aqui*/
+
+
+/*dashboard*/
+
+table {
+    width: 50px;
+    
+
+}
+
+th {
+    color: white;
+    background-color: #233C7B;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+tr {
+    color: black;
+    text-align: center;
+    font-size: 1em;
+}
+
+
+/* la barra***/
+
+.br-header {
+    background: #233C7B;
+}
+
+
+/**de logo**/
+
+.br-logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.br-logo.itss {
+    color: white;
+}
+
+
+/***barra lateral*/
+
+.br-sideleft {
+    background-color: #233C7B;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.br-sideleft:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.br-menu-item {
+    color: white;
+}
+
+.br-menu-item:active {
+    color: rgb(152, 12, 218);
+}
+
+.navicon-left {
+    color: white;
+}
+
+.icon {
+    color: white;
+}
+
+.icon:hover {
+    color: black;
+}
+
+.icon:active {
+    color: rgb(22, 54, 236);
+}
+
+.menu01 {
+    color: rgb(241, 234, 234);
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.bg-teal {
+    background-color: #57aaee;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin: 1px;
+}
+
+.tx-11 {
+    color: black;
+    font-size: 1em;
+}
+
+.tx-10 {
+    color: white;
+    font-size: 1em;
+}
+
+.bg-dange {
+    background-color: #4679FA;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin: 6px;
+}
+
+.bg-primar {
+    background-color: #6F81FD;
+    border-top-left-radius: 39px;
+    border-bottom-right-radius: 39px;
+    margin: 6px;
+}
+
+.bg-br-primar {
+    background-color: #587AFA;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin: 6px;
+}
+
+.tx-11 {
+    color: white;
+    font-size: 0.9em;
+}
+
+
+/*finaliza el dashboard*/
+
+
+/*Iniciar  dashboard curso*/
+
+.btnresgis {
+    margin: 20px 25px 25px;
+    background-color: #233C7B;
+    padding: 8px 10px 8px 10px;
+    border: none;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1000;
+}
+
+.btnresgis:hover {
+    border: none;
+    background-color: rgb(38, 84, 235);
+    color: white;
+    font-size: 1.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1000;
+}
+
+
+/**form*/
+
+.form {
+    border: 2px solid #08276b;
+    /*height: 40px;*/
+    padding: 0 10px;
+    font-size: 1.5em;
+    color: #000000;
+    border-radius: 10px;
+    width: 100%;
+    height: 62px;
+}
+
+
+/**se le qutio el boder**/
+
+textarea {
+    resize: none;
+    border: 2px solid #08276b;
+    /*height: 40px;*/
+    padding: 0 10px;
+    font-size: 1.5em;
+    color: #000000;
+    border-radius: 10px;
+    width: 100%;
+    height: 62px;
+}
+
+a {
+    color: #000000;
+}
+
+.formulario__mensaje-exito {
+    font-size: 14px;
+    color: #119200;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo {
+    display: block;
+}
+
+
+/*finaliza aqui  dashboard curso*/
+
+@media (max-width: 490px) {
+    .btnresgistro {
+        background-color: #f12323;
+        color: white;
+        text-shadow: 15px 15px 15px #000000;
+        font-size: 1.2em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 1000;
+        image-resolution: initial;
+    }
+}
+
+
+/*finaliza aqui  dashboard curso*/
+
+
+/* perfil*/
+
+.logged-name {
+    margin: 8px;
+    float: left;
+    color: white;
+    font-size: 1.3em;
+}
+
+
+/** finaliza aqui perfil**/
+
+
+/*Rgistro*/
+
+.tengo {
+    color: black;
+    cursor: pointer;
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+
+
 /*****este estilo pertenece a la pagina principal******/
 
 a {
@@ -114,457 +364,308 @@ a {
     color: #ececec;
 }
 
-
-
-img{
-	display: block;
-  	margin: 1px auto;
-  	max-width:380px;
-  
-  border: #000000;
- }
-  /**dispositivo movil**/
- @media  (max-width: 600px) {
-	img{
-		
-		 
-		  max-width:380px;
-
-	  	
-	 }
- }
- form .error {
-  color: #eb2f2f;
-}
-
-.mostrarClave{
-	margin: 10px;
-	background-color: #9E8010;
-	border-radius: 15px;
-	color: white;
-	text-decoration: none;
-	font-size: .9em;
-	border: #166FE5;
-}
-
-.br-logo{
-	color: white;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1.5em;
-}
-
-.alert{
-
-	color: rgb(252, 38, 38);
-	font-size: 1.2em;
-	margin: -15px;
-	font-weight: 400px;
-	
-	
-
-	
-}
-
-.dust-paarticle
-{
-  position: absolute;
-    width: 100%;
-	
-}
-
-#snell
-{
-  position:absolute;
-  top:0;
-  width:100%;
-  margin:20px;
-}
-
-#eye1
-{
-animation: swing ease-in-out .6s infinite alternate;
-    transform-origin: bottom;
-    transform-box: fill-box;
-    left: calc(52% - 5rem);
-}
-
-#eye2
-{
-	animation: swing ease-in-out .8s infinite alternate;
-    transform-origin: bottom;
-    transform-box: fill-box;
-    left: calc(40% - .0rem);
+img {
+    display: block;
+    margin: 1px auto;
+    max-width: 380px;
+    border: #000000;
 }
 
 
-#dust-paarticle path
-{
- 	 transform-box: fill-box;
-	transform-origin: center;
+/**dispositivo movil**/
+
+@media (max-width: 600px) {
+    img {
+        max-width: 380px;
+    }
 }
 
-/*************swing animacion************/
-@keyframes swing {
-    0% { transform: rotate(8deg); }
-    100% { transform: rotate(-8deg); }
+form .error {
+    color: #eb2f2f;
 }
 
-
-.position-set
-{
-position:absolute;
-  top:50%;
+.mostrarClave {
+    margin: 10px;
+    background-color: #9E8010;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: .9em;
+    border: #166FE5;
 }
 
-
-table{
-	text-align: center;
-	font-size: 1.2em;
-	color: black;
-	background-color: #eccc58;
+.br-menu-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
 }
 
-table th{
-	background-color: #eccc58;
-	color: black;
-	text-align: center;
-	font-size: 1.2em;
-}
-tr th{
-	color: black;
-
-}
- /**dispositivo movil**/
-@media  (max-width: 300px) and (min-width: 1300px) {
-	table ,th ,tr{
-		text-align: center;
-		font-size: 1.2em;
-		color: black;
-		background-color: #eccc58;
-	}
-	
-	table th,tr th{
-		background-color: #eccc58;
-		color: black;
-		text-align: center;
-		font-size: 1.2em;
-	}
-	tr, th, table{
-		color: black;
-	
-	}
-	
+.lista {
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.br-sideleft{
-	background-color: #eccc58;
-	font-family: Arial, Helvetica, sans-serif;
-	color: white;
+.lista0 {
+    font-size: 1.2em;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.br-menu-link{
-	color: black;
-	text-decoration: none;
-	font-size: 1.2em;
-	
-}
-.menu01{
-	color: black;
-	font-size: 1.2em;
-	text-align: center;
+.total {
+    font-size: 1.2em;
+    color: black;
 }
 
-.lista{
-	text-align: center;
-	font-size: 1.2em;
-	color: black;
-	font-family: Arial, Helvetica, sans-serif;
-	
-}
-.lista0{
-	
-	font-size: 1.2em;
-	color: black;
-	font-family: Arial, Helvetica, sans-serif;
-	
+.formulario {
+    border: 2px solid #08276b;
+    /*height: 40px;*/
+    padding: 0 10px;
+    font-size: 1.5em;
+    color: #000000;
+    border-radius: 10px;
+    width: 103%;
+    height: 62px;
 }
 
-
-
-.total{
-	font-size: 1.2em;
-	color: black;
-	
-}
-
-.formulario{
-	border: 2px solid #08276b ;
-	/*height: 40px;*/
-	padding: 0 10px;
-	font-size: 1.5em;
-	color: #000000	;
-	border-radius: 10px;
-	width: 103%;
-	height: 62px;
-	
-}
 
 /*le indico que todo el texto se centre en input**/
-.formulario:focus{
-	border: 2px solid #204ee8;
+
+.formulario:focus {
+    border: 2px solid #204ee8;
 }
+
+
 /***estilos para el text dentro de input**/
-.formulario::placeholder{
-	color: #000000;
-	font-size:1em;
+
+.formulario::placeholder {
+    color: #000000;
+    font-size: 1em;
 }
+
+
 /**para que se ve mas elegenate**/
-.formulario:-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #000000;
+
+.formulario:-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #000000;
 }
 
 
 /**boton perfil**/
-.btngurdar{
-	background-color: #f12323;
-	color: white;
-	padding: 10px 17px;
-	border: none;
-	cursor: pointer;
-	border-radius: 17px;
-	transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
-	transition-property: unset;
-	font-weight:1000;
-	width: 30%;
-}
-.btngurdar:hover{
-	background-color: #1374f3;
-	width: 100%;
-	color: black;
-	
-		
+
+.btngurdar {
+    background-color: #9E8010;
+    color: white;
+    padding: 10px 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 17px;
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+    transition-property: unset;
+    font-weight: 1000;
+    width: 30%;
 }
 
-.perfil{
-	color: black;
-	font-size: 1.8em;
-	font-family: Arial, Helvetica, sans-serif;
-	
-}/**finaliza aqui**/
-/**hace referencia la perfil de usuario**/
-label{
-	margin:0;
-	color: #000000;
-	font-size: 1.3em;
-}
- /**dispositivo movil**/
-@media   (max-width: 490px) {
-	.perfil{
-		color: tomato;
-		font-size: 1.8em;
-		font-family: Arial, Helvetica, sans-serif;
-		margin:0;
-		
-	}
-	label{
-		margin:0;
-		color: #000000;
-		font-size: 1.3em;
-		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	}
-	.btngurdar{
-		background-color: #f12323;
-		color: white;
-		padding: 14px 20px;
-		border: none;
-		cursor: pointer;
-		border-radius: 18px;
-		transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
-		transition-property: initial;
-		font-weight:700;
-		width: 40%;
-		
-		
-	}
-	.btngurdar:hover{
-		background-color: #1374f3;
-		width: 100%;
-		-ms-layout-grid: none;
-	}
-	input{
-		width: 50%;
-		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	}
-	
-}/**finaliza aqui**/
-/**btnpfd*/
-
-.btnpfd{
-	background-color: #f73333;
-	border: none;
-	padding: 12px 12px 12px;
-	cursor: pointer;
-	color: white;
-	font-size: 1.2em;
-	border-radius: 20px;
-	width: 40%;
-
-} 
-.btnimpr{
-	background-color: #3a78ec;
-	border: none;
-	padding: 12px 12px 12px;
-	cursor: pointer;
-	color: white;
-	font-size: 1.2em;
-	border-radius: 20px;
-	width: 40%;
-	margin: 10px 10px 10px;
-}
-/**dispositivo movil**/
-
-@media   (max-width: 490px){
-	.btnpfd{
-	background-color: #f73333;
-	border: none;
-	padding: 12px 12px 12px;
-	cursor: pointer;
-	color: white;
-	font-size: 1.2em;
-	border-radius: 20px;
-	width: 50%;
-	}	
+.btngurdar:hover {
+    background-color: #08276b;
+    width: 40%;
+    color: white;
 }
 
-/** finaliza aqui btnpfd*/
-/**estilos botonAdminMntUsuario***/
-/**es para esconder el elemento strong que tinee escrito **/
- /**dispositivo movil**/
-@media  (max-width: 500px){
-	strong{
-		visibility: hidden;
-	}
-	hr{
-	display: none;	
-	}
+.perfil {
+    color: black;
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.btnresgis{
-	margin: 20px 25px 25px;
-	background-color: #1374f3;
-	padding: 8px 10px 8px 10px;
-	border:none;
-	border-radius: 15px;
-	cursor: pointer;
-	color: white;
-	font-size: 1.2em;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-weight: 1000;
-	
-}
 
-.btnresgis:hover{
-	border:none;
-	background-color: #f12323;
-	color: white;
-	font-size: 1.2em;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-weight: 1000;
-	
-	
-}
-
-hr{
-	border: 0.5px solid #000000;
-	
-	margin: -0.9px;
-}
-
-@media   (max-width: 490px){
-	.btnresgistro{
-		background-color: #f12323;
-		color: white;
-		text-shadow: 15px 15px 15px  #000000;
-		font-size: 1.2em;
-		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-		font-weight: 1000;
-		image-resolution: initial;
-	}	
-}
-
-/**perfil**/
-.logged-name{
-	margin: 8px;
-	float: left;
-	color: #000000;
-	font-size: 1.3em;
-}
-logged-name:hover{
-	color: #ec1919;
-}
 /**finaliza aqui**/
 
-/**das**/
-.resgistro01{
-	background-color: #166FE5;
-	color: white;
-	padding: 14px 20px;
-	border: none;
-	cursor: pointer;
-	border-radius: 18px;
-	transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
-	transition-property: initial;
-	font-weight:700;
-}
-.resgistro01:hover{
-	background-color: #2b7ce6;
+
+/**hace referencia la perfil de usuario**/
+
+label {
+    margin: 0;
+    color: #000000;
+    font-size: 1.3em;
 }
 
-.resgistro02{
-	background-color: #ec1919;
-	color: white;
-	padding: 14px 20px;
-	border: none;
-	cursor: pointer;
-	border-radius: 18px;
-	transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
-	transition-property: initial;
-	font-weight:700;
+
+/**dispositivo movil**/
+
+@media (max-width: 490px) {
+    .perfil {
+        color: tomato;
+        font-size: 1.8em;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+    label {
+        margin: 0;
+        color: #000000;
+        font-size: 1.3em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .btngurdar {
+        background-color: #f12323;
+        color: white;
+        padding: 14px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 18px;
+        transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+        transition-property: initial;
+        font-weight: 700;
+        width: 40%;
+    }
+    .btngurdar:hover {
+        background-color: #1374f3;
+        width: 100%;
+        -ms-layout-grid: none;
+    }
+    input {
+        width: 50%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
 }
-.resgistro02:hover{
-	background-color: #ee4646;
-}/*finaliza aqui**/
+
+
+/**finaliza aqui**/
+
+
+/**btnpfd*/
+
+.btnpfd {
+    background-color: #f73333;
+    border: none;
+    padding: 12px 12px 12px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 20px;
+    width: 40%;
+}
+
+
+/**dispositivo movil**/
+
+@media (max-width: 490px) {
+    .btnpfd {
+        background-color: #f73333;
+        border: none;
+        padding: 12px 12px 12px;
+        cursor: pointer;
+        color: white;
+        font-size: 1.2em;
+        border-radius: 20px;
+        width: 50%;
+    }
+}
+
+
+/** finaliza aqui btnpfd*/
+
+
+/**estilos botonAdminMntUsuario***/
+
+
+/**es para esconder el elemento strong que tinee escrito **/
+
+
+/**dispositivo movil**/
+
+@media (max-width: 500px) {
+    strong {
+        visibility: hidden;
+    }
+    hr {
+        display: none;
+    }
+}
+
+logged-name:hover {
+    color: #ec1919;
+}
+
+.strong {
+    margin: 8px;
+    float: left;
+    color: #000000;
+    font-size: 1.3em;
+}
+
+
+/**finaliza aqui**/
+
+
+/**das**/
+
+.resgistro01 {
+    background-color: #166FE5;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 18px;
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+    transition-property: initial;
+    font-weight: 700;
+}
+
+.resgistro01:hover {
+    background-color: #2b7ce6;
+}
+
+.resgistro02 {
+    background-color: #ec1919;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 18px;
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+    transition-property: initial;
+    font-weight: 700;
+}
+
+.resgistro02:hover {
+    background-color: #ee4646;
+}
+
+
+/*finaliza aqui**/
+
 
 /****acerca***/
- a{
-	text-align: left;
-	color: white;
 
-}
-.logo{
-	font-size: 1.2em;
-}
-.container{
-	font-size: .9em;
+a {
+    text-align: left;
+    color: white;
 }
 
-.hola{
-	background-color: #57aaee;
-	color: white;
-	font-size: 1.5em;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	text-align: center;
-	padding: 10px;
-	
+.logo {
+    font-size: 1.2em;
 }
 
-.center{
-	text-align: left;
-	
-	
+.container {
+    font-size: .9em;
 }
+
+.hola {
+    background-color: #57aaee;
+    color: white;
+    font-size: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.center {
+    text-align: left;
+}
+
 
 /****finazliza***/
 
@@ -572,36 +673,25 @@ logged-name:hover{
 /*****AdminMntUsuario/admin*/
 
 .user,
-.useractivo
-{
-	text-align: center;
-	color: #000000;
-	font-size: 1.3em;
-	text-shadow: 2px 2px 2px tomato;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.useractivo {
+    text-align: center;
+    color: #000000;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 2px tomato;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-@media  (max-width: 460px){
-	.dtr-title{
-		visibility: hidden;
-		list-style: none;
-	}
-	span,
-	.dtr-title{
-		
-		
-		width: auto;
-		
-	}
-	.dtr-details{
-		list-style: none;
-		text-align: left;
-	}
-}
-
-span.emailjs{
-    color: black;
-    font-size: 1.1em;
-    margin: 2px 2px 2px;
-    float: right;
+@media (max-width: 460px) {
+    .dtr-title {
+        visibility: hidden;
+        list-style: none;
+    }
+    span,
+    .dtr-title {
+        width: auto;
+    }
+    .dtr-details {
+        list-style: none;
+        text-align: left;
+    }
 }

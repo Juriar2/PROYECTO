@@ -49,7 +49,7 @@ $(document).ready(function(){
             type:"post"
         },
         "bDestroy": true,
-        "responsive": true,
+        "responsive": false,
         "bInfo":true,
         "iDisplayLength": 10,
         "order": [[ 0, "desc" ]],
@@ -83,7 +83,7 @@ $(document).ready(function(){
 });
 
 function editar(usu_id){
-    $.post("../../controller/usuario.php?op=mostrar",{usu_id : usu_id}, function (data) {
+    $.post("../../controller/usuario.php?op=mostrar_perfil",{usu_id : usu_id}, function (data) {
         console.log(data);
         data = JSON.parse(data);
         $('#usu_id').val(data.usu_id);
@@ -95,9 +95,11 @@ function editar(usu_id){
         $('#usu_sex').val(data.usu_sex).trigger('change');
         $('#rol_id').val(data.rol_id).trigger('change');
         $('#usu_telf').val(data.usu_telf);
+        $('#usu_carre').val(data.usu_carre).trigger('change');
+        $('#usu_si').val(data.usu_si).trigger('change');
         $('#usu_matri').val(data.usu_matri);
     });
-    $('#lbltitulo').html('Editar Registro');
+    $('#lbltitulo').html('Modificar Rgistro');
     $('#modalmantenimiento').modal('show');
 }
 

@@ -18,7 +18,7 @@
     <?php require_once("../html/MainHeader.php"); ?>
 
     <div class="br-mainpanel">
-    <button class="btnresgis" id="add_button" onclick="nuevo()"><i class="fa fa-plus-square mg-r-10"></i> Nuevo Registro</button> <strong>Para mostrar un modal presione Ctrl+Q y Ecs para cerra</strong>
+    <button class="btnresgis" id="add_button" onclick="nuevo()"><i class="fa fa-plus-square mg-r-10"></i> Nuevo Registro</button>
     <hr>
       <div class="br-pagebody">
         <div class="br-section-wrapper">
@@ -30,7 +30,7 @@
             
 
             <div class="table-wrapper"></div>
-                <table id="instructor_data" class="table display responsive nowrap">
+                <table id="instructor_data" style="width:101%" class="table-bordered table-responsive">
                 <thead>
                     <tr>
                     <th class="wd-15p">Nombre</th>
@@ -60,6 +60,7 @@
 
   </body>
 </html>
+
 <?php
   }else{
     /* Si no a iniciado sesion se redireccionada a la ventana principal */

@@ -4,6 +4,7 @@ var usu_id = $('#usu_idx').val();
 function init(){
     $("#instructor_form").on("submit",function(e){
         guardaryeditar(e);
+        alert('todo los campos son oblogatorio');
     });
 }
 
