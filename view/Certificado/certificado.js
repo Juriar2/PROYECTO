@@ -20,26 +20,26 @@ $(document).ready(function(){
 
 
         /* Definimos tamaño de la fuente */
-        ctx.font = '30px Arial';
+        ctx.font = '27px Arial';
         ctx.textAlign = "center";
         ctx.textBaseline = 'middle';
         var x = canvas.width / 2;
-        ctx.fillText(data.usu_nom+' '+ data.usu_apep+' '+data.usu_apem, x, 275);
+        ctx.fillText(data.usu_nom+' '+ data.usu_apep+' '+data.usu_apem, x, 277);
         
        
 
-        ctx.font = '30px Arial';
-        ctx.textAlign = "right";
-        ctx.fillText(data.cur_nom, x, 329);
+        ctx.font = '27px Arial';
+        ctx.textAlign = "left";
+        ctx.fillText(data.cur_nom, x, 330);
 
-        ctx.font = '18px Arial';
+        /*ctx.font = '18px Arial';
         ctx.textAlign = "center";
-        ctx.fillText(data.inst_nom+' '+ data.inst_apep+' '+data.inst_apem, x, 420);
+        ctx.fillText(data.inst_nom+' '+ data.inst_apep+' '+data.inst_apem, x, 350);
         ctx.font = '20px Arial';
-        ctx.fillText('Instructor', x, 395);
-
-        ctx.font = '15px Arial';
-        ctx.fillText('Fecha de Inicio : '+data.cur_fechini+' / '+'Fecha de Finalización : '+data.cur_fechfin+'', x, 490);
+        ctx.fillText('Instructor', x, 395);*/
+        ctx.textAlign = "center";
+        ctx.font = '22px Arial';
+        ctx.fillText('Fecha de Inicio : '+data.cur_fechini+'--'+'Fecha de Finalización : '+data.cur_fechfin+'', x, 490);
 
 
         

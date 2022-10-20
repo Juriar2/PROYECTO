@@ -547,6 +547,16 @@ label {
     border-radius: 20px;
     width: 40%;
 }
+.btnpfd:hover {
+    background-color: #4548eb;
+    border: none;
+    padding: 12px 12px 12px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 20px;
+    width: 40%;
+}
 
 
 /**dispositivo movil**/

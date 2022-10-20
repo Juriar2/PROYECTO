@@ -1,26 +1,11 @@
 var usu_id = $('#usu_idx').val();
+
 $(document).ready(function(){
-    $.post("../../controller/usuario.php?op=total", {usu_id:usu_id }, function (data) {
+
+    $.post("../../controller/usuario.php?op=total", { usu_id : usu_id }, function (data) {
         data = JSON.parse(data);
         $('#lbltotal').html(data.total);
     });
-    $.post("../../controller/usuario.php?op=total2", {usu_id:usu_id }, function (data) {
-        data = JSON.parse(data);
-        $('#lbltotal2').html(data.total);
-    });
-    $.post("../../controller/usuario.php?op=total3", {usu_id:usu_id }, function (data) {
-        data = JSON.parse(data);
-        $('#lbltotal3').html(data.total);
-    });
-    $.post("../../controller/usuario.php?op=total4", {usu_id:usu_id }, function (data) {
-        data = JSON.parse(data);
-        $('#lbltotal4').html(data.total);
-    });
-    $.post("../../controller/usuario.php?op=total5", {usu_id:usu_id }, function (data) {
-        data = JSON.parse(data);
-        $('#lbltotal5').html(data.total);
-    });
-    
 
     $('#cursos_data').DataTable({
         "aProcessing": true,

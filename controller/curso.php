@@ -43,7 +43,7 @@
             foreach($datos as $row){
                 $sub_array = array();
                 $sub_array[] = $row["cat_nom"];
-                $sub_array[] = '<a href="'.$row["cur_img"].'" target="_blank">'.strtoupper($row["cur_nom"]).'</a>';
+                $sub_array[] = '<a style="color:black;" href="'.$row["cur_img"].'" target="_blank">'.strtoupper($row["cur_nom"]).'</a>';
                 $sub_array[] = $row["cur_fechini"];
                 $sub_array[] = $row["cur_fechfin"];
                 $sub_array[] = $row["inst_nom"] ." ". $row["inst_apep"] ." ". $row["inst_apem"];

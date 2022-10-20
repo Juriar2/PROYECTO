@@ -32,7 +32,7 @@
           <p class="lista">Desde aqui podra buscar sus cursos por certificado.</p>
 
           <div class="table-wrapper">
-            <table id="cursos_data" style="width:101%" class="table-bordered table-responsive mi_tabla">
+            <table id="cursos_data" class="table table-bordered">
               <thead class="halo" >
                 <tr>
                   <th class="wd-15p">Curso</th>
@@ -52,13 +52,12 @@
 
     </div>
     <?php require_once("../html/MainJs.php");?>
-    
     <script src="usucurso.js"></script>
   </body>
 </html>
 <?php
   }else{
-    /* Si no a iniciado sesion se redireccionada a la ventana principal */
+    /* se redireccionada a la ventana principal */
     header("Location:".Conectar::ruta()."login");
   }
 ?>

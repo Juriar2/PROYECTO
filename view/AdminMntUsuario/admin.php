@@ -3,7 +3,6 @@
   require_once("../../config/config.php");
   if(isset($_SESSION["usu_id"])){
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -30,7 +29,7 @@
             <h6 class="user">Usuario</h6>
             <p class="useractivo">Usuarios activos</p>
             <div class="table-wrapper"></div>
-                <table id="usuario_data" style="width:50%" class="table-responsive">
+                <table id="usuario_data" style="width:95%" class="table-responsive">
                 <thead>
                   
                     <tr>
@@ -40,10 +39,9 @@
                     <th class="wd-15p">Ape.Materno</th>
                     <th class="wd-15p">Correo</th>
                     <th class="wd-15p">Telefono</th>
-                    <th class="wd-15p">Carrera</th>
-                    <th class="wd-15p">Estudiante o no?</th>
+                     <th class="wd-15p">Grupo</th>
+                    <th class="wd-15p">Grado</th>
                     <th class="wd-15p">Rol</th>
-                    
                     <th class="wd-10p"></th>
                     <th class="wd-10p"></th>
 
@@ -74,8 +72,7 @@
 </html>
 <?php
   }else{
-    /* Si no a iniciado sesion se redireccionada a la ventana principal */
+    /*  redireccionada a la ventana principal */
     header("Location:".Conectar::ruta()."login");
   }
 ?>
- 

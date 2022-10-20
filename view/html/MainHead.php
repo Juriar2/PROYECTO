@@ -30,10 +30,5 @@
 
 <link rel="stylesheet" href="../../asset/css/inciar_sesion.css">
 
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-<link rel="stylesheet" href="../../asset/css/loader.css">
-
-<link rel="stylesheet" href="../../asset/css/overhang.min.css">
-
-
+<link rel="stylesheet" href="../../asset/css/wickedcss.min.css">

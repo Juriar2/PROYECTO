@@ -1,16 +1,14 @@
-
 <?php
   /* Llamamos al archivo de conexion.php */
   require_once("../../config/config.php");
   if(isset($_SESSION["usu_id"])){
-  
 ?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <?php require_once("../html/MainHead.php"); ?>
 
-    <title>Curso</title>
+    <title>Empresa::MntCurso</title>
   </head>
 
   <body>
@@ -20,7 +18,7 @@
     <?php require_once("../html/MainHeader.php"); ?>
 
     <div class="br-mainpanel">
-    <button class="btnresgis" id="add_button" onclick="nuevo()"><i class="fa fa-plus-square mg-r-10"></i> Nuevo Registro</button>
+    <button class="btnresgis" id="add_button" onclick="nuevo()"><i class="fa fa-plus-square mg-r-10"></i> Nuevo Registro</button> <strong>Para mostrar un modal presione Ctrl+Q y Ecs para cerra</strong>
 
     <hr>  
       
@@ -32,19 +30,17 @@
         <p class="mg-b-0">Mantenimiento</p>
         </div>
             <div class="table-wrapper">
-                <table id="cursos_data"style="width:102%"  class="table-bordered table-responsive">
+                <table id="cursos_data" style="width:95%" class="table-responsive">
                 <thead>
                     <tr>
-                      
                     <th class="wd-15p">Categoria</th>
-                    <th  class="wd-15p">Taller</th>
+                    <th class="wd-15p">Nombre</th>
                     <th class="wd-15p">Fech.Inicio</th>
-                    <th class="wd-15p">Fech.Fin</th>
+                    <th class="wd-20p">Fech.Fin</th>
                     <th class="wd-15p">Instructor</th>
                     <th class="wd-10p"></th>
                     <th class="wd-10p"></th>
                     <th class="wd-10p"></th>
-                    
                     </tr>
                 </thead>
                 <tbody>
@@ -53,7 +49,6 @@
                 </table>
             </div>
 
-            
         </div>
       </div>
     </div>

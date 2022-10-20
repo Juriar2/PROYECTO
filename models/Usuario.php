@@ -25,7 +25,7 @@
                         $_SESSION["usu_correo"]=$resultado["usu_correo"];
                         $_SESSION["rol_id"]=$resultado["rol_id"];
                         /*TODO: Si todo esta correcto indexar en home */
-                        header("Location:".Conectar::ruta()."view/UsuHome/Usuario");
+                        header("Location:".Conectar::ruta()."view/UsuHome/Dashboard");
                         exit();
                     }else{
                         /*TODO: En caso no coincidan el usuario o la contraseña */
@@ -201,9 +201,9 @@
             return $resultado=$sql->fetchAll();
         }
 
-        /*TODO: Actualizar la informacion del perfil*/
-    public function update_usuario_perfil($usu_id,$usu_nom,$usu_apep,$usu_apem,$usu_pass,$usu_sex,$usu_telf,$usu_gra,$usu_grup,$usu_gef){
-        $conectar= parent::conexion();
+        /*TODO: Actualizar la informacion del perfil del usuario segun ID */
+        public function update_usuario_perfil($usu_id,$usu_nom,$usu_apep,$usu_apem,$usu_pass,$usu_sex,$usu_telf){
+            $conectar= parent::conexion();
             parent::set_names();
             $sql="UPDATE tm_usuario 
                 SET
@@ -212,10 +212,7 @@
                     usu_apem = ?,
                     usu_pass = ?,
                     usu_sex = ?,
-                    usu_telf = ?,
-                    usu_gra  =?,
-                    usu_grup  =?,
-                    usu_gef   =?
+                    usu_telf = ?
                 WHERE
                     usu_id = ?";
             $sql=$conectar->prepare($sql);
@@ -225,71 +222,68 @@
             $sql->bindValue(4, $usu_pass);
             $sql->bindValue(5, $usu_sex);
             $sql->bindValue(6, $usu_telf);
-            $sql->bindValue(7, $usu_gra);
-            $sql->bindValue(8, $usu_grup);/***se  puede agregar otro debajo siguinedo el */
-            $sql->bindValue(9, $usu_gef);
-            $sql->bindValue(10, $usu_id);
+            $sql->bindValue(7, $usu_id);
             $sql->execute();
             return $resultado=$sql->fetchAll();
-    }
+        }
 
         /*TODO: Funcion para insertar usuario */
-         public function insert_usuario($usu_nom,$usu_apep,$usu_apem,$usu_correo,$usu_pass,$usu_sex,$usu_telf,$usu_carre,$usu_si,$rol_id,$usu_matri){
-                $conectar= parent::conexion();
-                parent::set_names();
-                $sql="INSERT INTO tm_usuario (usu_id,usu_nom,usu_apep,usu_apem,usu_correo,usu_pass,usu_sex,usu_telf,usu_carre,usu_si,rol_id,usu_matri,fech_crea, est) VALUES (NULL,?,?,?,?,?,?,?,?,?,?,?,now(),'1');";
-                $sql=$conectar->prepare($sql);
-                $sql->bindValue(1, $usu_nom);
-                $sql->bindValue(2, $usu_apep);
-                $sql->bindValue(3, $usu_apem);
-                $sql->bindValue(4, $usu_correo);
-                $sql->bindValue(5, $usu_pass);
-                $sql->bindValue(6, $usu_sex);
-                $sql->bindValue(7, $usu_telf);
-                $sql->bindValue(8, $usu_carre);
-                $sql->bindValue(9, $usu_si);
-                $sql->bindValue(10, $rol_id);
-                $sql->bindValue(11, $usu_matri);
-                $sql->execute();
-                return $resultado=$sql->fetchAll();
-            }
+        public function insert_usuario($usu_nom,$usu_apep,$usu_apem,$usu_correo,$usu_pass,$usu_sex,$usu_telf,$usu_gra,$usu_grup,$rol_id,$usu_matri){
+            $conectar= parent::conexion();
+            parent::set_names();
+            $sql="INSERT INTO tm_usuario (usu_id,usu_nom,usu_apep,usu_apem,usu_correo,usu_pass,usu_sex,usu_telf,usu_gra,usu_grup,rol_id,usu_matri,fech_crea, est) VALUES (NULL,?,?,?,?,?,?,?,?,?,?,?,now(),'1');";
+            $sql=$conectar->prepare($sql);
+            $sql->bindValue(1, $usu_nom);
+            $sql->bindValue(2, $usu_apep);
+            $sql->bindValue(3, $usu_apem);
+            $sql->bindValue(4, $usu_correo);
+            $sql->bindValue(5, $usu_pass);
+            $sql->bindValue(6, $usu_sex);
+            $sql->bindValue(7, $usu_telf);
+            $sql->bindValue(8, $usu_gra);
+            $sql->bindValue(9, $usu_grup);
+            $sql->bindValue(10, $rol_id);
+            $sql->bindValue(11, $usu_matri);
+            $sql->execute();
+            return $resultado=$sql->fetchAll();
+        }
 
         /*TODO: Funcion para actualizar usuario */
-            public function update_usuario($usu_id,$usu_nom,$usu_apep,$usu_apem,$usu_correo,$usu_pass,$usu_sex,$usu_telf,$usu_carre,$usu_si,$rol_id,$usu_matri){
-                $conectar= parent::conexion();
-                parent::set_names();
-                $sql="UPDATE tm_usuario
-                    SET
-                        usu_nom = ?,
-                        usu_apep = ?,
-                        usu_apem = ?,
-                        usu_correo = ?,
-                        usu_pass = ?,
-                        
-                        usu_sex = ?,
-                        usu_telf = ?,
-                        usu_carre=?,
-                        usu_si=?,
-                        rol_id = ?,
-                        usu_matri = ?
-                    WHERE
-                        usu_id = ?";
-                $sql=$conectar->prepare($sql);
-                $sql->bindValue(1, $usu_nom);
-                $sql->bindValue(2, $usu_apep);
-                $sql->bindValue(3, $usu_apem);
-                $sql->bindValue(4, $usu_correo);
-                $sql->bindValue(5, $usu_pass);
-                $sql->bindValue(6, $usu_sex);
-                $sql->bindValue(7, $usu_telf);
-                $sql->bindValue(8, $usu_carre);
-                $sql->bindValue(9, $usu_si);
-                $sql->bindValue(10, $rol_id);
-                $sql->bindValue(11, $usu_matri);
-                $sql->bindValue(12, $usu_id);
-                $sql->execute();
-                return $resultado=$sql->fetchAll();
-            }
+        public function update_usuario($usu_id,$usu_nom,$usu_apep,$usu_apem,$usu_correo,$usu_pass,$usu_sex,$usu_telf,$usu_gra,$usu_grup,$rol_id,$usu_matri){
+            $conectar= parent::conexion();
+            parent::set_names();
+            $sql="UPDATE tm_usuario
+                SET
+                    usu_nom = ?,
+                    usu_apep = ?,
+                    usu_apem = ?,
+                    usu_correo = ?,
+                    usu_pass = ?,
+                    usu_sex = ?,
+                    usu_telf = ?,
+                    usu_gra=  ?,
+                    usu_grup=?,
+                    rol_id = ?,
+                    usu_matri = ?
+                WHERE
+                    usu_id = ?";
+            $sql=$conectar->prepare($sql);
+            $sql->bindValue(1, $usu_nom);
+            $sql->bindValue(2, $usu_apep);
+            $sql->bindValue(3, $usu_apem);
+            $sql->bindValue(4, $usu_correo);
+            $sql->bindValue(5, $usu_pass);
+            $sql->bindValue(6, $usu_sex);
+            $sql->bindValue(7, $usu_telf);
+            $sql->bindValue(8, $usu_gra);
+            $sql->bindValue(9, $usu_grup);
+            $sql->bindValue(10, $rol_id);
+            $sql->bindValue(11, $usu_matri);
+            $sql->bindValue(12, $usu_id);
+            $sql->execute();
+            return $resultado=$sql->fetchAll();
+        }
+
         /*TODO: Eliminar cambiar de estado a la categoria */
         public function delete_usuario($usu_id){
             $conectar= parent::conexion();

@@ -7,9 +7,22 @@ $(document).ready(function(){
         "aServerSide": true,
         dom: 'Bfrtip',
         buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
+            {
+                "extend": "copyHtml5",
+                "text": "<i class='far fa-copy'></i> Copiar",
+                "titleAttr":"Copiar",
+                "className": "btn btn-primary btn-sm"
+            },{
+                "extend": "excelHtml5",
+                "text": "<i class='fas fa-file-excel'></i> Excel",
+                "titleAttr":"Esportar a Excel",
+                "className": "" 
+            },{
+                "extend": "csvHtml5",
+                "text": "<i class='fas fa-file-csv'></i> CSV",
+                "titleAttr":"Esportar a CSV",
+                "className": ""
+            }
             
            
         ],
@@ -52,6 +65,6 @@ $(document).ready(function(){
 });
 
 function certificado(curd_id){
+    console.log(curd_id);
     window.open('../Certificado/Certificado?curd_id='+ curd_id +'','_blank');
-
 }

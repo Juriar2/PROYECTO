@@ -40,7 +40,7 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Sexo: <span class="tx-danger">*</span></label>
-                            <select class="form select" style="width:100%" name="inst_sex" id="inst_sex"  data-placeholder="Seleccione">
+                            <select class="form select2" style="width:100%" name="inst_sex" id="inst_sex"  data-placeholder="Seleccione">
                                 <option label="Seleccione"></option>
                                 <option value="M">Masculino</option>
                                 <option value="F">Femenino</option>

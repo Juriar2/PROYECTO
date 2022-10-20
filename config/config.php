@@ -32,7 +32,7 @@
         /*TODO: Ruta principal del proyecto */
         public static function ruta(){
             //QA
-            return "https://localhost/itss/";
+            return "https://localhost/xd/";
             
            
         }

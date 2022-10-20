@@ -12,7 +12,7 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Nombre: <span class="tx-danger">*</span></label>
-                            <input class="form tx-uppercase" id="cat_nom" type="text" name="cat_nom" placeholder="Nombre del instructor" />
+                            <input class="form tx-uppercase" id="cat_nom" type="text" name="cat_nom" placeholder="Nombre del instructor" required/>
                         </div>
                     </div>
 

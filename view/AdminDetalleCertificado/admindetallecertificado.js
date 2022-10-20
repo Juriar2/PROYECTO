@@ -163,7 +163,7 @@ function listar_usuario(cur_id){
     });
 }
 
-function resgistrar(){
+function registrardetalle(){
     table = $('#usuario_data').DataTable();
     var usu_id =[];
 

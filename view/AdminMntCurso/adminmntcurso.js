@@ -51,7 +51,7 @@ $('#cursos_data').DataTable({
             type:"post"
         },
         "bDestroy": true,
-        "responsive": true,
+        "responsive": false,
         "bInfo":true,
         "iDisplayLength": 10,
         "order": [[ 0, "desc" ]],
