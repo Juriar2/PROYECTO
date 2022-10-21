@@ -147,29 +147,12 @@ function combo_instructor(){
     });
 }
 
-function guardaryeditarimg(e){
-    e.preventDefault();
-    var formData = new FormData($("#detalle_form")[0]);
-    $.ajax({
-        url: "../../controller/curso.php?op=update_imagen_curso",
-        type: "POST",
-        data: formData,
-        contentType: false,
-        processData: false,
-        success: function(datos){ 
-            $('#cursos_data').DataTable().ajax.reload();
-            Swal.fire({
-                title: 'Correcto!',
-                text: 'Se Actualizo Correctamente',
-                icon: 'success',
-                confirmButtonText: 'Aceptar'
-            })
-            $("#modalfile").modal('hide');
 
-        }
-    });
+
+function vali (phone) {
+    var regex = new RegExp('^\([0-9]{2}\)((3[0-9]{3}-[0-9]{4})|(9[0-9]{3}-[0-9]{5}))$');
+    return regex.test(phone);
 }
-
 init();
 
 

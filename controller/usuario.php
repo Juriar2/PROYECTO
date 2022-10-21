@@ -85,13 +85,73 @@
         case "total":
             $datos=$usuario->get_total_cursos_x_usuario($_POST["usu_id"]);
             if(is_array($datos)==true and count($datos)>0){
-                foreach($datos as $row)
-                {
+                foreach($datos as $row){
                     $output["total"] = $row["total"];
-                }
-                echo json_encode($output);
+
+                        }
+                    echo json_encode($output);
             }
-            break;
+                break;
+            case "total2":
+            $datos=$usuario->get_total_cursos_x_usuario2($_POST["usu_id"]);
+            if(is_array($datos)==true and count($datos)>0){
+                foreach($datos as $row)
+                    {
+                        $output["total"] = $row["total"];
+
+                    }
+                    echo json_encode($output);
+
+                    }
+                    break;
+
+            case "total3":
+            $datos=$usuario->get_total_cursos_x_usuario3($_POST["usu_id"]);
+                if(is_array($datos)==true and count($datos)>0){
+                    foreach($datos as $row)
+                    {
+                        $output["total"] = $row["total"];
+
+                    }
+                        echo json_encode($output);
+
+                    }
+                        break;
+    
+            case "total4":
+            $datos=$usuario->get_total_cursos_x_usuario4($_POST["usu_id"]);
+                if(is_array($datos)==true and count($datos)>0){
+                    foreach($datos as $row)
+                    {
+                    $output["total"] = $row["total"];
+
+                }
+                    echo json_encode($output);
+             }
+                break;    /*TODO: Total de Cursos por usuario para el dashboard  finaliza aqui*/
+             
+             case "total4":
+            $datos=$usuario->get_total_cursos_x_usuario4($_POST["usu_id"]);
+                if(is_array($datos)==true and count($datos)>0){
+                    foreach($datos as $row)
+                    {
+                    $output["total"] = $row["total"];
+
+                }
+                    echo json_encode($output);
+             }
+                break;    /*TODO: Total de Cursos por usuario para el dashboard  finaliza aqui*/
+                case "total5":
+                    $datos=$usuario->get_total_cursos_x_usuario5($_POST["usu_id"]);
+                        if(is_array($datos)==true and count($datos)>0){
+                            foreach($datos as $row)
+                            {
+                            $output["total"] = $row["total"];
+        
+                        }
+                            echo json_encode($output);
+                     }
+                    break;
         /*TODO: Mostrar informacion del usuario en la vista perfil */
         case "mostrar":
             $datos = $usuario->get_usuario_x_id($_POST["usu_id"]);

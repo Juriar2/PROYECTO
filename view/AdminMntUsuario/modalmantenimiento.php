@@ -58,7 +58,7 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Telefono: <span class="tx-danger">*</span></label>
-                            <input class="form " id="usu_telf" type="tel" name="usu_telf" placeholder="123-748-4578" pattern="\x2b[0-9]+" required />
+                            <input class="form " id="usu_telf" type="tel" name="usu_telf" placeholder="123-748-4578" pattern="[0-9]+" required />
                         </div>
                     </div>
                     <div class="col-lg-12">

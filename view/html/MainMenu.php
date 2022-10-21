@@ -1,10 +1,10 @@
-<div class="br-logo"><a href="../UsuHome/dashboard"><span>[</span>ITSS<span>]</span></a></div>
+<div class="br-logo"><a href="../UsuHome/Dashboard"><span>[</span>ITSS<span>]</span></a></div>
 
 <div class="br-sideleft overflow-y-auto">
   <label class="menu01">dashboard</label>
   <div class="br-sideleft-menu">
 
-    <a href="../UsuHome/dashboard" class="br-menu-link">
+    <a href="../UsuHome/Dashboard" class="br-menu-link">
       <div class="br-menu-item">
         <i class="fa fa-tachometer tx-22"></i>
         <span class="menu-item-label">dashboard</span>

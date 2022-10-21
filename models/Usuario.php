@@ -172,12 +172,49 @@
         public function get_total_cursos_x_usuario($usu_id){
             $conectar= parent::conexion();
             parent::set_names();
-            $sql="SELECT count(*) as total FROM td_curso_usuario WHERE usu_id=?";
+            $sql="SELECT count(*) as total FROM tm_usuario WHERE  ?";
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1, $usu_id);
             $sql->execute();
             return $resultado=$sql->fetchAll();
         }
+        public function get_total_cursos_x_usuario2($usu_id){
+            $conectar= parent::conexion();
+            parent::set_names();
+            $sql="SELECT count(*) as total FROM tm_curso WHERE ?";
+            $sql=$conectar->prepare($sql);
+            $sql->bindValue(1, $usu_id);
+            $sql->execute();
+            return $resultado=$sql->fetchAll();
+            }
+            public function get_total_cursos_x_usuario3($usu_id){
+            $conectar= parent::conexion();
+            parent::set_names();
+            $sql="SELECT count(*) as total FROM tm_instructor WHERE ?";
+            $sql=$conectar->prepare($sql);
+            $sql->bindValue(1, $usu_id);
+            $sql->execute();
+            return $resultado=$sql->fetchAll();
+       
+        }
+        public function get_total_cursos_x_usuario4($usu_id){
+            $conectar= parent::conexion();
+            parent::set_names();
+            $sql="SELECT count(*) as total FROM tm_categoria WHERE ?";
+            $sql=$conectar->prepare($sql);
+            $sql->bindValue(1, $usu_id);
+            $sql->execute();
+            return $resultado=$sql->fetchAll();/*TODO: Cantidad de Cursos por Usuario finaliza aqui */
+        }
+        public function get_total_cursos_x_usuario5($usu_id){
+            $conectar= parent::conexion();
+            parent::set_names();
+            $sql="SELECT count(*) as total FROM td_curso_usuario WHERE usu_id=?";
+            $sql=$conectar->prepare($sql);
+            $sql->bindValue(1, $usu_id);
+            $sql->execute();
+            return $resultado=$sql->fetchAll();
+            }
 
         /*TODO: Mostrar los datos del usuario segun el ID */
         public function get_usuario_x_id($usu_id){
