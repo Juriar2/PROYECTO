@@ -33,7 +33,7 @@
                 <table id="cursos_data"  class="table-bordered table-responsive">
                 <thead>
                     <tr>
-                    <th class="wd-8p">NO°</th>
+                    
                     <th class="wd-12p">Categoria</th>
                     <th class="wd-15p">Nombre</th>
                     <th class="wd-15p">Fech.Inicio</th>

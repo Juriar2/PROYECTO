@@ -42,7 +42,6 @@
             $data= Array();
             foreach($datos as $row){
                 $sub_array = array();
-                $sub_array[] = $row["cat_id"];
                 $sub_array[] = $row["cat_nom"];
                 $sub_array[] = '<a style="color:black;" href="'.$row["cur_img"].'" target="_blank">'.strtoupper($row["cur_nom"]).'</a>';
                 $sub_array[] = $row["cur_fechini"];
