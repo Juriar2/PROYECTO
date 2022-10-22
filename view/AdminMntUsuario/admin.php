@@ -29,11 +29,11 @@
             <h6 class="user">Usuario</h6>
             <p class="useractivo">Usuarios activos</p>
             <div class="table-wrapper"></div>
-                <table id="usuario_data"  class="table-bordered table-responsive">
+                <table id="usuario_data" style="width:70%" class="table-bordered table-responsive">
                 <thead>
                   
                     <tr>
-                    <th class="wd-15p">NO°</th>
+                    <strong><th class="wd-15p">NO°</th></strong>
                     <th class="wd-15p">Nombre</th>
                     <th class="wd-15p">Ape.Paterno</th>
                     <th class="wd-15p">Ape.Materno</th>
@@ -42,11 +42,12 @@
                     <th class="wd-15p">Grupo</th>
                     <th class="wd-15p">Grado</th>
                     <th class="wd-15p">Matricula</th>
+                    <th class="wd-15p">Genero</th>
                     <th class="wd-15p">Rol</th>
                     <th class="wd-10p"></th>
                     <th class="wd-10p"></th>
 
-                    
+                 
                     </tr>
                 </thead>
                 <tbody>
@@ -60,7 +61,7 @@
     </div>
 
     <?php require_once("modalmantenimiento.php"); ?>
-    <?php require_once("modalplantilla.php"); ?>
+   
 
     <?php require_once("../html/MainJs.php"); ?>
     <script type="text/javascript" src="adminmntusuario.js"></script>

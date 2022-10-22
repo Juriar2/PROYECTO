@@ -32,7 +32,7 @@
       <div class="br-pagebody">
         <div class="br-section-wrapper">
           <h6 class="perfil">Perfil</h6>
-          <p class="perfil">Actualize sus datos</p>
+          <p class="perfil">Actualize sus datos verifiquen que esten correcto</p>
 
           <div class="form-layout form-layout-1">
             <div class="row mg-b-25">
@@ -74,6 +74,8 @@
                     <option label="Seleccione"></option>
                     <option value="F">Femenino</option>
                     <option value="M">Masculino</option>
+                    <option value="N">No binario</option>
+                    <option value="O">Otros</option>
                   </select>
                 </div>
               </div>

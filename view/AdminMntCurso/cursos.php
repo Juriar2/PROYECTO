@@ -18,7 +18,7 @@
     <?php require_once("../html/MainHeader.php"); ?>
 
     <div class="br-mainpanel">
-    <button class="btnresgis" id="add_button" onclick="nuevo()"><i class="fa fa-plus-square mg-r-10"></i> Nuevo Registro</button> <strong>Para mostrar un modal presione Ctrl+Q y Ecs para cerra</strong>
+    <button class="btnresgis" id="add_button" onclick="nuevo()"><i class="fa fa-plus-square mg-r-10"></i> Nuevo Registro</button>
 
     <hr>  
       
@@ -30,7 +30,7 @@
         <p class="mg-b-0">Mantenimiento</p>
         </div>
             <div class="table-wrapper">
-                <table id="cursos_data"  class="table-bordered table-responsive">
+                <table id="cursos_data" style="width:90%" class="table-bordered table-responsive">
                 <thead>
                     <tr>
                     

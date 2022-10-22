@@ -228,6 +228,12 @@ tr {
     border-bottom-right-radius: 39px;
     margin: 6px;
 }
+@media (max-width: 490px) {
+    .bg-primar {
+        
+        margin: 9px;
+    }
+}
 
 .bg-br-primar {
     background-color: #587AFA;

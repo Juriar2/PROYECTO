@@ -46,11 +46,14 @@
 
                     <div class="col-lg-12">
                         <div class="form-group">
-                            <label class="form-control-label">Sexo: <span class="tx-danger">*</span></label>
+                            <label class="form-control-label">Genero: <span class="tx-danger">*</span></label>
                             <select class="form select2" style="width:100%" name="usu_sex" id="usu_sex" data-placeholder="Seleccione" required>
                                 <option label="Seleccione"></option>
                                 <option value="M">Masculino</option>
                                 <option value="F">Femenino</option>
+                                <option value="N">No binario</option>
+                                <option value="O">Otros</option>
+                               
                             </select>
                         </div>
                     </div>
@@ -70,6 +73,8 @@
                                 <option value="Tercer_semestre">Tercer semestre</option>
                                 <option value="Quinto_semetre">Quinto semetre</option>
                                 <option value="Septimo_semestre">Septimo semestre</option>
+                                <option value="Docente">Docente</option>
+
                             </select>
                         </div>
                     </div>
@@ -81,6 +86,7 @@
                                 <option label="Seleccione"></option>
                                 <option value="A">A</option>
                                 <option value="B">B</option>
+                                <option value="Ninguno_Ninguno">Ninguno</option>
                             </select>
                         </div>
                     </div>
@@ -89,7 +95,7 @@
                             <label class="form-control-label">Rol: <span class="tx-danger">*</span></label>
                             <select class="form select2" style="width:100%" name="rol_id" id="rol_id" data-placeholder="Seleccione" required>
                                 <option label="Seleccione"></option>
-                                <option value="1">Usuario</option>
+                                <option value="1">Alumno</option>
                                 <option value="2">Admin</option>
                             </select>
                         </div>

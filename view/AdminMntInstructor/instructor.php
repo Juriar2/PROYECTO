@@ -30,7 +30,7 @@
             
 
             <div class="table-wrapper"></div>
-                <table id="instructor_data" class="table-bordered table-responsive">
+                <table id="instructor_data" style="width:90%" class="table-bordered table-responsive">
                 <thead>
                     <tr>
                     <th class="wd-15p">NO°</th>

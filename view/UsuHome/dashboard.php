@@ -132,7 +132,7 @@
               </div>
               <div class="pd-x-15 pd-b-15">
                 <div class="table-wrapper">
-                <table id="cursos_data" style="width:100%" class="table-bordered table-responsive">
+                <table id="cursos_data" style="width:90%" class=table-responsive">
                     <thead>
                       <tr>
                       

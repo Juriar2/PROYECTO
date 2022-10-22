@@ -32,14 +32,14 @@
           <p class="lista">Desde aqui podra buscar sus cursos por certificado.</p>
 
           <div class="table-wrapper">
-            <table id="cursos_data" class="table-bordered table-responsive">
+            <table id="cursos_data" style="width:90%" class="table-responsive">
               <thead class="halo" >
                 <tr>
-                  <th class="wd-15p">Curso</th>
+                  <th class="wd-15p">Taller</th>
                   <th class="wd-15p">Fecha Inicio</th>
                   <th class="wd-20p">Fecha Fin</th>
                   <th class="wd-15p">Instructor</th>
-                  <th class="wd-10p">ceretificado</th>
+                  <th class="wd-10p">Constancia</th>
                 </tr>
               </thead>
               <tbody>

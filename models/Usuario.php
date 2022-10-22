@@ -228,7 +228,7 @@
         }
 
         /*TODO: Mostrar los datos del usuario segun el DNI */
-        public function get_usuario_x_dni($usu_matri){
+        public function get_usuario_x_matri($usu_matri){
             $conectar= parent::conexion();
             parent::set_names();
             $sql="SELECT * FROM tm_usuario WHERE est=1 AND usu_matri=?";

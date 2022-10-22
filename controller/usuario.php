@@ -177,7 +177,7 @@
             break;
         /*TODO: Mostrar informacion segun DNI del usuario registrado */
         case "consulta_dni":
-            $datos = $usuario->get_usuario_x_dni($_POST["usu_matri"]);
+            $datos = $usuario->get_usuario_x_matri($_POST["usu_matri"]);
             if(is_array($datos)==true and count($datos)<>0){
                 foreach($datos as $row){
                     $output["usu_id"] = $row["usu_id"];
@@ -233,10 +233,11 @@
                     $sub_array[] = $row["usu_gra"];
                     $sub_array[] = $row["usu_grup"];
                     $sub_array[] = $row["usu_matri"];
+                    $sub_array[] = $row["usu_sex"];
                     if ($row["rol_id"]==1) {
-                        $sub_array[] = "Usuario";
+                        $sub_array[] = "<strong>Alumno</strong>";
                     }else{
-                        $sub_array[] = "Admin";
+                        $sub_array[] = "<strong>Admin</strong>";
                     }
                     $sub_array[] = '<button type="button" onClick="editar('.$row["usu_id"].');"  id="'.$row["usu_id"].'" class="btn btn-outline-warning btn-icon"><div><i class="fa fa-edit"></i></div></button>';
                     $sub_array[] = '<button type="button" onClick="eliminar('.$row["usu_id"].');"  id="'.$row["usu_id"].'" class="btn btn-outline-danger btn-icon"><div><i class="fa fa-close"></i></div></button>';
