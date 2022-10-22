@@ -32,7 +32,7 @@ $(document).ready(function(){
             data:{usu_id:usu_id},
         },
         "bDestroy": true,
-        "responsive": true,
+        "responsive": false,
         "bInfo":true,
         "iDisplayLength": 10,
         "order": [[ 0, "desc" ]],

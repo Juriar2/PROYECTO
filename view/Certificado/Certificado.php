@@ -7,7 +7,7 @@
 <html lang="es" class="pos-relative">
     <head>
         <?php require_once("../html/MainHead.php"); ?>
-        <title>Constancia-ITSS</title>
+        <title>Certificado</title>
     </head>
 
   <body class="pos-relative">

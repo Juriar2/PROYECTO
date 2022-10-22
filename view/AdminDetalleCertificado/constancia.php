@@ -8,7 +8,7 @@
   <head>
     <?php require_once("../html/MainHead.php"); ?>
 
-    <title>Constancia-ITSS</title>
+    <title>Certificado</title>
   </head>
 
   <body>
@@ -51,10 +51,9 @@
             <p></p>
 
             <div class="table-wrapper"></div>
-                <table id="detalle_data" style="width:95%" class="table-responsive">
+                <table id="detalle_data"  class="table-bordered table-responsive" width="100%">
                 <thead>
                     <tr>
-                    <th class="wd-15p">No°</th>
                     <th class="wd-15p">Curso</th>
                     <th class="wd-15p">Usuario</th>
                     <th class="wd-15p">Fecha Inicio</th>

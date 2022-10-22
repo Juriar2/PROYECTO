@@ -58,7 +58,7 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Telefono: <span class="tx-danger">*</span></label>
-                            <input class="form " id="usu_telf" type="tel" name="usu_telf" placeholder="123-748-4578" pattern="[0-9]+" required />
+                            <input class="form " id="usu_telf" type="text" name="usu_telf" placeholder="Ingrese el telefono"required />
                         </div>
                     </div>
                     <div class="col-lg-12">
@@ -89,8 +89,8 @@
                             <label class="form-control-label">Rol: <span class="tx-danger">*</span></label>
                             <select class="form select2" style="width:100%" name="rol_id" id="rol_id" data-placeholder="Seleccione" required>
                                 <option label="Seleccione"></option>
-                                <option value="1">Alumno</option>
-                                <option value="2">Administrador</option>
+                                <option value="1">Usuario</option>
+                                <option value="2">Admin</option>
                             </select>
                         </div>
                     </div>

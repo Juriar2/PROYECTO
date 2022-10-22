@@ -25,7 +25,7 @@
                         $_SESSION["usu_correo"]=$resultado["usu_correo"];
                         $_SESSION["rol_id"]=$resultado["rol_id"];
                         /*TODO: Si todo esta correcto indexar en home */
-                        header("Location:".Conectar::ruta()."view/UsuHome/Dashboard");
+                        header("Location:".Conectar::ruta()."view/UsuHome/dashboard");
                         exit();
                     }else{
                         /*TODO: En caso no coincidan el usuario o la contraseña */
@@ -168,7 +168,7 @@
             return $resultado=$sql->fetchAll();
         }
 
-        /*TODO: Cantidad de Cursos por Usuario */
+            /*TODO: Cantidad de Cursos por Usuario */
         public function get_total_cursos_x_usuario($usu_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -239,20 +239,17 @@
         }
 
         /*TODO: Actualizar la informacion del perfil del usuario segun ID */
-        public function update_usuario_perfil($usu_id,$usu_nom,$usu_apep,$usu_apem,$usu_pass,$usu_sex,$usu_telf,$usu_gra,$usu_grup){
+        public function update_usuario_perfil($usu_id,$usu_nom,$usu_apep,$usu_apem,$usu_pass,$usu_sex,$usu_telf){
             $conectar= parent::conexion();
             parent::set_names();
             $sql="UPDATE tm_usuario 
                 SET
-                usu_nom = ?,
+                    usu_nom = ?,
                     usu_apep = ?,
                     usu_apem = ?,
                     usu_pass = ?,
                     usu_sex = ?,
-                    usu_telf = ?,
-                    usu_gra  =?,
-                    usu_grup  =?
-                
+                    usu_telf = ?
                 WHERE
                     usu_id = ?";
             $sql=$conectar->prepare($sql);
@@ -262,9 +259,7 @@
             $sql->bindValue(4, $usu_pass);
             $sql->bindValue(5, $usu_sex);
             $sql->bindValue(6, $usu_telf);
-            $sql->bindValue(7, $usu_gra);
-            $sql->bindValue(8, $usu_grup);
-            $sql->bindValue(9, $usu_id);
+            $sql->bindValue(7, $usu_id);
             $sql->execute();
             return $resultado=$sql->fetchAll();
         }

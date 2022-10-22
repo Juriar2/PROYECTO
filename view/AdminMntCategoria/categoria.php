@@ -8,7 +8,7 @@
   <head>
     <?php require_once("../html/MainHead.php"); ?>
 
-    <title>Categoria-ITSS</title>
+    <title>Empresa::MntCategoria</title>
   </head>
 
   <body>
@@ -27,10 +27,9 @@
             <h6 class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10">Categorias</h6>
             <p class="mg-b-30 tx-gray-600">Listado de Categorias</p>
             <div class="table-wrapper"></div>
-                <table id="categoria_data" style="width:100%"  class="table-bordered table-responsive">
+                <table id="categoria_data"  class="table-bordered table-responsive">
                 <thead>
                     <tr>
-                    <th class="wd-15p">No°</th>
                     <th class="wd-15p">Nombre</th>
                     <th class="wd-10p"></th>
                     <th class="wd-10p"></th>
@@ -41,6 +40,7 @@
                 </tbody>
                 </table>
             </div>
+
         </div>
       </div>
     </div>
@@ -59,4 +59,3 @@
     header("Location:".Conectar::ruta()."login");
   }
 ?>
-<strong></strong>

@@ -39,7 +39,6 @@
             $data= Array();
             foreach($datos as $row){
                 $sub_array = array();
-                $sub_array[] = $row["cur_id"];
                 $sub_array[] = $row["cur_nom"];
                 $sub_array[] = $row["cur_fechini"];
                 $sub_array[] = $row["cur_fechfin"];
@@ -82,77 +81,77 @@
                 echo json_encode($output);
             }
             break;
-        /*TODO: Total de Cursos por usuario para el dashboard */
-        case "total":
-            $datos=$usuario->get_total_cursos_x_usuario($_POST["usu_id"]);
-            if(is_array($datos)==true and count($datos)>0){
-                foreach($datos as $row){
-                    $output["total"] = $row["total"];
-
-                        }
-                    echo json_encode($output);
-            }
-                break;
-            case "total2":
-            $datos=$usuario->get_total_cursos_x_usuario2($_POST["usu_id"]);
-            if(is_array($datos)==true and count($datos)>0){
-                foreach($datos as $row)
-                    {
+            case "total":
+                $datos=$usuario->get_total_cursos_x_usuario($_POST["usu_id"]);
+                if(is_array($datos)==true and count($datos)>0){
+                    foreach($datos as $row){
                         $output["total"] = $row["total"];
-
-                    }
-                    echo json_encode($output);
-
-                    }
+    
+                            }
+                        echo json_encode($output);
+                }
                     break;
-
-            case "total3":
-            $datos=$usuario->get_total_cursos_x_usuario3($_POST["usu_id"]);
+                case "total2":
+                $datos=$usuario->get_total_cursos_x_usuario2($_POST["usu_id"]);
                 if(is_array($datos)==true and count($datos)>0){
                     foreach($datos as $row)
-                    {
-                        $output["total"] = $row["total"];
-
-                    }
+                        {
+                            $output["total"] = $row["total"];
+    
+                        }
                         echo json_encode($output);
-
-                    }
+    
+                        }
                         break;
     
-            case "total4":
-            $datos=$usuario->get_total_cursos_x_usuario4($_POST["usu_id"]);
-                if(is_array($datos)==true and count($datos)>0){
-                    foreach($datos as $row)
-                    {
-                    $output["total"] = $row["total"];
-
-                }
-                    echo json_encode($output);
-             }
-                break;    /*TODO: Total de Cursos por usuario para el dashboard  finaliza aqui*/
-             
-             case "total4":
-            $datos=$usuario->get_total_cursos_x_usuario4($_POST["usu_id"]);
-                if(is_array($datos)==true and count($datos)>0){
-                    foreach($datos as $row)
-                    {
-                    $output["total"] = $row["total"];
-
-                }
-                    echo json_encode($output);
-             }
-                break;    /*TODO: Total de Cursos por usuario para el dashboard  finaliza aqui*/
-                case "total5":
-                    $datos=$usuario->get_total_cursos_x_usuario5($_POST["usu_id"]);
-                        if(is_array($datos)==true and count($datos)>0){
-                            foreach($datos as $row)
-                            {
+                case "total3":
+                $datos=$usuario->get_total_cursos_x_usuario3($_POST["usu_id"]);
+                    if(is_array($datos)==true and count($datos)>0){
+                        foreach($datos as $row)
+                        {
                             $output["total"] = $row["total"];
-        
+    
                         }
                             echo json_encode($output);
-                     }
-                    break;
+    
+                        }
+                            break;
+        
+                case "total4":
+                $datos=$usuario->get_total_cursos_x_usuario4($_POST["usu_id"]);
+                    if(is_array($datos)==true and count($datos)>0){
+                        foreach($datos as $row)
+                        {
+                        $output["total"] = $row["total"];
+    
+                    }
+                        echo json_encode($output);
+                 }
+                    break;    /*TODO: Total de Cursos por usuario para el dashboard  finaliza aqui*/
+                 
+                 case "total4":
+                $datos=$usuario->get_total_cursos_x_usuario4($_POST["usu_id"]);
+                    if(is_array($datos)==true and count($datos)>0){
+                        foreach($datos as $row)
+                        {
+                        $output["total"] = $row["total"];
+    
+                    }
+                        echo json_encode($output);
+                 }
+                    break;    /*TODO: Total de Cursos por usuario para el dashboard  finaliza aqui*/
+                    case "total5":
+                        $datos=$usuario->get_total_cursos_x_usuario5($_POST["usu_id"]);
+                            if(is_array($datos)==true and count($datos)>0){
+                                foreach($datos as $row)
+                                {
+                                $output["total"] = $row["total"];
+            
+                            }
+                                echo json_encode($output);
+                         }
+                        break;
+        
         /*TODO: Mostrar informacion del usuario en la vista perfil */
         case "mostrar":
             $datos = $usuario->get_usuario_x_id($_POST["usu_id"]);
@@ -165,8 +164,6 @@
                     $output["usu_correo"] = $row["usu_correo"];
                     $output["usu_sex"] = $row["usu_sex"];
                     $output["usu_pass"] = $row["usu_pass"];
-                    $output["usu_gra"] = $row["usu_gra"];
-                    $output["usu_grup"] = $row["usu_grup"];
                     $output["usu_telf"] = $row["usu_telf"];
                     $output["rol_id"] = $row["rol_id"];
                     $output["usu_matri"] = $row["usu_matri"];
@@ -196,16 +193,13 @@
         /*TODO: Actualizar datos de perfil */
         case "update_perfil":
             $usuario->update_usuario_perfil(
-                    $_POST["usu_id"],
-                    $_POST["usu_nom"],
-                    $_POST["usu_apep"],
-                    $_POST["usu_apem"],
-                    $_POST["usu_pass"],
-                    $_POST["usu_sex"],
-                    $_POST["usu_telf"],
-                    $_POST["usu_gra"],
-                    $_POST["usu_grup"]
-
+                $_POST["usu_id"],
+                $_POST["usu_nom"],
+                $_POST["usu_apep"],
+                $_POST["usu_apem"],
+                $_POST["usu_pass"],
+                $_POST["usu_sex"],
+                $_POST["usu_telf"]
             );
             break;
         /*TODO: Guardar y editar cuando se tenga el ID */
@@ -226,7 +220,6 @@
                 $data= Array();
                 foreach($datos as $row){
                     $sub_array = array();
-                    $sub_array[] = $row["usu_id"];
                     $sub_array[] = $row["usu_nom"];
                     $sub_array[] = $row["usu_apep"];
                     $sub_array[] = $row["usu_apem"];
@@ -235,12 +228,12 @@
                     $sub_array[] = $row["usu_gra"];
                     $sub_array[] = $row["usu_grup"];
                     if ($row["rol_id"]==1) {
-                        $sub_array[] = "<strong>Alumno</strong>";
+                        $sub_array[] = "Usuario";
                     }else{
-                        $sub_array[] = "<strong>Administrador</strong>";
+                        $sub_array[] = "Admin";
                     }
-                    $sub_array[] = '<button type="button" onClick="editar('.$row["usu_id"].');"  id="'.$row["usu_id"].'" class="btn btn-outline-primary btn-icon"><div><i class="fa fa-pencil"></i></div></button>';
-                    $sub_array[] = '<button type="button" onClick="eliminar('.$row["usu_id"].');"  id="'.$row["usu_id"].'" class="btn btn-outline-danger btn-icon"><div><i class="fa fa-minus-square-o"></i></div></button>';
+                    $sub_array[] = '<button type="button" onClick="editar('.$row["usu_id"].');"  id="'.$row["usu_id"].'" class="btn btn-outline-warning btn-icon"><div><i class="fa fa-edit"></i></div></button>';
+                    $sub_array[] = '<button type="button" onClick="eliminar('.$row["usu_id"].');"  id="'.$row["usu_id"].'" class="btn btn-outline-danger btn-icon"><div><i class="fa fa-close"></i></div></button>';
                     $data[] = $sub_array;
                 }
 
@@ -257,14 +250,13 @@
             $data= Array();
             foreach($datos as $row){
                 $sub_array = array();
-                $sub_array[] = $row["usu_id"];
                 $sub_array[] = $row["cur_nom"];
                 $sub_array[] = $row["usu_nom"]." ".$row["usu_apep"]." ".$row["usu_apem"];
                 $sub_array[] = $row["cur_fechini"];
                 $sub_array[] = $row["cur_fechfin"];
                 $sub_array[] = $row["inst_nom"]." ".$row["inst_apep"];
-                $sub_array[] = '<button type="button" onClick="certificado('.$row["curd_id"].');"  id="'.$row["curd_id"].'" class="btn btn-outline-primary btn-icon"><div><i class="fa fa-certificate"></i></div></button>';
-                $sub_array[] = '<button type="button" onClick="eliminar('.$row["curd_id"].');"  id="'.$row["curd_id"].'" class="btn btn-outline-danger btn-icon"><div><i class="fa fa-minus-square-o"></i></div></button>';
+                $sub_array[] = '<button type="button" onClick="certificado('.$row["curd_id"].');"  id="'.$row["curd_id"].'" class="btn btn-outline-primary btn-icon"><div><i class="fa fa-id-card-o"></i></div></button>';
+                $sub_array[] = '<button type="button" onClick="eliminar('.$row["curd_id"].');"  id="'.$row["curd_id"].'" class="btn btn-outline-danger btn-icon"><div><i class="fa fa-close"></i></div></button>';
                 $data[] = $sub_array;
             }
 
@@ -282,7 +274,6 @@
             foreach($datos as $row){
                 $sub_array = array();
                 $sub_array[] = "<input type='checkbox' name='detallecheck[]' value='". $row["usu_id"] ."'>";
-                $sub_array[] = $row["usu_id"];
                 $sub_array[] = $row["usu_nom"];
                 $sub_array[] = $row["usu_apep"];
                 $sub_array[] = $row["usu_apem"];

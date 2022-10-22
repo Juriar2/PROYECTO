@@ -67,47 +67,28 @@ $(document).ready(function(){
 });
 
 function eliminar(curd_id){
-    const swalWithBootstrapButtons = Swal.mixin({
-        customClass: {
-          confirmButton: 'btn btn-success',
-          cancelButton: 'btn btn-danger'
-        },
-        buttonsStyling: true
-      })
-      
-      swalWithBootstrapButtons.fire({
-        title: 'Estas seguro?',
-        text: "No podrás revertir esto.!",
-        icon: 'warning',
+    swal.fire({
+        title: "Eliminar!",
+        text: "Desea Eliminar el Registro?",
+        icon: "error",
+        confirmButtonText: "Si",
         showCancelButton: true,
-        confirmButtonText: 'si, eliminarlo!',
-        cancelButtonText: 'No, cancelar!',
-        reverseButtons: true
-      }).then((result) => {
-        if(result.value){
+        cancelButtonText: "No",
+    }).then((result) => {
+        if (result.value) {
             $.post("../../controller/curso.php?op=eliminar_curso_usuario",{curd_id : curd_id}, function (data) {
                 $('#detalle_data').DataTable().ajax.reload();
+
+                Swal.fire({
+                    title: 'Correcto!',
+                    text: 'Se Elimino Correctamente',
+                    icon: 'success',
+                    confirmButtonText: 'Aceptar'
+                })
             });
         }
-        if (result.isConfirmed) {
-          swalWithBootstrapButtons.fire(
-            'Deleted!',
-            'Su el resgistro ha sido eliminado con exito.',
-            'success'
-          )
-        } else if (
-          /* Read more about handling dismissals below */
-          result.dismiss === Swal.DismissReason.cancel
-        ) {
-          swalWithBootstrapButtons.fire(
-            'info',
-            'ha cancelado',
-            'question'
-          )
-        }
-      })
+    });
 }
-
 
 function combo_curso(){
     $.post("../../controller/curso?op=combo", function (data) {
