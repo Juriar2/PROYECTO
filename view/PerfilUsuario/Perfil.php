@@ -8,7 +8,7 @@
   <head>
     <?php require_once("../html/MainHead.php"); ?>
 
-    <title>Empresa::Perfil</title>
+    <title>Perfil-ITSS</title>
   </head>
 
   <body>
@@ -81,51 +81,18 @@
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="form-control-label">Telefono: <span class="tx-danger">*</span></label>
-                  <input class="formulario floater" type="number" name="usu_telf" id="usu_telf" placeholder="Ingrese Telefono">
+                  <input class="formulario floater" type="tel" name="usu_telf" id="usu_telf" placeholder="Ingrese Telefono"pattern="[0-9]+">
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="form-group mg-b-10-force">
-                  <label class="form-control-label">Grado: <span class="tx-danger">*</span></label>
-                  <select class="formulario select2 floater" name="usu_gra" id="usu_gra" data-placeholder="Seleccione">
-                    <option label="Seleccione"></option>
-                    <option value="1">1</option>
-                    <option value="3">3</option>
-                    <option value="5">5</option>
-                    <option value="7">7</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="form-group mg-b-10-force">
-                  <label class="form-control-label">Grupo: <span class="tx-danger">*</span></label>
-                  <select class="formulario select2 floater" name="usu_grupo" id="usu_grupo" data-placeholder="Seleccione">
-                    <option label="Seleccione"></option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    
-                  </select>
-                </div>
-              </div>
-            </div>
-            
-            <?php
-      if($_SESSION["rol_id"]==2){
-        ?>
-            <div class="form-layout-footer">
+              
+          </div>
+          <div class="form-layout-footer">
               <button class="btngurdar" id="btnactualizar">Actualizar perfil</button>
             </div>
-            <?php
-      }else{
-        ?>
-          </div>
-
         </div>
       </div>
     </div>
-    <?php
-      }
-    ?>
+    
 
     <?php require_once("../html/MainJs.php"); ?>
     <script type="text/javascript" src="usuperfil.js"></script>

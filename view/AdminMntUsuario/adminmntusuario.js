@@ -203,8 +203,23 @@ document.getElementById('upload').addEventListener('change', handleFileSelect, f
 init();
 
 
+/* Limiting the number of characters that can be entered into the input field. */
+var input=  document.getElementById('usu_telf');
+input.addEventListener('input',function(){
+  if (this.value.length > 10) 
+     this.value = this.value.slice(0,10);
+     
+     
+})
 
-
+/* Listening for the input event and then replacing anything that is not a number with nothing. */
+$(document).ready(function(){
+	// Listen for the input event.
+	$("#usu_telf").on('input', function (evt) {
+		// Allow only numbers.
+		$(this).val($(this).val().replace(/[^0-9]/g, ''));
+	});
+});
 
 
  $(document).ready(function(){  

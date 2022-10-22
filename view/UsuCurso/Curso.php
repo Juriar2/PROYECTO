@@ -7,7 +7,7 @@
 <html lang="es">
   <head>
     <?php require_once("../html/MainHead.php"); ?>
-    <title>Itss</title>
+    <title>Curso-Itss</title>
   </head>
 
   <body>
@@ -32,7 +32,7 @@
           <p class="lista">Desde aqui podra buscar sus cursos por certificado.</p>
 
           <div class="table-wrapper">
-            <table id="cursos_data" class="table table-bordered">
+            <table id="cursos_data" class="table-bordered table-responsive">
               <thead class="halo" >
                 <tr>
                   <th class="wd-15p">Curso</th>

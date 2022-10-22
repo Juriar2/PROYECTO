@@ -58,7 +58,7 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Telefono: <span class="tx-danger">*</span></label>
-                            <input class="form " id="usu_telf" type="text" name="usu_telf" placeholder="Ingrese el telefono"required />
+                            <input class="formulario " type="tel" name="usu_telf" id="usu_telf" placeholder="Ingrese Telefono"pattern="[0-9]+">
                         </div>
                     </div>
                     <div class="col-lg-12">

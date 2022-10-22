@@ -8,7 +8,7 @@
   <head>
     <?php require_once("../html/MainHead.php"); ?>
 
-    <title>Adminitrador</title>
+    <title>Adminitrador-ITSS</title>
   </head>
 
   <body>
@@ -33,14 +33,15 @@
                 <thead>
                   
                     <tr>
-                    
+                    <th class="wd-15p">NO°</th>
                     <th class="wd-15p">Nombre</th>
                     <th class="wd-15p">Ape.Paterno</th>
                     <th class="wd-15p">Ape.Materno</th>
                     <th class="wd-15p">Correo</th>
                     <th class="wd-15p">Telefono</th>
-                     <th class="wd-15p">Grupo</th>
+                    <th class="wd-15p">Grupo</th>
                     <th class="wd-15p">Grado</th>
+                    <th class="wd-15p">Matricula</th>
                     <th class="wd-15p">Rol</th>
                     <th class="wd-10p"></th>
                     <th class="wd-10p"></th>

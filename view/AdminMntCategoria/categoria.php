@@ -8,7 +8,7 @@
   <head>
     <?php require_once("../html/MainHead.php"); ?>
 
-    <title>Empresa::MntCategoria</title>
+    <title>Categoria-ITSS</title>
   </head>
 
   <body>
@@ -30,6 +30,7 @@
                 <table id="categoria_data"  class="table-bordered table-responsive">
                 <thead>
                     <tr>
+                    <th class="wd-15p">N0°</th>
                     <th class="wd-15p">Nombre</th>
                     <th class="wd-10p"></th>
                     <th class="wd-10p"></th>
