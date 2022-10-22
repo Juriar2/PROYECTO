@@ -89,8 +89,8 @@
                             <label class="form-control-label">Rol: <span class="tx-danger">*</span></label>
                             <select class="form select2" style="width:100%" name="rol_id" id="rol_id" data-placeholder="Seleccione" required>
                                 <option label="Seleccione"></option>
-                                <option value="1">Usuario</option>
-                                <option value="2">Admin</option>
+                                <option value="1">Alumno</option>
+                                <option value="2">Administrador</option>
                             </select>
                         </div>
                     </div>

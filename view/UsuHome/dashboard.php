@@ -7,7 +7,7 @@
 <html lang="es">
   <head>
     <?php require_once("../html/MainHead.php"); ?>
-    <title>ITSS</title>
+    <title>Dashboard-ITSS</title>
   </head>
 
   <body>
@@ -135,6 +135,7 @@
                 <table id="cursos_data" style="width:100%" class="table-bordered table-responsive">
                     <thead>
                       <tr>
+                      <th class="wd-15p">No°</th>
                         <th class="wd-15p">Curso</th>
                         <th class="wd-15p">Fecha Inicio</th>
                         <th class="wd-20p">Fecha Fin</th>

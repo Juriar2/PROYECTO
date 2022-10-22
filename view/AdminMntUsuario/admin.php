@@ -8,7 +8,7 @@
   <head>
     <?php require_once("../html/MainHead.php"); ?>
 
-    <title>Adminitrador</title>
+    <title>Usuarios-ITSS</title>
   </head>
 
   <body>
@@ -23,17 +23,17 @@
 
     <hr>
      
-
+      <!----Una tabla que está siendo poblada por ajax ----->
       <div class="br-pagebody">
         <div class="br-section-wrapper">
             <h6 class="user">Usuario</h6>
             <p class="useractivo">Usuarios activos</p>
             <div class="table-wrapper"></div>
-                <table id="usuario_data" style="width:95%" class="table-responsive">
+                <table id="usuario_data" style="width:95%" class="table-bordered table-responsive">
                 <thead>
                   
                     <tr>
-                    
+                    <th class="wd-15p">No°</th>
                     <th class="wd-15p">Nombre</th>
                     <th class="wd-15p">Ape.Paterno</th>
                     <th class="wd-15p">Ape.Materno</th>
@@ -57,7 +57,7 @@
         </div>
       </div>
     </div>
-
+    <!---Llamando a la ventana modal.--->
     <?php require_once("modalmantenimiento.php"); ?>
     <?php require_once("modalplantilla.php"); ?>
 

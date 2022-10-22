@@ -9,6 +9,8 @@ $(document).ready(function(){
         $('#usu_correo').val(data.usu_correo);
         $('#usu_telf').val(data.usu_telf);
         $('#usu_pass').val(data.usu_pass);
+        $('#usu_gra').val(data.usu_gra).trigger("change");
+        $('#usu_grup').val(data.usu_grup).trigger("change");
         $('#usu_sex').val(data.usu_sex).trigger("change");
     });
 });
@@ -24,7 +26,9 @@ $(document).on("click","#btnactualizar", function(){
         usu_pass : $('#usu_pass').val(),
         usu_sex : $('#usu_sex').val(),
         usu_telf : $('#usu_telf').val(),
-        usu_grado : $('#usu_gra').val(),
+        usu_gra : $('#usu_gra').val(),
+        usu_grup : $('#usu_grup').val(),
+
      }, function (data) {
     });
 
@@ -34,4 +38,22 @@ $(document).on("click","#btnactualizar", function(){
         icon: 'success',
         confirmButtonText: 'Aceptar'
     })
+});
+
+/* Limiting the number of characters that can be entered into the input field. */
+var input=  document.getElementById('usu_telf');
+input.addEventListener('input',function(){
+  if (this.value.length > 10) 
+     this.value = this.value.slice(0,10);
+     
+     
+})
+
+/* Listening for the input event and then replacing anything that is not a number with nothing. */
+$(document).ready(function(){
+	// Listen for the input event.
+	$("#usu_telf").on('input', function (evt) {
+		// Allow only numbers.
+		$(this).val($(this).val().replace(/[^0-9]/g, ''));
+	});
 });

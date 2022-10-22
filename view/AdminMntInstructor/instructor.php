@@ -8,7 +8,7 @@
   <head>
     <?php require_once("../html/MainHead.php"); ?>
 
-    <title>Empresa::MntInstructor</title>
+    <title>Instructor-ITSS</title>
   </head>
 
   <body>
@@ -33,6 +33,7 @@
                 <table id="instructor_data" class="table-bordered table-responsive">
                 <thead>
                     <tr>
+                    <th class="wd-10p">No°</th>
                     <th class="wd-15p">Nombre</th>
                     <th class="wd-15p">Ape.Paterno</th>
                     <th class="wd-15p">Ape.Materno</th>

@@ -96,27 +96,45 @@ function editar(inst_id){
 }
 
 function eliminar(inst_id){
-    swal.fire({
-        title: "Eliminar!",
-        text: "Desea Eliminar el Registro?",
-        icon: "error",
-        confirmButtonText: "Si",
+    const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+          confirmButton: 'btn btn-success',
+          cancelButton: 'btn btn-danger'
+        },
+        buttonsStyling: true
+      })
+      
+      swalWithBootstrapButtons.fire({
+        title: 'Estas seguro?',
+        text: "No podrás revertir esto.!",
+        icon: 'warning',
         showCancelButton: true,
-        cancelButtonText: "No",
-    }).then((result) => {
-        if (result.value) {
+        confirmButtonText: 'si, eliminarlo!',
+        cancelButtonText: 'No, cancelar!',
+        reverseButtons: true
+      }).then((result) => {
+        if(result.value){
             $.post("../../controller/instructor.php?op=eliminar",{inst_id : inst_id}, function (data) {
                 $('#instructor_data').DataTable().ajax.reload();
-
-                Swal.fire({
-                    title: 'Correcto!',
-                    text: 'Se Elimino Correctamente',
-                    icon: 'success',
-                    confirmButtonText: 'Aceptar'
-                })
             });
         }
-    });
+        if (result.isConfirmed) {
+          swalWithBootstrapButtons.fire(
+            'Deleted!',
+            'Su el resgistro ha sido eliminado con exito.',
+            'success'
+          )
+        } else if (
+          /* Read more about handling dismissals below */
+          result.dismiss === Swal.DismissReason.cancel
+        ) {
+          swalWithBootstrapButtons.fire(
+            'info',
+            'ha cancelado',
+            'question'
+          )
+        }
+      })
 }
 
 function nuevo(){

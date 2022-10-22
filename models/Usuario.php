@@ -239,17 +239,20 @@
         }
 
         /*TODO: Actualizar la informacion del perfil del usuario segun ID */
-        public function update_usuario_perfil($usu_id,$usu_nom,$usu_apep,$usu_apem,$usu_pass,$usu_sex,$usu_telf){
+        public function update_usuario_perfil($usu_id,$usu_nom,$usu_apep,$usu_apem,$usu_pass,$usu_sex,$usu_telf,$usu_gra,$usu_grup){
             $conectar= parent::conexion();
             parent::set_names();
             $sql="UPDATE tm_usuario 
                 SET
-                    usu_nom = ?,
+                usu_nom = ?,
                     usu_apep = ?,
                     usu_apem = ?,
                     usu_pass = ?,
                     usu_sex = ?,
-                    usu_telf = ?
+                    usu_telf = ?,
+                    usu_gra  =?,
+                    usu_grup  =?
+                
                 WHERE
                     usu_id = ?";
             $sql=$conectar->prepare($sql);
@@ -259,7 +262,9 @@
             $sql->bindValue(4, $usu_pass);
             $sql->bindValue(5, $usu_sex);
             $sql->bindValue(6, $usu_telf);
-            $sql->bindValue(7, $usu_id);
+            $sql->bindValue(7, $usu_gra);
+            $sql->bindValue(8, $usu_grup);
+            $sql->bindValue(9, $usu_id);
             $sql->execute();
             return $resultado=$sql->fetchAll();
         }

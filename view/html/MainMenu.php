@@ -38,7 +38,7 @@
           <a href="../AdminMntCurso/cursos" class="br-menu-link">
             <div class="br-menu-item">
               <i class="fa fa-i-cursor tx-24"></i>
-              <span class="menu-item-label"> Curso</span>
+              <span class="menu-item-label">Curso</span>
             </div>
           </a>
           <a href="../AdminMntUsuario/admin" class="br-menu-link">

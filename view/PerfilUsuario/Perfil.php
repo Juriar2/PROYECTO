@@ -8,7 +8,7 @@
   <head>
     <?php require_once("../html/MainHead.php"); ?>
 
-    <title>Empresa::Perfil</title>
+    <title>Perfil usuario</title>
   </head>
 
   <body>
@@ -86,46 +86,60 @@
               </div>
               <div class="col-lg-6">
                 <div class="form-group mg-b-10-force">
-                  <label class="form-control-label">Grado: <span class="tx-danger">*</span></label>
+                  <label class="form-control-label">Docente: <span class="tx-danger">*</span></label>
                   <select class="formulario select2 floater" name="usu_gra" id="usu_gra" data-placeholder="Seleccione">
                     <option label="Seleccione"></option>
-                    <option value="1">1</option>
-                    <option value="3">3</option>
-                    <option value="5">5</option>
-                    <option value="7">7</option>
+                    <option value="Septimo_semestre">Gefa</option>
+                    <option value="Docente">Docente</option>
                   </select>
                 </div>
               </div>
+              <?php
+      if($_SESSION["rol_id"]==1){
+        ?>
+              <div class="col-lg-6">
+                <div class="form-group mg-b-10-force">
+                  <label class="form-control-label">Docente: <span class="tx-danger">*</span></label>
+                  <select class="formulario select2 floater" name="usu_gra" id="usu_gra" data-placeholder="Seleccione">
+                    <option label="Seleccione"></option>
+                    <option value="Primer_semestre">Primer semestre</option>
+                    <option value="Tercer_semestre">Tercer semestre</option>
+                    <option value="Quinto_semetre">Quinto semetre</option>
+                    <option value="Septimo_semestre">Septimo semestre</option>
+                    <option value="Docente">Docente</option>
+                  </select>
+                </div>
+              </div>
+             
               <div class="col-lg-6">
                 <div class="form-group mg-b-10-force">
                   <label class="form-control-label">Grupo: <span class="tx-danger">*</span></label>
-                  <select class="formulario select2 floater" name="usu_grupo" id="usu_grupo" data-placeholder="Seleccione">
+                  <select class="formulario select2 floater" name="usu_grup" id="usu_grup" data-placeholder="Seleccione">
                     <option label="Seleccione"></option>
                     <option value="A">A</option>
                     <option value="B">B</option>
-                    
+                      
                   </select>
+                 
                 </div>
+                
               </div>
+              <?php
+              }
+            ?>
             </div>
-            
-            <?php
-      if($_SESSION["rol_id"]==2){
-        ?>
+           
             <div class="form-layout-footer">
               <button class="btngurdar" id="btnactualizar">Actualizar perfil</button>
             </div>
-            <?php
-      }else{
-        ?>
+            
+      
           </div>
 
         </div>
       </div>
     </div>
-    <?php
-      }
-    ?>
+    
 
     <?php require_once("../html/MainJs.php"); ?>
     <script type="text/javascript" src="usuperfil.js"></script>
