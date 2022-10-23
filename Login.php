@@ -102,6 +102,8 @@
                     <div class="form-group">
                         <input type="hidden" id="login"  name="enviar"  class="form-control" value="si">
                         <button  type="button" id="login02" class="button02">Iniciar sesion</button>
+
+                        <a href="resgistrate"  target="new" class="cuenta">No tiene cuenta?</a>
                     </div>
                   
                   </form>

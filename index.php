@@ -76,7 +76,7 @@
                             
                         </div>
                         
-                      <a href="registrate"  target="new" class="btnresgistrate">Registrate ahora</a>
+                      <a href="resgistrate"  target="new" class="btnresgistrate">Registrate ahora</a>
                 </div>
                 
                 <div class="home-image">

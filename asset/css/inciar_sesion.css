@@ -53,7 +53,10 @@ footer {
     margin: 10px;
 }
 
-
+.cuenta{
+    text-align: right;
+    color: #000000
+}
 /*hace referencia BOTN DEL LOGIN**/
 
 .button02 {
@@ -286,20 +289,21 @@ tr {
     font-size: 1.5em;
     color: #000000;
     border-radius: 10px;
-    width: 100%;
+    width: 2;
     height: 62px;
 }
 
 .form1 {
-    border: 2px solid #e5e6eb;
+    border: 2px solid #08276b;
     /*height: 40px;*/
     padding: 0 10px;
-    font-size: 1em;
+    font-size: 1.5em;
     color: #000000;
-    border-radius: 1px;
+    border-radius: 10px;
     width: 100%;
-    height: 38px;
+    height: 62px;
 }
+
 
 /**se le qutio el boder**/
 

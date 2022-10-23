@@ -31,7 +31,6 @@
 <form method="post" id="usuario_form">
 <div class="d-flex align-items-center justify-content-center  ht-20v">
 <input type="hidden" name="usu_id" id="usu_id"/>
-
     <div class="">
       <div class="signin-logo tx-center tx-28 tx-bold tx-inverse"><span class="tx-normal">[</span> Registrate <span
           class="tx-normal">]</span></div>
@@ -39,7 +38,6 @@
       <div class="form-group">
         <input type="text" id="usu_nom" name="usu_nom" class="form-control" placeholder="Ingrese Nombre">
       </div>
-
 	  <div class="form-group">
         <input type="text" id="usu_apep" name="usu_apep" class="form-control" placeholder="Apellido">
       </div>
@@ -54,7 +52,6 @@
       <div class="form-group">
         <input type="password" id="usu_pass" name="usu_pass"class="form1" placeholder="Ingrese Contraseña">
       </div>
-
       <div class="form-group">
      <label class="form-control-label">Genero: <span class="tx-danger">*</span></label>
             <select class="form1 select2" style="width:100%" name="usu_sex" id="usu_sex" data-placeholder="Seleccione" required>
@@ -66,7 +63,6 @@
                                
         	</select>
             </div>
-
 		<div class="form-group">
         <input type="tel" id="usu_telf" name="usu_telf"class="form-control" placeholder="Telefono">
       </div>
@@ -80,10 +76,8 @@
                      <option value="Quinto_semetre">Quinto semetre</option>
                     <option value="Septimo_semestre">Septimo semestre</option>
                     <option value="Docente">Docente</option>
-
                 </select>
              </div>
-
 	<div class="form-group">
          <label class="form-control-label">Grupo: <span class="tx-danger">*</span></label>
         <select class="form1 select2" style="width:100%" name="usu_grup" id="usu_grup" data-placeholder="Seleccione" required>
@@ -101,7 +95,6 @@
                 <option value="1">Alumno</option>
                 </select>
                 </div>
-
 				<div class="form-group">
                      <label class="form-control-label">Matricula: <span class="tx-danger">*</span></label>
                     <input class="form1" id="usu_matri" type="text" name="usu_matri"placeholder="Ingrese la matricula" required>
@@ -117,41 +110,10 @@
   <script src="public/lib/bootstrap/bootstrap.js"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
-
+  <script src="asset/js/registrate.js"></script>
 
   <script>
-	var usu_id = $('#usu_idx').val();
-	function init(){
-    $("#usuario_form").on("submit",function(e){
-        guardaryeditar(e);
-    });
-}
-
-function guardaryeditar(e){
-    e.preventDefault();
-    var formData = new FormData($("#usuario_form")[0]);
-    $.ajax({
-        url: "controller/usuario.php?op=guardaryeditar",
-        type: "POST",
-        data: formData,
-        contentType: false,
-        processData: false,
-        success: function(data){
-			window.location.replace("https://localhost/itss/login");
-			alert('en momen se te redirira para que inici sesion')
-
-            Swal.fire({
-                title: 'Correcto!',
-                text: 'Se Registro Correctamente',
-                icon: 'success',
-                confirmButtonText: 'Aceptar'
-				
-            })
-        }
-    });
-}
-
-init();
+	
 
 
 
