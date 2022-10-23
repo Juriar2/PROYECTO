@@ -26,7 +26,7 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Apellido Materno: <span class="tx-danger">*</span></label>
-                            <input class="form" id="usu_apem" type="text" name="usu_apem"placeholder="Ingrese el appelido"required />
+                            <input class="form" id="usu_apem" type="text" name="usu_apem" placeholder="Ingrese el appelido"required />
                         </div>
                     </div>
 

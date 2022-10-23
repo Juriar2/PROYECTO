@@ -55,7 +55,7 @@
             
             <div class="home-wrapper d-flex">
                 <div class="col-left">
-                    <h1 class="res slideRight">Registrarse por tiempo ilimitado</h1>
+                    <h1 class="res slideRight">Registrarse para el evento</h1>
                         <div class="launch-time">
                             <div>
                                 <p id="days">00</p>
@@ -76,7 +76,7 @@
                             
                         </div>
                         
-                      <a href="Resgistrate" target="new" class="btnresgistrate">Inscríbete</a>
+                      <a href="registrate"  target="new" class="btnresgistrate">Registrate ahora</a>
                 </div>
                 
                 <div class="home-image">
