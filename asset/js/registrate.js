@@ -17,9 +17,8 @@ $.ajax({
     contentType: false,
     processData: false,
     success: function(data){
-        alert('Te estaremos redireccionando al login');
-        window.location="http://localhost/itss/login";
-
+        alert('te estaremos rediregsionando al login');
+        window.location.replace("https://localhost/itss/login");
         Swal.fire({
             title: 'Correcto!',
             text: 'Se Registro Correctamente',
@@ -30,28 +29,6 @@ $.ajax({
     }
 });
 }
-function registro(e){
-    e.preventDefault();
-    
-    $.ajax({
-        url: "controller/usuario.php?op=registro",
-        type: "POST",
-        data: formData,
-        contentType: false,
-        processData: false,
-        success: function(data){
-            
-    
-            Swal.fire({
-                title: 'error!',
-                text: 'Este correo ya exite',
-                icon: 'success',
-                confirmButtonText: 'Aceptar'
-                
-            })
-        }
-    });
-    }
 
 init();
 

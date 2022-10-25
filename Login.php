@@ -95,13 +95,13 @@
                     </div>
                     <div class="form-group mb-3">
                     <label class="label" for="password">contraseña</label>
-                    <input type="password" id="usu_pass" name="usu_pass" class="formularioxd clave"  placeholder="Ingrese su contraseña como matricula">
+                    <input type="password" id="usu_pass" name="usu_pass" class="formularioxd clave"  placeholder="Ingrese su contraseña">
                         <button type="button" class="mostrarClave">Mostra contraseña</button>
                     
                     </div>
                     <div class="form-group">
                         <input type="hidden" id="login"  name="enviar"  class="form-control" value="si">
-                        <button  type="button" id="login02" class="button02">Iniciar sesion</button>
+                        <button  type="submit" id="login02" class="button02">Iniciar sesion</button>
 
                         <a href="resgistrate"  target="new" class="cuenta">No tiene cuenta?</a>
                     </div>

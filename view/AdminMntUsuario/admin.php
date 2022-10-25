@@ -8,7 +8,7 @@
   <head>
     <?php require_once("../html/MainHead.php"); ?>
 
-    <title>Adminitrador-ITSS</title>
+    <title>Ususario-registrado-ITSS</title>
   </head>
 
   <body>
@@ -18,7 +18,7 @@
     <?php require_once("../html/MainHeader.php"); ?>
 
     <div class="br-mainpanel">
-   <button class="btnresgis" id="add_button" onclick="nuevo()"><i class="fa fa-plus-square mg-r-10"></i> Nuevo Registro</button> <strong>Para mostrar un modal presione Ctrl+Q y Ecs para cerra</strong>
+   <button class="btnresgis" id="add_button" onclick="nuevo()"><i class="fa fa-plus-square mg-r-10"></i> Nuevo Registro</button>
   
 
     <hr>
@@ -43,8 +43,10 @@
                     <th class="wd-15p">Grado</th>
                     <th class="wd-15p">Matricula</th>
                     <th class="wd-15p">Genero</th>
+                   
                     <th class="wd-15p">Rol</th>
                     <th class="wd-10p"></th>
+                    
                     <th class="wd-10p"></th>
 
                  
