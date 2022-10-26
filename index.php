@@ -45,6 +45,7 @@
             <nav class="nav d-flex">
                 <a href="#" class="logo">ITSS</a>
                 <a href="login" target="new" class="btn rollerRight">inciar sesion</a>
+                <a href="" target="new" class="btn rollerRight">Registrarse</a>
                     
             </nav>
         </div>

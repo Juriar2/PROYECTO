@@ -40,8 +40,8 @@
                 $sub_array = array();
                 $sub_array[] = $row["cat_id"];
                 $sub_array[] = $row["cat_nom"];
-                $sub_array[] = '<button type="button" onClick="editar('.$row["cat_id"].');"  id="'.$row["cat_id"].'" class="btn btn-outline-primary btn-icon"><div><i class="fa fa-edit"></i></div></button>';
-                $sub_array[] = '<button type="button" onClick="eliminar('.$row["cat_id"].');"  id="'.$row["cat_id"].'" class="btn btn-outline-danger btn-icon"><div><i class="fa fa-close"></i></div></button>';                
+                $sub_array[] = '<button type="button" onClick="editar('.$row["cat_id"].');"  id="'.$row["cat_id"].'" class="btn btn-outline-primary btn-icon"><div><i class="fa fa-pencil-square-o"></i></div></button>';
+                $sub_array[] = '<button type="button" onClick="eliminar('.$row["cat_id"].');"  id="'.$row["cat_id"].'" class="btn btn-outline-danger btn-icon"><div><i class="fa fa-minus-circle"></i></div></button>';                
                 $data[] = $sub_array;
             }
 
