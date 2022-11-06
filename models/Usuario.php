@@ -24,11 +24,11 @@
                         $_SESSION["usu_ape"]=$resultado["usu_ape"];
                         $_SESSION["usu_correo"]=$resultado["usu_correo"];
                         $_SESSION["rol_id"]=$resultado["rol_id"];
-                        /*TODO: Si todo esta correcto indexar en home */
+                        /* si esta todo correcto va dejar pasar la menu principal */
                         header("Location:".Conectar::ruta()."view/UsuHome/dashboard");
                         exit();
                     }else{
-                        /*TODO: En caso no coincidan el usuario o la contraseña */
+                        /*En caso no coincidan el usuario o la contraseña  va ser redirecionado con contraseña incorrecta*/
                         header("Location:".conectar::ruta()."login?m=1");
                        
                         exit();
@@ -38,7 +38,7 @@
             }
         }
 
-        /*TODO: Mostrar todos los cursos en los cuales esta inscrito un usuario */
+        /*  todos los cursos en los cual esta inscrito un usuario */
         public function get_cursos_x_usuario($usu_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -70,7 +70,7 @@
             return $resultado=$sql->fetchAll();
         }
 
-        /*TODO: Mostrar todos los cursos en los cuales esta inscrito un usuario */
+        
         public function get_cursos_x_usuario_top10($usu_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -104,6 +104,11 @@
             return $resultado=$sql->fetchAll();
         }
 
+       /**
+        * Devuelve la información del curso y del usuario que está registrado
+        * 
+        *
+        */
         public  function get_cursos_usuario_x_id($cur_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -136,7 +141,14 @@
             return $resultado=$sql->fetchAll();
         }
 
-        /*TODO: Mostrar todos los datos de un curso por su id de detalle */
+        
+        /**
+         * Devuelve los datos de un curso por su id.
+
+         * It returns the data of a course by its id.
+         * 
+         * 
+         */
         public function get_curso_x_id_detalle($curd_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -168,7 +180,7 @@
             return $resultado=$sql->fetchAll();
         }
 
-            /*TODO: Cantidad de Cursos por Usuario */
+            /*mostrar en dasbord */
         public function get_total_cursos_x_usuario($usu_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -204,7 +216,7 @@
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1, $usu_id);
             $sql->execute();
-            return $resultado=$sql->fetchAll();/*TODO: Cantidad de Cursos por Usuario finaliza aqui */
+            return $resultado=$sql->fetchAll();
         }
         public function get_total_cursos_x_usuario5($usu_id){
             $conectar= parent::conexion();
@@ -213,10 +225,16 @@
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1, $usu_id);
             $sql->execute();
-            return $resultado=$sql->fetchAll();
+            return $resultado=$sql->fetchAll();/* Cantidad de Cursos por Usuario finaliza aqui */
             }
 
-        /*TODO: Mostrar los datos del usuario segun el ID */
+        
+        /**
+         * Obtiene el usuario por id.
+         * It gets the user by id.
+         * 
+         * 
+         */
         public function get_usuario_x_id($usu_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -227,48 +245,40 @@
             return $resultado=$sql->fetchAll();
         }
 
-        /*TODO: Mostrar los datos del usuario segun el DNI */
-        public function get_usuario_x_matri($usu_matri){
-            $conectar= parent::conexion();
-            parent::set_names();
-            $sql="SELECT * FROM tm_usuario WHERE est=1 AND usu_matri=?";
-            $sql=$conectar->prepare($sql);
-            $sql->bindValue(1, $usu_matri);
-            $sql->execute();
-            return $resultado=$sql->fetchAll();
-        }
+        
 
-        /*TODO: Actualizar la informacion del perfil del usuario segun ID */
-        public function update_usuario_perfil($usu_id,$usu_nom,$usu_apep,$usu_apem,$usu_pass,$usu_sex,$usu_telf){
+        /* Actualizar la informacion del perfil del usuario  */
+        public function update_usuario_perfil($usu_id,$usu_pass,$usu_sex,$usu_telf,$usu_matri,$usu_correo){
             $conectar= parent::conexion();
             parent::set_names();
             $sql="UPDATE tm_usuario 
                 SET
-                    usu_nom = ?,
-                    usu_apep = ?,
-                    usu_apem = ?,
+                    
                     usu_pass = ?,
                     usu_sex = ?,
-                    usu_telf = ?
+                    usu_telf = ?,
+                    usu_matri = ?,
+                    usu_correo = ?
+
                 WHERE
                     usu_id = ?";
             $sql=$conectar->prepare($sql);
-            $sql->bindValue(1, $usu_nom);
-            $sql->bindValue(2, $usu_apep);
-            $sql->bindValue(3, $usu_apem);
-            $sql->bindValue(4, $usu_pass);
-            $sql->bindValue(5, $usu_sex);
-            $sql->bindValue(6, $usu_telf);
-            $sql->bindValue(7, $usu_id);
+            
+            $sql->bindValue(1, $usu_pass);
+            $sql->bindValue(2, $usu_sex);
+            $sql->bindValue(3, $usu_telf);
+            $sql->bindValue(4, $usu_matri);
+            $sql->bindValue(5, $usu_correo);
+            $sql->bindValue(6, $usu_id);
             $sql->execute();
             return $resultado=$sql->fetchAll();
         }
 
-        /*TODO: Funcion para insertar usuario */
-        public function insert_usuario($usu_nom,$usu_apep,$usu_apem,$usu_correo,$usu_pass,$usu_sex,$usu_telf,$usu_gra,$usu_grup,$rol_id,$usu_matri){
+        /*esta  Funcion para insertar a  los  usuario */
+        public function insert_usuario($usu_nom,$usu_apep,$usu_apem,$usu_correo,$usu_pass,$usu_sex,$usu_telf,$usu_gra,$usu_grup,$rol_id,$usu_matri,$usu_pago){
             $conectar= parent::conexion();
             parent::set_names();
-            $sql="INSERT INTO tm_usuario (usu_id,usu_nom,usu_apep,usu_apem,usu_correo,usu_pass,usu_sex,usu_telf,usu_gra,usu_grup,rol_id,usu_matri,fech_crea, est) VALUES (NULL,?,?,?,?,?,?,?,?,?,?,?,now(),'1');";
+            $sql="INSERT INTO tm_usuario (usu_id,usu_nom,usu_apep,usu_apem,usu_correo,usu_pass,usu_sex,usu_telf,usu_gra,usu_grup,rol_id,usu_matri,usu_pago,fech_crea, est) VALUES (NULL,?,?,?,?,?,?,?,?,?,?,?,?,now(),'1');";
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1, $usu_nom);
             $sql->bindValue(2, $usu_apep);
@@ -281,12 +291,14 @@
             $sql->bindValue(9, $usu_grup);
             $sql->bindValue(10, $rol_id);
             $sql->bindValue(11, $usu_matri);
+            $sql->bindValue(12, $usu_pago);
+            
             $sql->execute();
             return $resultado=$sql->fetchAll();
         }
 
-        /*TODO: Funcion para actualizar usuario */
-        public function update_usuario($usu_id,$usu_nom,$usu_apep,$usu_apem,$usu_correo,$usu_pass,$usu_sex,$usu_telf,$usu_gra,$usu_grup,$rol_id,$usu_matri){
+        /* Funcion para actualizar a los  usuario */
+        public function update_usuario($usu_id,$usu_nom,$usu_apep,$usu_apem,$usu_correo,$usu_pass,$usu_sex,$usu_telf,$usu_gra,$usu_grup,$rol_id,$usu_matri,$usu_pago){
             $conectar= parent::conexion();
             parent::set_names();
             $sql="UPDATE tm_usuario
@@ -301,7 +313,9 @@
                     usu_gra=  ?,
                     usu_grup=?,
                     rol_id = ?,
-                    usu_matri = ?
+                    usu_matri = ?,
+                    usu_pago = ?
+                    
                 WHERE
                     usu_id = ?";
             $sql=$conectar->prepare($sql);
@@ -316,12 +330,13 @@
             $sql->bindValue(9, $usu_grup);
             $sql->bindValue(10, $rol_id);
             $sql->bindValue(11, $usu_matri);
-            $sql->bindValue(12, $usu_id);
+            $sql->bindValue(12, $usu_pago);
+            $sql->bindValue(13, $usu_id);
             $sql->execute();
             return $resultado=$sql->fetchAll();
         }
 
-        /*TODO: Eliminar cambiar de estado a la categoria */
+        /* Eliminar */
         public function delete_usuario($usu_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -336,7 +351,14 @@
             return $resultado=$sql->fetchAll();
         }
 
-        /*TODO: Listar todas las categorias */
+        
+        /**
+         * Devuelve todas las filas de la tabla tm_usuario donde la columna est es igual a 1
+         * It returns all the rows from the table tm_usuario where the column est is equal to 1
+         * 
+         *
+         */
+
         public function get_usuario(){
             $conectar= parent::conexion();
             parent::set_names();
@@ -346,7 +368,14 @@
             return $resultado=$sql->fetchAll();
         }
 
-        /*TODO: Listar todas las categorias */
+        
+        /**
+         * Devuelve todos los usuarios que no están en el curso.
+
+         * It returns all the users that are not in the course.
+         * 
+         * @param cur_id The id of the course
+         */
         public function get_usuario_modal($cur_id){
             $conectar= parent::conexion();
             parent::set_names();

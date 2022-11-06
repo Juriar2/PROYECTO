@@ -77,12 +77,24 @@ footer {
     color: white;
 }
 
+.itss{
+    margin: auto;
+    width: 660px; 
+    padding:40px 40px 40px;
+    margin: 20px 20px 20px; 
+}
 
-/**dispositivo movil**/
+
 
 @media (max-width: 900px) {
     .button02 {
         width: 100%;
+    }
+    .alert {
+        color: rgb(252, 38, 38);
+        font-size: 1.2em;
+        margin: -15px;
+        font-weight: 400px;
     }
 }
 
@@ -121,6 +133,7 @@ table {
     
 
 }
+
 
 th {
     color: white;
@@ -200,8 +213,9 @@ tr {
 
 .bg-teal {
     background-color: #57aaee;
+    border-radius: 15px;
+    border-bottom-left-radius: 40px;
     border-top-left-radius: 40px;
-    border-bottom-right-radius: 40px;
     margin: 1px;
 }
 
@@ -217,22 +231,25 @@ tr {
 
 .bg-dange {
     background-color: #4679FA;
+    border-radius: 15px;
+    border-bottom-left-radius: 40px;
     border-top-left-radius: 40px;
-    border-bottom-right-radius: 40px;
     margin: 6px;
 }
 
 .bg-primar {
     background-color: #6F81FD;
-    border-top-left-radius: 39px;
-    border-bottom-right-radius: 39px;
+    border-radius: 15px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
     margin: 6px;
 }
 
 .bg-br-primar {
     background-color: #587AFA;
+    border-radius: 15px;
+    border-bottom-left-radius: 40px;
     border-top-left-radius: 40px;
-    border-bottom-right-radius: 40px;
     margin: 6px;
 }
 
@@ -458,8 +475,10 @@ a {
 img {
     display: block;
     margin: 1px auto;
-    max-width: 380px;
-    border: #000000;
+    max-width: 344px;
+    
+    
+
 }
 
 
@@ -467,22 +486,20 @@ img {
 
 @media (max-width: 600px) {
     img {
-        max-width: 380px;
+        max-width: 344px;
     }
 }
 
-form .error {
-    color: #eb2f2f;
-}
+
 
 .mostrarClave {
     margin: 10px;
     background-color: #9E8010;
-    border-radius: 15px;
+    border-radius: 10px;
     color: white;
     text-decoration: none;
     font-size: .9em;
-    border: #166FE5;
+   
 }
 
 .br-menu-link {

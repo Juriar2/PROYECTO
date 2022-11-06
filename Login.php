@@ -15,7 +15,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Iniciar sesison</title>
+    <title>Iniciar sesison ITSS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="Itss">
@@ -26,26 +26,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="asset/css/inciar_sesion.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6LddbUkhAAAAABS6nf9K7K4SKbC_ResEqfWBaGmD"></script>
-        <script>
-            $(document).ready(function() {
-                $('#login02').click(function() {
-                    grecaptcha.ready(function() {
-                        grecaptcha.execute('6LddbUkhAAAAABS6nf9K7K4SKbC_ResEqfWBaGmD', {
-                            
-                            }).then(function(token) {
-                            $('#formLogin').prepend('<input type="hidden" name="token" value="' + token + '" >');
-                            $('#formLogin').prepend('<input type="hidden" name="action" value="validarUsuario" >');
-                            $('#formLogin').submit();
-                        });
-                    });
-                });
-            });
-        </script>
+    <link rel="stylesheet" href="asset/css/loader.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+
     </head>
     <body>
-    
+      
+    <div id="demo-content">
+          <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div>
+            </div>
+          <div id="content"> </div>
+        </div>
     <section class="ftco-section">
         
         <div class="container">
@@ -54,9 +49,9 @@
             
                 <div class="col-md-12 col-lg-10">
                     <div class="wrap d-md-flex">
-                        <div>
+                        <div class="bajar">
                             
-                        <img src="asset/images/itss.jpg" alt="" srcset="">
+                        <img class="itss animate__animated animate__zoomInRight" src="asset/images/itss.jpg" alt="" srcset="">
                   </div>
                         <div class="login-wrap p-4 p-md-5">
                     <div class="d-flex">
@@ -70,7 +65,7 @@
                                 case "1";
                                 ?>
                             <div class="alert alert-error" role="alert">
-                            <strong class="d-block d-sm-inline-block-force">El correo o la contraseña son incorrecto no coicide </strong>
+                            <strong class="d-block d-sm-inline-block-force">El correo o la contraseña son incorrecto</strong>
 
                             </div>
                                 <?php
@@ -90,18 +85,18 @@
                         <br>
                         
                     <div class="form-group mb-3">
-                    <label class="label" for="Correo electronico">Correo electronico</label>
-                    <input type="email" id="usu_correo" name="usu_correo" class="formularioxd"  placeholder="Ingrese su correo electronico ">
+                    <label class="label animate__animated animate__fadeInDown" for="Correo electronico">Correo electronico</label>
+                    <input type="email" id="usu_correo" name="usu_correo" class="formularioxd animate__animated animate__fadeInLeft"  placeholder="Ingrese su correo electronico ">
                     </div>
                     <div class="form-group mb-3">
-                    <label class="label" for="password">contraseña</label>
-                    <input type="password" id="usu_pass" name="usu_pass" class="formularioxd clave"  placeholder="Ingrese su contraseña">
+                    <label class="label animate__animated animate__fadeInDown" for="password">contraseña</label>
+                    <input type="password" id="usu_pass" name="usu_pass" class=" animate__animated animate__fadeInLeft formularioxd clave"  placeholder="Ingrese su contraseña">
                         <button type="button" class="mostrarClave">Mostra contraseña</button>
                     
                     </div>
                     <div class="form-group">
                         <input type="hidden" id="login"  name="enviar"  class="form-control" value="si">
-                        <button  type="submit" id="login02" class="button02">Iniciar sesion</button>
+                        <button  type="submit" id="login02" class="button02 animate__animated  animate__zoomInDown">Iniciar sesion</button>
 
                         <a href="resgistrate"  target="new" class="cuenta">No tiene cuenta?</a>
                     </div>
@@ -123,7 +118,9 @@
         
     </section>
     
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LddbUkhAAAAABS6nf9K7K4SKbC_ResEqfWBaGmD"></script>
+
     <script src="asset/js/jquery.min.js"></script>
      <script src="asset/js/popper.js"></script>
     <script src="asset/js/bootstrap.min.js"></script>

@@ -8,7 +8,7 @@
 
     /*  solicitud de controller */
     switch($_GET["op"]){
-        /*Guardar y editar */
+        /*Guardar y editar*/
         case "guardaryeditar":
             if(empty($_POST["cat_id"])){
                 $categoria->insert_categoria($_POST["cat_nom"]);
@@ -16,8 +16,8 @@
                 $categoria->update_categoria($_POST["cat_id"],$_POST["cat_nom"]);
             }
             break;
-        /*TODO: Creando Json segun el ID */
-        
+        /*Creando Json segun el ID */
+
         case "mostrar":
             $datos = $categoria->get_categoria_id($_POST["cat_id"]);
             if(is_array($datos)==true and count($datos)<>0){
@@ -28,11 +28,12 @@
                 echo json_encode($output);
             }
             break;
-        /*TODO: Eliminar segun ID */
+        /* Eliminar*/
         case "eliminar":
             $categoria->delete_categoria($_POST["cat_id"]);
             break;
-        /*TODO:  Listar toda la informacion segun formato de datatable */
+        /* Listar toda la informacion en el  datatable */
+        /*  */
         case "listar":
             $datos=$categoria->get_categoria();
             $data= Array();
@@ -52,8 +53,7 @@
                 "aaData"=>$data);
             echo json_encode($results);
             break;
-        /*TODO:  Listar toda la informacion segun formato de datatable */
-        /* Esta es una función que se utilizará para completar el menú desplegable en el formulario. */
+        
         case "combo":
             $datos=$categoria->get_categoria();
             if(is_array($datos)==true and count($datos)>0){

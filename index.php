@@ -8,8 +8,8 @@
     <meta name="keywords" content="Itss">
     <meta name="author" content="Itss">
     <meta name="theme-color" content="#9E8010">
-    <link rel="stylesheet" href="asset/css/wickedcss.min.css">
     <link rel="stylesheet" href="asset/css/home.css">
+    <link rel="shortcut icon" href="asset/images/itss.jpg" type="image/x-icon">
     
     
     <title>ITSS</title>
@@ -44,8 +44,8 @@
         <div class="container">
             <nav class="nav d-flex">
                 <a href="#" class="logo">ITSS</a>
-                <a href="login" target="new" class="btn rollerRight">inciar sesion</a>
-                <a href="" target="new" class="btn rollerRight">Registrarse</a>
+                <a href="login" target="new" class="btn">Inciar sesion</a>
+               
                     
             </nav>
         </div>
@@ -56,7 +56,7 @@
             
             <div class="home-wrapper d-flex">
                 <div class="col-left">
-                    <h1 class="res slideRight">Registrarse para el evento</h1>
+                    <h1 class=""><strong>Registrarse para el evento</strong> </h1>
                         <div class="launch-time">
                             <div>
                                 <p id="days">00</p>
@@ -81,7 +81,7 @@
                 </div>
                 
                 <div class="home-image">
-                <img class="nave pulse" src="https://firebasestorage.googleapis.com/v0/b/yuriar-d684c.appspot.com/o/rocket.png?alt=media&token=4b46a1a5-ef10-4e36-98f7-e0047aed49a7" class="pulse">
+                
                 </div>
             </div>
         </div>

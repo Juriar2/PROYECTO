@@ -38,3 +38,36 @@ for (let i = 0; i < mostrarClave.length; i++) {
 
 
 
+$(document).ready(function() {
+    $('#login02').click(function() {
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LddbUkhAAAAABS6nf9K7K4SKbC_ResEqfWBaGmD', {
+                
+                }).then(function(token) {
+                $('#formLogin').prepend('<input type="hidden" name="token" value="' + token + '" >');
+                $('#formLogin').prepend('<input type="hidden" name="action" value="validarUsuario" >');
+                $('#formLogin').submit();
+            });
+        });
+    });
+});
+
+$(function() {
+    setTimeout(function(){
+      $('body').addClass('loaded');
+    },2000);
+
+
+
+
+function loaderF(statusLoader){
+  if(statusLoader){
+    $("#loaderFiltro").show();
+    $("#loaderFiltro").html('<img class="img-fluid" src="asset/images/cargando.svg" style="left:50%; right: 50%; width:50px;">');
+  }else{
+    $("#loaderFiltro").hide();
+    
+  }
+}
+});
+

@@ -129,7 +129,22 @@ function nuevo(){
 
 init();
 
+var input=  document.getElementById('inst_telf');
+input.addEventListener('input',function(){
+  if (this.value.length > 10) 
+     this.value = this.value.slice(0,10);
+     
+     
+})
 
+
+$(document).ready(function(){
+	
+	$("#inst_telf").on('input', function (evt) {
+		
+		$(this).val($(this).val().replace(/[^0-9]/g, ''));
+	});
+});
 
 $(document).ready(function(){  
     //Para mostrar un modal
@@ -142,3 +157,7 @@ $(document).ready(function(){
    });
   
 });
+
+
+
+

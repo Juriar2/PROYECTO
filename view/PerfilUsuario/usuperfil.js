@@ -10,6 +10,10 @@ $(document).ready(function(){
         $('#usu_telf').val(data.usu_telf);
         $('#usu_pass').val(data.usu_pass);
         $('#usu_sex').val(data.usu_sex).trigger("change");
+        $('#usu_matri').val(data.usu_matri);
+        $('#usu_gra').val(data.usu_gra);
+        $('#usu_grup').val(data.usu_grup);
+        
     });
 });
 
@@ -18,13 +22,14 @@ $(document).on("click","#btnactualizar", function(){
 
     $.post("../../controller/usuario.php?op=update_perfil", { 
         usu_id : usu_id,
-        usu_nom : $('#usu_nom').val(),
-        usu_apep : $('#usu_apep').val(),
-        usu_apem : $('#usu_apem').val(),
+        
         usu_pass : $('#usu_pass').val(),
         usu_sex : $('#usu_sex').val(),
         usu_telf : $('#usu_telf').val(),
-        usu_grado : $('#usu_gra').val(),
+        usu_matri : $('#usu_matri').val(),
+        usu_correo : $('#usu_correo').val(),
+       
+        
      }, function (data) {
     });
 

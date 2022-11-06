@@ -25,18 +25,18 @@
         </nav>
       </div>
       <div class="pd-x-20 pd-sm-x-30 pd-t-20 pd-sm-t-30">
-        <h4 class="perfil">Perfi del Usuario</h4>
+        <h4 class="perfil"></h4>
        
       </div>
 
       <div class="br-pagebody">
         <div class="br-section-wrapper">
-          <h6 class="perfil">Perfil</h6>
+          <h6 class="perfil">Perfi del Usuario</h6>
           <p class="perfil">Actualize sus datos verifiquen que esten correcto</p>
-
           <div class="form-layout form-layout-1">
             <div class="row mg-b-25">
               <div class="col-lg-4">
+                
                 <div class="form-group">
                   <label class="form-control-label ">Nombre: <span class="tx-danger">*</span></label>
                   <input class="formulario floater" type="text" name="usu_nom" id="usu_nom" placeholder="Nombre" required>
@@ -57,7 +57,7 @@
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="form-control-label">Correo Electronico: <span class="tx-danger">*</span></label>
-                  <input class="formulario floater" type="email" name="usu_correo" id="usu_correo" placeholder="corrreo electroncio" readonly disabled="disabled" >
+                  <input class="formulario floater" type="email" name="usu_correo" id="usu_correo" placeholder="corrreo electroncio" >
                 </div>
               </div>
               <div class="col-lg-6">
@@ -69,7 +69,7 @@
               </div>
               <div class="col-lg-6">
                 <div class="form-group mg-b-10-force">
-                  <label class="form-control-label">Sexo: <span class="tx-danger">*</span></label>
+                  <label class="form-control-label">Genero: <span class="tx-danger">*</span></label>
                   <select class="formulario select2 floater" name="usu_sex" id="usu_sex" data-placeholder="Seleccione">
                     <option label="Seleccione"></option>
                     <option value="F">Femenino</option>
@@ -83,10 +83,28 @@
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="form-control-label">Telefono: <span class="tx-danger">*</span></label>
-                  <input class="formulario floater" type="tel" name="usu_telf" id="usu_telf" placeholder="Ingrese Telefono"pattern="[0-9]+">
+                  <input class="formulario floater" type="tel" name="usu_telf" id="usu_telf" placeholder="Matriula"pattern="[0-9]+">
                 </div>
               </div>
-              
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label">Matricula: <span class="tx-danger">*</span></label>
+                  <input class="formulario floater" type="text" name="usu_matri" id="usu_matri" placeholder="Carrera"maxlength="9">
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label">Carrera: <span class="tx-danger"></span></label>
+                  <input class="formulario floater" type="text" name="usu_gra" id="usu_gra" placeholder="Carrera" disabled>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label">Taller Inscrito: <span class="tx-danger"></span></label>
+                  <input class="formulario floater" type="text" name="usu_grup" id="usu_grup" placeholder="Taller Inscrito"  disabled>
+                </div>
+              </div>
           </div>
           <div class="form-layout-footer">
               <button class="btngurdar" id="btnactualizar">Actualizar perfil</button>
@@ -98,7 +116,7 @@
 
     <?php require_once("../html/MainJs.php"); ?>
     <script type="text/javascript" src="usuperfil.js"></script>
-    
+    <script src="../../asset/js/app.js"></script>
 
         
   </body>

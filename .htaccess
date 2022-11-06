@@ -1,5 +1,5 @@
 <IfModule mod_rewrite.c>
-ErrorDocument 404 http://localhost/itss/view/404/Error404
+ErrorDocument 404 https://localhost/itss/view/404/Error404
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f

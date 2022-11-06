@@ -96,10 +96,7 @@ function combo_curso(){
     });
 }
 
-function certificado(curd_id){
-    console.log(curd_id);
-    window.open('../Certificado/Certificado?curd_id='+ curd_id +'','_blank');
-}
+
 
 function nuevo(){
     if ($('#cur_id').val()==''){
@@ -178,7 +175,7 @@ function registrardetalle(){
     if (usu_id == 0){
         Swal.fire({
             title: 'Error!',
-            text: 'Seleccionar Usuarios',
+            text: 'debes de selecionar alumnos',
             icon: 'error',
             confirmButtonText: 'Aceptar'
         })
@@ -197,17 +194,6 @@ function registrardetalle(){
             success : function(data) {
                 data = JSON.parse(data);
 
-                data.forEach(e => {
-                    e.forEach(i => {
-                        console.log(i['curd_id']);
-                        $.ajax({
-                            type: "POST",
-                            url: "../../controller/curso.php?op=generar_qr",
-                            data: {curd_id : i['curd_id']},
-                            dataType: "json"
-                        });
-                    });
-                });
             }
         });
 

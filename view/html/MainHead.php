@@ -13,7 +13,7 @@
 <meta name="theme-color" content="#9E8010">
 <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
 <meta name="author" content="ThemePixels">
-<link rel="shortcut icon" href="../../asset/images/itss.png" type="image/x-icon">
+<link rel="shortcut icon" href="../../asset/images/itss.jpg" type="image/x-icon">
 <link href="../../public/lib/font-awesome/css/font-awesome.css" rel="stylesheet">
 <link href="../../public/lib/Ionicons/css/ionicons.css" rel="stylesheet">
 <link href="../../public/lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">

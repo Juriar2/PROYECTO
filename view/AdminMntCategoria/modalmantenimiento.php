@@ -12,7 +12,7 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Nombre taller : <span class="tx-danger">*</span></label>
-                            <input class="form" id="cat_nom" type="text" name="cat_nom" placeholder="Ingrese una catgoria" required/>
+                            <input class="form" id="cat_nom" type="text" name="cat_nom" placeholder="Ingrese del taller" required/>
                         </div>
                     </div>
 

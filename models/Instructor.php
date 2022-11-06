@@ -1,6 +1,12 @@
 <?php
     class Instructor extends Conectar{
 
+        /**
+         * Inserta un nuevo instructor en la base de datos.
+         * It inserts a new instructor into the database.
+         * 
+         * 
+         */
         public function insert_instructor($inst_nom,$inst_apep,$inst_apem,$inst_correo,$inst_sex,$inst_telf){
             $conectar= parent::conexion();
             parent::set_names();
@@ -16,6 +22,14 @@
             return $resultado=$sql->fetchAll();
         }
 
+        /**
+         * c function
+         * update_instructor
+         * funció actualizar_instructor
+         * 
+         * 
+         * @
+         */
         public function update_instructor($inst_id,$inst_nom,$inst_apep,$inst_apem,$inst_correo,$inst_sex,$inst_telf){
             $conectar= parent::conexion();
             parent::set_names();
@@ -41,6 +55,11 @@
             return $resultado=$sql->fetchAll();
         }
 
+        /**
+         * It deletes the instructor from the database.
+         * 
+         * Elimina la instructora de la base de datos.
+         */
         public function delete_instructor($inst_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -55,6 +74,7 @@
             return $resultado=$sql->fetchAll();
         }
 
+        
         public function get_instructor(){
             $conectar= parent::conexion();
             parent::set_names();

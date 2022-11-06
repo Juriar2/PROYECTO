@@ -98,6 +98,7 @@ function editar(usu_id){
         $('#usu_gra').val(data.usu_gra).trigger("change");
         $('#usu_grup').val(data.usu_grup).trigger("change");
         $('#usu_matri').val(data.usu_matri);
+        $('#usu_pago').val(data.usu_pago);
     });
     $('#lbltitulo').html('Editar Registro');
     $('#modalmantenimiento').modal('show');

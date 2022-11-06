@@ -32,7 +32,7 @@
 <div class="d-flex align-items-center justify-content-center  ht-20v">
 
 <input type="hidden" name="usu_id" id="usu_id"/>
-<input type="hidden" name="curx_idx" id="curx_idx"/>
+
     <div class="">
     <div class="registre"><span>[</span>Registrate <span class="tx-normal">]</span></div>
      
@@ -48,18 +48,18 @@
       
 	  <div class="form-group">
         <label class="form-control-label">Segundo Apellido : <span class="tx-danger">*</span></label>
-        <input type="text" id="usu_apem" name="usu_apem" class="form-control1" placeholder="Ingrese su segundo  Apellido">
+        <input type="text" id="usu_apem" name="usu_apem" class="form-control1" placeholder="Ingrese su segundo Apellido">
     </div>
 
    
     <div class="form-group">
       <label class="form-control-label">Correo electronico: <span class="tx-danger">*</span></label>
-      <input type="email" id="usu_correo" name="usu_correo" class="form-control1" placeholder="Ingrese su Correo Electronico institucional">
+      <input type="email" id="usu_correo" name="usu_correo" class="form-control1" placeholder="Correo Electronico">
     </div>
 
     <div class="form-group">
       <label class="form-control-label">Contraseña: <span class="tx-danger">*</span></label>
-      <input type="password" id="usu_pass" name="usu_pass"class="form-control1" placeholder="Ingrese Contraseña">
+      <input type="password" id="usu_pass" name="usu_pass"class="form-control1" placeholder="Contraseña ...">
     </div>
 
     <div class="form-group">
@@ -80,42 +80,55 @@
     </div>
 		
 	  <div class="form-group">
-          <label class="form-control-label">Grado: <span class="tx-danger">*</span></label>
+          <label class="form-control-label">carrera: <span class="tx-danger">*</span></label>
               <select class="form-control1 select2" style="width:100%" name="usu_gra" id="usu_gra" data-placeholder="Seleccione " required>
-                  <option label="Seleccione su semestre"></option>
-                  <option value="Primer_semestre">Primer semestre</option>
-                  <option value="Tercer_semestre">Tercer semestre</option>
-                  <option value="Quinto_semetre">Quinto semetre</option>
-                  <option value="Septimo_semestre">Septimo semestre</option>
-              </select>
+                  <option label="Seleccione"></option>
+                  <option value="Informatica">Informatica</option>
+                  <option value="Administracion">Administracion</option>
+                  <option value="Electromecanica">Electromecanica</option>
+                  <option value="Enegia renovable">Enegia renovable</option>
+                  <option value="Industrial">Industrial</option>
+                  <option value="Otra carrera">Otra carrera</option>
+        </select>
     </div>
 
-    <div class="form-group">
-        <label class="form-control-label">Grupo: <span class="tx-danger">*</span></label>
-        <select class="form-control1 select2" style="width:100%" name="usu_grup" id="usu_grup" data-placeholder="Seleccione " required>
-          <option label="Seleccione grupo"></option>
-          <option value="A">A</option>
-          <option value="B">B</option>  
-          </select>
-    </div>	
-        
-        
-    <div class="form-group">
-            <label class="form-control-label">Acceso: <span class="tx-danger">*</span></label>
-              <select class="form-control1 select2" style="width:100%" name="rol_id" id="rol_id" data-placeholder="Seleccione" required>
-              <option label="Seleccione acceso"></option>
-              <option value="1">Alumno</option>
+        <div class="form-group">
+          <label class="form-control-label">Taller a elgir <span class="tx-danger">*</span></label>
+            <select class="form-control1 select2" style="width:100%" name="usu_grup" id="usu_grup" data-placeholder="Seleccione " required>
+            <option label="Seleccione"></option>
+            <option value="T1">T1</option>
+            <option value="T2">T2</option>  
+            <option value="T4">T3</option>  
             </select>
+      </div>	
+        
+        
+    <div class="form-group">
+      <label class="form-control-label">Acceso: <span class="tx-danger">*</span></label>
+        <select class="form-control1 select2" style="width:100%" name="rol_id" id="rol_id" data-placeholder="Seleccione" required>
+          <option label="Seleccione acceso"></option>
+          <option value="1">Alumno</option>
+          <option value="1">Invitado</option>
+              
+        </select>
     </div>
 
     <div class="form-group">
             <label class="form-control-label">Matricula: <span class="tx-danger">*</span></label>
             <input class="form-control1" id="usu_matri" type="text" name="usu_matri"placeholder="Ingrese la matricula" required>
+        </div>
+        <div class="form-group">
+            
+            <input class="form-control1" id="usu_pago" type="hidden" name="usu_pago">
         </div>		
             
 			<button type="submit" id="btnregistrar" class="registro">Registrarse</button>
+
+      
+      
 </form>
   
+
       
      
 

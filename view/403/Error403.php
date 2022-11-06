@@ -5,6 +5,7 @@
   <title>Error 404</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="asset/css/inciar_sesion.css">
+  <link rel="shortcut icon" href="../../asset/images/itss.jpg" type="image/x-icon">
 
 </head>
 <body>
@@ -22,7 +23,7 @@
   display: inline-block;
   line-height: 0.7;
   position: relative;
-  color: #FFB485;
+  color: #204ee8;
 }
 .error-container > span > span {
   display: inline-block;
@@ -31,7 +32,7 @@
 .error-container > span:nth-of-type(1) {
   perspective: 1000px;
   perspective-origin: 500% 50%;
-  color: #F0E395;
+  color:#08276b;
 }
 .error-container > span:nth-of-type(1) > span {
   transform-origin: 50% 100% 0px;
@@ -42,7 +43,7 @@
 .error-container > span:nth-of-type(3) {
   perspective: none;
   perspective-origin: 50% 50%;
-  color: #D15C95;
+  color:  #9E8010;
 }
 .error-container > span:nth-of-type(3) > span {
   transform-origin: 100% 100% 0px;
@@ -106,59 +107,59 @@
 
 /* demo stuff */
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-  background-color: #f4f4f4;
-  margin-bottom: 50px;
+background-color: #f4f4f4;
+margin-bottom: 50px;
 }
 html, button, input, select, textarea {
-    font-family: 'Montserrat', Helvetica, sans-serif;
-    color: black;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  color: black;
 }
 h1 {
-  text-align: center;
-  margin: 30px 15px;
+text-align: center;
+margin: 30px 15px;
 }
 .zoom-area { 
-  max-width: 490px;
-  margin: 30px auto 30px;
-  font-size: 19px;
-  text-align: center;
+max-width: 490px;
+margin: 30px auto 30px;
+font-size: 19px;
+text-align: center;
 }
 .link-container {
-  text-align: center;
+text-align: center;
 }
 a.more-link {
-  text-transform: uppercase;
-  font-size: 13px;
-    background-color: #f4f4f4;
-    padding: 10px 15px;
-    border-radius: 0;
-    color: black;
-    display: inline-block;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    line-height: 1.5;
-    text-decoration: none;
-  margin-top: 50px;
-  letter-spacing: 1px;
+text-transform: uppercase;
+font-size: 13px;
+  background-color: #f4f4f4;
+  padding: 10px 15px;
+  border-radius: 0;
+  color: black;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  text-decoration: none;
+margin-top: 50px;
+letter-spacing: 1px;
 }
     </style>
 <!-- partial:index.partial.html -->
-<h1>Acceso Prohibido</h1>
+
 <p class="zoom-area"><b></b></p>
 <section class="error-container">
   <span><span>4</span></span>
   <span>0</span>
   <span><span>3</span></span>
 </section>
-<div class="link-container">
-  <a target="_blank" href="https://localhost/itss/login" class="more-link">Regresar</a>
-</div>
 
+ <br>
+
+<h1>Acceso Prohibido</h1>
   
 </body>
 </html>

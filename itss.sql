@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-10-2022 a las 04:48:08
+-- Tiempo de generación: 02-11-2022 a las 23:12:22
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -48,7 +48,10 @@ INSERT INTO `td_curso_usuario` (`curd_id`, `cur_id`, `usu_id`, `fech_crea`, `est
 (6, 1, 2, '2022-10-21 22:24:16', 1),
 (7, 1, 4, '2022-10-22 11:49:46', 1),
 (8, 2, 4, '2022-10-22 11:51:18', 1),
-(9, 1, 17, '2022-10-22 20:51:31', 1);
+(9, 1, 17, '2022-10-22 20:51:31', 1),
+(10, 1, 15, '2022-11-02 10:11:17', 1),
+(11, 2, 15, '2022-11-02 10:32:34', 0),
+(12, 2, 16, '2022-11-02 15:17:33', 1);
 
 -- --------------------------------------------------------
 
@@ -145,8 +148,9 @@ CREATE TABLE `tm_usuario` (
   `usu_sex` varchar(1) COLLATE utf8_spanish_ci NOT NULL,
   `usu_telf` varchar(12) COLLATE utf8_spanish_ci NOT NULL,
   `usu_gra` varchar(16) COLLATE utf8_spanish_ci NOT NULL,
-  `usu_grup` varchar(2) COLLATE utf8_spanish_ci NOT NULL,
+  `usu_grup` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
   `rol_id` int(11) NOT NULL,
+  `usu_pago` varchar(25) COLLATE utf8_spanish_ci NOT NULL,
   `usu_matri` varchar(15) COLLATE utf8_spanish_ci NOT NULL,
   `fech_crea` datetime DEFAULT NULL,
   `est` int(11) NOT NULL
@@ -156,13 +160,9 @@ CREATE TABLE `tm_usuario` (
 -- Volcado de datos para la tabla `tm_usuario`
 --
 
-INSERT INTO `tm_usuario` (`usu_id`, `usu_nom`, `usu_apep`, `usu_apem`, `usu_correo`, `usu_pass`, `usu_sex`, `usu_telf`, `usu_gra`, `usu_grup`, `rol_id`, `usu_matri`, `fech_crea`, `est`) VALUES
-(6, 'Juriar', 'Torrez ', 'Jimenez', 'yuriar2000@hotmail.com', '123', 'M', '3', 'Primer_semestre', 'B', 2, '19e307432', '2022-10-25 19:23:40', 1),
-(8, 'a', 'a', 'a', 'q@hotmail.com', '123', 'M', '111111', 'Primer_semestre', 'A', 1, '2', '2022-10-25 19:28:01', 1),
-(9, 'a', 'a', 'a', 'a@hotmail.com', 'a', 'F', '', 'Tercer_semestre', 'A', 1, '2111111', '2022-10-25 19:40:43', 1),
-(10, 'a', 'a', 'a', 'aa@hotmail.com', 'qby5hHpTz3th5Rd', 'M', '111111', 'Primer_semestre', 'A', 1, '2', '2022-10-25 19:42:17', 1),
-(11, 'a', 'a', 'a', 'a@hotmail.com', '1222', 'M', '1111111111', 'Quinto_semetre', 'B', 1, 'aaaaa', '2022-10-25 21:32:23', 1),
-(12, 'a', 'a', 'a', 'ah@hotmail.com', '1222', 'M', '1111111111', 'Quinto_semetre', 'B', 1, 'aaaaa', '2022-10-25 21:32:53', 1);
+INSERT INTO `tm_usuario` (`usu_id`, `usu_nom`, `usu_apep`, `usu_apem`, `usu_correo`, `usu_pass`, `usu_sex`, `usu_telf`, `usu_gra`, `usu_grup`, `rol_id`, `usu_pago`, `usu_matri`, `fech_crea`, `est`) VALUES
+(15, 'Juriar', 'Torrez ', 'Jimenez', 'yuriar2000@hotmail.com', '1234', 'M', '9321137432', 'Informatica', 'Pragrmacion C#', 2, 'Si pago', '', '2022-11-02 09:28:40', 1),
+(16, 'a', 'a', 'a', 'a@hotmail.com', '123', 'N', '19307888', 'Informatica', 'Pragrmacion C#', 1, 'Si pago', '4444', '2022-11-02 14:21:56', 1);
 
 --
 -- Índices para tablas volcadas
@@ -206,7 +206,7 @@ ALTER TABLE `tm_usuario`
 -- AUTO_INCREMENT de la tabla `td_curso_usuario`
 --
 ALTER TABLE `td_curso_usuario`
-  MODIFY `curd_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `curd_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `tm_categoria`
@@ -230,7 +230,7 @@ ALTER TABLE `tm_instructor`
 -- AUTO_INCREMENT de la tabla `tm_usuario`
 --
 ALTER TABLE `tm_usuario`
-  MODIFY `usu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `usu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

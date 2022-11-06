@@ -1,6 +1,7 @@
 <?php
     class Curso extends Conectar{
 
+       /**** insertar */
         public function insert_curso($cat_id,$cur_nom,$cur_descrip,$cur_fechini,$cur_fechfin,$inst_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -15,7 +16,7 @@
             $sql->execute();
             return $resultado=$sql->fetchAll();
         }
-
+        /******actualizar los cursos */
         public function update_curso($cur_id,$cat_id,$cur_nom,$cur_descrip,$cur_fechini,$cur_fechfin,$inst_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -40,7 +41,7 @@
             $sql->execute();
             return $resultado=$sql->fetchAll();
         }
-
+        /***eliminar  */
         public function delete_curso($cur_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -55,6 +56,11 @@
             return $resultado=$sql->fetchAll();
         }
 
+        /**
+         * se devuelve el resultado de la consulta.
+         * 
+         * result of the query is being returned.
+         */
         public function get_curso(){
             $conectar= parent::conexion();
             parent::set_names();
@@ -83,6 +89,13 @@
             return $resultado=$sql->fetchAll();
         }
 
+       /**
+        * Obtiene los datos de la base de datos 
+        Get the data from the database *
+
+        * 
+        * 
+        */
         public function get_curso_id($cur_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -93,6 +106,10 @@
             return $resultado=$sql->fetchAll();
         }
 
+        /**
+         * It deletes a course from the database.
+         * 
+         * */
         public function delete_curso_usuario($curd_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -107,7 +124,7 @@
             return $resultado=$sql->fetchAll();
         }
 
-        /*Insert Curso por Usuario */
+        
         public function insert_curso_usuario($cur_id,$usu_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -122,7 +139,7 @@
             $sql1->execute();
             return $resultado=$sql1->fetch(pdo::FETCH_ASSOC);
         }
-
+        /*****actualizar las imagen */
         public function update_imagen_curso($cur_id,$cur_img){
             $conectar= parent::conexion();
             parent::set_names();
@@ -146,6 +163,7 @@
             return $resultado=$sql->fetchAll();
         }
 
+        
         public function upload_file(){
             if(isset($_FILES["cur_img"])){
                 $extension = explode('.', $_FILES['cur_img']['name']);

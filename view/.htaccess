@@ -1,2 +1,2 @@
 Options All -indexes
-ErrorDocument 403 http://localhost/itss/view/404/Error404
+ErrorDocument 403 http://localhost/itss/view/403/Error403

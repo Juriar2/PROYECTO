@@ -66,14 +66,15 @@
                     </div>
                     <div class="col-lg-12">
                         <div class="form-group">
-                            <label class="form-control-label">Grado: <span class="tx-danger">*</span></label>
-                            <select class="form select2" style="width:100%" name="usu_gra" id="usu_gra" data-placeholder="Seleccione" required>
-                                <option label="Seleccione"></option>
-                                <option value="Primer_semestre">Primer semestre</option>
-                                <option value="Tercer_semestre">Tercer semestre</option>
-                                <option value="Quinto_semetre">Quinto semetre</option>
-                                <option value="Septimo_semestre">Septimo semestre</option>
-                                <option value="Docente">Docente</option>
+                            <label class="form-control-label">carrera: <span class="tx-danger"></span></label>
+                            <select class="form select2" style="width:100%" name="usu_gra" id="usu_gra" data-placeholder="Seleccione">
+                            <option label="Seleccione"></option>
+                                <option value="Informatica">Informatica</option>
+                                <option value="Administracion">Administracion</option>
+                                <option value="Electromecanica">Electromecanica</option>
+                                <option value="Enegia renovable">Enegia renovable</option>
+                                <option value="Industrial">Industrial</option>
+                                <option value="Otra carrera">Otra carrera</option>
 
                             </select>
                         </div>
@@ -81,12 +82,13 @@
 
                          <div class="col-lg-12">
                         <div class="form-group">
-                            <label class="form-control-label">Grupo: <span class="tx-danger">*</span></label>
+                            <label class="form-control-label">Taller: <span class="tx-danger"></span></label>
                             <select class="form select2" style="width:100%" name="usu_grup" id="usu_grup" data-placeholder="Seleccione" required>
-                                <option label="Seleccione"></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="Ninguno_Ninguno">Ninguno</option>
+                            <option label="Seleccione"></option>
+                                <option value="Pragrmacion C#">Pragrmacion C#</option>
+                                <option value="Introducciona c#">Introducciona c#</option>  
+                                <option value="Base BD">Base BD</option>  
+                                <option value="Azure">Azure</option>  
                             </select>
                         </div>
                     </div>
@@ -102,13 +104,23 @@
                     </div>
 
 
+
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Matricula: <span class="tx-danger">*</span></label>
                             <input class="form" id="usu_matri" type="text" name="usu_matri"placeholder="Ingrese la matricula" required>
                         </div>
                     </div>
-
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label class="form-control-label">Vaucher: <span class="tx-danger">*</span></label>
+                            <select class="form select2" style="width:100%" name="usu_pago" id="usu_pago" data-placeholder="Seleccione" required>
+                                <option label="Seleccione"></option>
+                                <option value="Si pago">Si pago</option>
+                                <option value="No pago">No pago</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="submit" name="action" value="add" class="resgistro01"></i> Guardar</button>

@@ -39,11 +39,11 @@
                     <th class="wd-15p">Ape.Materno</th>
                     <th class="wd-15p">Correo</th>
                     <th class="wd-15p">Telefono</th>
-                    <th class="wd-15p">Grupo</th>
-                    <th class="wd-15p">Grado</th>
+                    <th class="wd-15p">Carrera</th>
+                    <th class="wd-15p">Taller</th>
                     <th class="wd-15p">Matricula</th>
                     <th class="wd-15p">Genero</th>
-                   
+                    <th class="wd-15p">Vaucher</th>
                     <th class="wd-15p">Rol</th>
                     <th class="wd-10p"></th>
                     

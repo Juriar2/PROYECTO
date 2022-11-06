@@ -8,15 +8,19 @@
 
     /* Opcion de solicitud de controller */
     switch($_GET["op"]){
-        /* Guardar y editar cuando */
+       /* Comprobando si el usuario está vacío, si lo está, insertará el usuario, si no, actualizará el
+        usuario. */
+        /* Checking if the user is empty, if it is, it will insert the user, if not, it will update the
+        user. */
         case "guardaryeditar":
             if(empty($_POST["inst_id"])){
                 $instructor->insert_instructor($_POST["inst_nom"],$_POST["inst_apep"],$_POST["inst_apem"],$_POST["inst_correo"],$_POST["inst_sex"],$_POST["inst_telf"]);
             }else{
                 $instructor->update_instructor($_POST["inst_id"],$_POST["inst_nom"],$_POST["inst_apep"],$_POST["inst_apem"],$_POST["inst_correo"],$_POST["inst_sex"],$_POST["inst_telf"]);
             }
-            break;
-        /* Creando Json*/
+        break;
+        
+        /* Creating a JSON object. */
         case "mostrar":
             $datos = $instructor->get_instructor_id($_POST["inst_id"]);
             if(is_array($datos)==true and count($datos)<>0){
@@ -32,11 +36,13 @@
                 echo json_encode($output);
             }
             break;
-        
+        /***para hacer una eliminacion en desde la visra */
         case "eliminar":
             $instructor->delete_instructor($_POST["inst_id"]);
             break;
         
+        /* va ser un listado de todo los instructores*/
+        /* will be a list of all instructors */
         case "listar":
             $datos=$instructor->get_instructor();
             $data= Array();
@@ -60,7 +66,8 @@
                 "aaData"=>$data);
             echo json_encode($results);
             break;
-        /*TODO:  Listar toda la informacion segun formato de datatable */
+        /*Crear una lista desplegable de todos los instructores*/
+        /* Creating a dropdown list of all the instructors. */
         case "combo":
             $datos=$instructor->get_instructor();
             if(is_array($datos)==true and count($datos)>0){

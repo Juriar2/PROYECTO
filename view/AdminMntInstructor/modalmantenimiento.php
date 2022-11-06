@@ -12,28 +12,28 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Nombre: <span class="tx-danger">*</span></label>
-                            <input class="form tx-uppercase" id="inst_nom" type="text" name="inst_nom" placeholder="Ingrese el nombre " required/>
+                            <input class="form" id="inst_nom" type="text" name="inst_nom" placeholder="Nombre" required/>
                         </div>
                     </div>
 
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Apellido Paterno: <span class="tx-danger">*</span></label>
-                            <input class="form tx-uppercase" id="inst_apep" type="text" name="inst_apep"  placeholder="Apellido paterno" required/>
+                            <input class="form" id="inst_apep" type="text" name="inst_apep"  placeholder="Apellido paterno" required/>
                         </div>
                     </div>
 
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Apellido Materno: <span class="tx-danger">*</span></label>
-                            <input class="form tx-uppercase" id="inst_apem" type="text" name="inst_apem" placeholder="Apellido materno" required/>
+                            <input class="form" id="inst_apem" type="text" name="inst_apem" placeholder="Apellido materno" required/>
                         </div>
                     </div>
 
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Correo: <span class="tx-danger">*</span></label>
-                            <input class="form tx-uppercase" id="inst_correo" type="email" name="inst_correo" placeholder="Ingrese el correo electronico " required/>
+                            <input class="form" id="inst_correo" type="email" name="inst_correo" placeholder="Correo electronico " required/>
                         </div>
                     </div>
 
@@ -51,7 +51,7 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Telefono: <span class="tx-danger">*</span></label>
-                            <input class="form tx-uppercase" id="inst_telf" type="text" name="inst_telf" placeholder="Ingrese telefono" required/>
+                            <input class="form" id="inst_telf" type="text" name="inst_telf" placeholder="Telefono" required/>
                         </div>
                     </div>
 

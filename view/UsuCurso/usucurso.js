@@ -7,24 +7,9 @@ $(document).ready(function(){
         "aServerSide": true,
         dom: 'Bfrtip',
         buttons: [
-            {
-                "extend": "copyHtml5",
-                "text": "<i class='far fa-copy'></i> Copiar",
-                "titleAttr":"Copiar",
-                "className": "btn btn-primary btn-sm"
-            },{
-                "extend": "excelHtml5",
-                "text": "<i class='fas fa-file-excel'></i> Excel",
-                "titleAttr":"Esportar a Excel",
-                "className": "" 
-            },{
-                "extend": "csvHtml5",
-                "text": "<i class='fas fa-file-csv'></i> CSV",
-                "titleAttr":"Esportar a CSV",
-                "className": ""
-            }
-            
-           
+            'copyHtml5',
+            'excelHtml5',
+            'csvHtml5',
         ],
         "ajax":{
             url:"../../controller/usuario.php?op=listar_cursos",
