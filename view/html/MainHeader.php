@@ -23,16 +23,16 @@
             <div class="dropdown-menu dropdown-menu-header wd-200">
               <ul class="list-unstyled user-profile-nav">
 
-                <li class="btnperfil"><a href="../PerfilUsuario/Perfil"><i class="icon ion-ios-person"></i>Perfil</a></li>
+                <li class="btnperfil" style="color:black;"><a href="../PerfilUsuario/Perfil" style="color:black;"><i class="fa fa-male"></i> Perfil</a></li>
                 
-                <li class="btnperfil"><a href="../Acerca/acerca"><i class="icon ion-ios-gear"></i>Correo</a>
+                <li class="btnperfil" style="color:black;"><a href="#" style="color:black;"><i class="fa fa-envelope"></i> Correo</a>
                   <span class="emailjs"><?php echo $_SESSION["usu_correo"]?></span>
                 </li>
                 
 
-                <li class="btnperfil"><a href="../Acerca/acerca"><i class="icon ion-ios-gear"></i>Version 1.0</a></li>
+               
                 
-                <li class="btnperfil"><a href="../html/Logout"><i class="icon ion-ios-gear"></i>Cerrar Sesion</a></li>
+                <li class="btnperfil" style="color:black;"><a href="../html/Logout" style="color:black;"><i class="fa fa-sign-out"></i> Cerrar Sesion</a></li>
 
               </ul>
             </div>

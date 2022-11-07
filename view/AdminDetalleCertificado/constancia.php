@@ -75,7 +75,7 @@
     <?php require_once("modalmantenimiento.php"); ?>
 
     <?php require_once("../html/MainJs.php"); ?>
-    <script type="text/javascript" src="admindetallecertificado.js"></script>
+    <script  src="../../asset/js/pro/constancia.js"></script>
   </body>
 </html>
 <?php

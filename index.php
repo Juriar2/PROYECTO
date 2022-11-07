@@ -9,7 +9,9 @@
     <meta name="author" content="Itss">
     <meta name="theme-color" content="#9E8010">
     <link rel="stylesheet" href="asset/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="shortcut icon" href="asset/images/itss.jpg" type="image/x-icon">
+    
     
     
     <title>ITSS</title>
@@ -44,7 +46,7 @@
         <div class="container">
             <nav class="nav d-flex">
                 <a href="#" class="logo">ITSS</a>
-                <a href="login" target="new" class="btn">Inciar sesion</a>
+                <a href="login" target="new" class="btn animate__animated animate__zoomInDown">Inciar sesion</a>
                
                     
             </nav>
@@ -56,7 +58,7 @@
             
             <div class="home-wrapper d-flex">
                 <div class="col-left">
-                    <h1 class=""><strong>Registrarse para el evento</strong> </h1>
+                    <h1 class="animate__animated animate__lightSpeedInLeft"><strong>Registrarse para el evento</strong> </h1>
                         <div class="launch-time">
                             <div>
                                 <p id="days">00</p>
@@ -77,7 +79,7 @@
                             
                         </div>
                         
-                      <a href="resgistrate"  target="new" class="btnresgistrate">Registrate ahora</a>
+                      <a href="resgistrate"  target="new" class="btnresgistrate animate__animated animate__backInDown">Registrate ahora</a>
                 </div>
                 
                 <div class="home-image">

@@ -34,7 +34,7 @@
                 <thead>
                     <tr>
                     
-                    <th class="wd-12p">Categoria</th>
+                    <th class="wd-12p">Nombre tallere</th>
                     <th class="wd-15p">Nombre</th>
                     <th class="wd-15p">Fech.Inicio</th>
                     <th class="wd-17p">Fech.Fin</th>
@@ -58,7 +58,7 @@
     <?php require_once("modalfile.php"); ?>
 
     <?php require_once("../html/MainJs.php"); ?>
-    <script type="text/javascript" src="adminmntcurso.js"></script>
+    <script  src="../../asset/js/pro/cursos.js"></script>
     <script  src="../../asset/js/shortcut.js"></script>
   </body>
 </html>

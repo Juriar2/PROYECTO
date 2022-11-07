@@ -49,7 +49,7 @@
     <?php require_once("modalmantenimiento.php"); ?>
 
     <?php require_once("../html/MainJs.php"); ?>
-    <script type="text/javascript" src="adminmntcategoria.js"></script>
+    <script  src="../../asset/js/pro/categoria.js"></script>
     <script  src="../../asset/js/shortcut.js"></script>
 
   </body>

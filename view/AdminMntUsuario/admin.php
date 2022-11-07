@@ -66,8 +66,8 @@
    
 
     <?php require_once("../html/MainJs.php"); ?>
-    <script type="text/javascript" src="adminmntusuario.js"></script>
-    <script type="text/javascript" src="shortcut.js"></script>
+    <script  src="../../asset/js/pro/admin.js"></script>
+    <script  src="shortcut.js"></script>
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>

@@ -115,7 +115,7 @@
     
 
     <?php require_once("../html/MainJs.php"); ?>
-    <script type="text/javascript" src="usuperfil.js"></script>
+    <script type="text/javascript" src="../../asset/js/pro/perfil.js"></script>
     <script src="../../asset/js/app.js"></script>
 
         

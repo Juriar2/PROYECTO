@@ -18,7 +18,7 @@
     <?php require_once("../html/MainHeader.php"); ?>
 
     <div class="br-mainpanel">
-    <button class="btnresgis" id="add_button" onclick="nuevo()"><i class="fa fa-plus-square mg-r-10"></i> Nuevo Registro</button> <strong>Para mostrar un modal presione Ctrl+Q y Ecs para cerra</strong>
+    <button class="btnresgis" id="add_button" onclick="nuevo()"><i class="fa fa-plus-square mg-r-10"></i> Nuevo Registro</button>
     <hr>
       <div class="br-pagebody">
         <div class="br-section-wrapper">
@@ -56,7 +56,7 @@
     <?php require_once("modalmantenimiento.php"); ?>
 
     <?php require_once("../html/MainJs.php"); ?>
-    <script type="text/javascript" src="adminmntinstructor.js"></script>
+    <script type="text/javascript" src="../../asset/js/pro/instructor.js"></script>
     <script  src="../../asset/js/shortcut.js"></script>
 
   </body>

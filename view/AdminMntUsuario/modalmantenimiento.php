@@ -60,7 +60,7 @@
 
                     <div class="col-lg-12">
                         <div class="form-group">
-                            <label class="form-control-label">Telefono: <span class="tx-danger">*</span></label>
+                            <label class="form-control-label">Telefono: <span class="tx-danger"></span></label>
                             <input class="formulario " type="tel" name="usu_telf" id="usu_telf" placeholder="Ingrese Telefono"pattern="[0-9]+">
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                          <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label">Taller: <span class="tx-danger"></span></label>
-                            <select class="form select2" style="width:100%" name="usu_grup" id="usu_grup" data-placeholder="Seleccione" required>
+                            <select class="form select2" style="width:100%" name="usu_grup" id="usu_grup" data-placeholder="Seleccione">
                             <option label="Seleccione"></option>
                                 <option value="Pragrmacion C#">Pragrmacion C#</option>
                                 <option value="Introducciona c#">Introducciona c#</option>  
@@ -107,14 +107,14 @@
 
                     <div class="col-lg-12">
                         <div class="form-group">
-                            <label class="form-control-label">Matricula: <span class="tx-danger">*</span></label>
-                            <input class="form" id="usu_matri" type="text" name="usu_matri"placeholder="Ingrese la matricula" required>
+                            <label class="form-control-label">Matricula: <span class="tx-danger"></span></label>
+                            <input class="form" id="usu_matri" type="text" name="usu_matri"placeholder="Ingrese la matricula">
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="form-group">
-                            <label class="form-control-label">Vaucher: <span class="tx-danger">*</span></label>
-                            <select class="form select2" style="width:100%" name="usu_pago" id="usu_pago" data-placeholder="Seleccione" required>
+                            <label class="form-control-label">Vaucher: <span class="tx-danger"></span></label>
+                            <select class="form select2" style="width:100%" name="usu_pago" id="usu_pago" data-placeholder="Seleccione">
                                 <option label="Seleccione"></option>
                                 <option value="Si pago">Si pago</option>
                                 <option value="No pago">No pago</option>

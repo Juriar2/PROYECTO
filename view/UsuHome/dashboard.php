@@ -108,7 +108,7 @@
               <div class="pd-25 d-flex align-items-center">
                 <i class="ion ion-monitor tx-60 lh-0 tx-white op-7"></i>
                 <div class="mg-l-20">
-                  <p class="tx-10 tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10">Total de Cursos</p>
+                  <p class="tx-10 tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10">Mi talleres</p>
                   <p class="tx-24 tx-white tx-lato tx-bold mg-b-2 lh-1" id="lbltotal5"></p>
                 </div>
               </div>
@@ -125,7 +125,7 @@
               <div class="pd-x-30 pd-t-30 pd-b-15">
                 <div class="d-flex align-items-center justify-content-between">
                   <div>
-                    <h6 class="lista0">Curso</h6>
+                    <h6 class="lista0">Taller</h6>
                     <p class="lista"></p>
                   </div>
                 </div>
@@ -136,7 +136,7 @@
                     <thead>
                       <tr>
                       
-                        <th class="wd-15p">Curso</th>
+                        <th class="wd-15p">Taller</th>
                         <th class="wd-15p">Fecha Inicio</th>
                         <th class="wd-20p">Fecha Fin</th>
                         <th class="wd-15p">Instructor</th>
@@ -157,7 +157,7 @@
     </div>
     <?php require_once("../html/MainJs.php"); ?>
     <script src="../../asset/js/app.js"></script>
-    <script src="HomeUsuario.js"></script>
+    <script src="../../asset/js/pro/dashboard.js"></script>
     
   </body>
 </html>

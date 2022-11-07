@@ -108,7 +108,7 @@
         <select class="form-control1 select2" style="width:100%" name="rol_id" id="rol_id" data-placeholder="Seleccione" required>
           <option label="Seleccione acceso"></option>
           <option value="1">Alumno</option>
-          <option value="1">Invitado</option>
+          
               
         </select>
     </div>

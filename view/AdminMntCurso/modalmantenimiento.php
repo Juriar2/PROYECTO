@@ -10,7 +10,7 @@
                     <input type="hidden" name="cur_id" id="cur_id"/>
                     <div class="col-lg-12">
                         <div class="form-group">
-                            <label class="form-control-label">Categoria: <span class="tx-danger">*</span></label>
+                            <label class="form-control-label">Elegir taller: <span class="tx-danger">*</span></label>
                             <select class="form select2" style="width:100%" name="cat_id" id="cat_id" data-placeholder="Seleccione">
                                 <option label="Seleccione"></option>
 
@@ -19,25 +19,25 @@
                     </div>
                     <div class="col-lg-12">
                         <div class="form-group">
-                            <label class="form-control-label">Nombre: <span class="tx-danger">*</span></label>
+                            <label class="form-control-label">Nombre del taller: <span class="tx-danger">*</span></label>
                             <input class="form " id="cur_nom" type="text" name="cur_nom" placeholder="Nombre" required/>
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="form-group">
-                            <label class="form-control-label">Descripcion: <span class="tx-danger">*</span></label>
+                            <label class="form-control-label">Descripcion: <span class="tx-danger"></span></label>
                             <textarea class="formularioxd1 tx-uppercase" id="cur_descrip" type="text" name="cur_descrip" placeholder="Descripcion" required></textarea>
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="form-group">
-                            <label class="form-control-label">Fecha Inicio: <span class="tx-danger">*</span></label>
+                            <label class="form-control-label">Fecha Inicio del evento: <span class="tx-danger">*</span></label>
                             <input class="form tx-uppercase" id="cur_fechini" type="date" name="cur_fechini" required/>
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="form-group">
-                            <label class="form-control-label">Fecha Fin: <span class="tx-danger">*</span></label>
+                            <label class="form-control-label">Fecha Fin del evento: <span class="tx-danger">*</span></label>
                             <input class="form tx-uppercase" id="cur_fechfin" type="date" name="cur_fechfin" required/>
                         </div>
                     </div>
